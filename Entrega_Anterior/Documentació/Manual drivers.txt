@@ -1,8 +1,0 @@
-Tots els drivers funcionant seguint el mateix format:
-
-Per executar-lo es pot fer o bé amb els inputs que tenen el mateix nom del driver i comprovant que tenen
-el mateix output en els fitxers output amb el mateix nom del driver o també es pot executar manualment 
-seguint les instruccions que van sortint per consola.
-
-En cas que es vulgui utilitzar els drivers de forma manual, el propi usuari ha se saber quin es el valor
-correcte que ha de ser escrit per consola un cop realitzat el test.
