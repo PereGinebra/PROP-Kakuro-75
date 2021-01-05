@@ -1,0 +1,19 @@
+Crida a mètode constructor.
+S'ha creat la partida.
+-1: Sortir
+0: Temps
+1: NombreAjudesDemanades
+2: Files
+3: Columnes
+
+Crida a mètode getTemps.
+Ha retornat el temps: 0
+
+Crida a mètode nombreAjudesDemanades.
+Ha retornat el nombre d'ajudes demanades: 0
+
+Crida a mètode getFiles.
+Ha retornat el nombre de files del kakuro:9
+
+Crida a mètode getColumnnes.
+Ha retornat el nombre de columnes del kakuro: 9

@@ -1,0 +1,1218 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{}\doxysection{src.\+Capa\+Domini.\+Classes.\+Partida Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+
+
+Representa una partida.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea4fec8734ccd89d91ec4a539b79e344}{Partida}} ()
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0ae5d617093342f80cb058573f48270e}{Partida}} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} t)
+\begin{DoxyCompactList}\small\item\em Creadora de partida. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac09f665ce30cdf0be631e88eb983e24a}{getcoord\+No\+Confirmades}} ()
+\begin{DoxyCompactList}\small\item\em Retorna les coordenades de caselles que no han sigut solucionades. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a7e6eb67d78ab51d7702198bcfbcf298a}{get\+Taulell}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el taulell de la partida. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aa028a8e9013cc7e99f21730983e90174}{get\+Valors\+Actuals}} ()
+\begin{DoxyCompactList}\small\item\em Retorna els valors que ha col·locat l\textquotesingle{}usuari. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a63c887902b57c61c664155bf42e9e565}{get\+Temps}} ()
+\begin{DoxyCompactList}\small\item\em Retorna la quantitat de temps que s\textquotesingle{}ha jugat la partida. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a4267fae6e3dcfddd16141205a26c114d}{get\+Dificultat}} ()
+\begin{DoxyCompactList}\small\item\em Retorna la dificultat de la partida. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_adeebe10d6f657e20ee75c3c1f0a56b01}{get\+Files}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el nombre de files del kakuro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae91bc797e247e8421297b3e8bc1eb714}{get\+Columnes}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el nombre de columnes del kakuro. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aaa7613f2ba0e861500a5e94a680000fe}{get\+Id\+Partida}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el ID de la partida. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae18be80bca34e96b03f8978f558cb20c}{hi\+Ha\+Repetits}} (int i, int j, String s)
+\begin{DoxyCompactList}\small\item\em Mira si hi ha algun nombre igual que el que es vol posar en la mateixa fila i/o columna. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea6c1074d4ab8ea7662adf84a1a34295}{get\+Valor\+Actual}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Retorna el valor de la casella \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8d8dcdb8c7f16bb9f95a4683141d8ebb}{casella\+Es\+Escribible}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Consulta si es pot escriure un nombre en la casella amb coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ab86ac7d6a680029c33c14a11e5bc5576}{casella\+Es\+Bloquejada}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Consulta si la casella \mbox{[}i\mbox{]}\mbox{[}j\mbox{]} ha estat bloquejada perquè ja està solucionada. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8bfd09a2e9a23de829b59733b754751b}{partida\+Acabada}} ()
+\begin{DoxyCompactList}\small\item\em Comprova si la partida ha sigut acabada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_acf561c2dc74094a926c359df1f876298}{escriure\+Taulell\+Partida}} ()
+\begin{DoxyCompactList}\small\item\em Escriu el taulell amb els valors que s\textquotesingle{}ha posat fins ara. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac99bd8bbdff75a5a94fe4744073801e7}{demanar\+Ajuda}} ()
+\begin{DoxyCompactList}\small\item\em Resol una casella i la bloqueja per tal que no es pugui modificar. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a894cfb744272ff86533ed23ad3f827c1}{solucionar}} ()
+\begin{DoxyCompactList}\small\item\em Resol tot el kakuro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8dbece6b327b741068562697d12ff99e}{modificar\+Casella}} (int fila, int columna, String valor)
+\begin{DoxyCompactList}\small\item\em Modifica la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]} posant-\/li el valor \char`\"{}valor\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad12fd54a1e75d51ed2f9cf851c254b3c}{assignar\+Atributs}} (String time, String I\+D\+Partida, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}} mat\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ llista, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} t)
+\begin{DoxyCompactList}\small\item\em Assigna els atributs necessaris per tal de poder jugar la partida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a6300572544d886c29b6e93ec2f1e6497}{assignar\+Temps}} (String t)
+\begin{DoxyCompactList}\small\item\em Assigna el temps que s\textquotesingle{}ha estat jugant la partida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casella\+Es\+Blanca}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Consulta si la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]} és una casella on hi ha d\textquotesingle{}haver un nombre posat per l\textquotesingle{}usuari. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a09ce81fe8f4a765bad3dbe7ca6ae0d7e}{get\+Valor\+Correcte}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Retorna el valor correcte de la casella \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3e8cf939455c33e8e7d899ce14ebdd85}{omplir\+Coord\+No\+Confirmades}} ()
+\begin{DoxyCompactList}\small\item\em Quan es crea una partida omple un conjunt amb les coordenades que pertanyen a caselles blanques. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a21b02046ad92f5fc17fcf3afd0c850f7}{resoldre\+Casella}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Resol la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a2139f72a26941ff0777b56167453c50d}{assignar\+Id\+Partida}} (String ID)
+\begin{DoxyCompactList}\small\item\em Assigna a la partida el seu ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aebe3b89d61029889c532897d8788e40c}{assignar\+Valors\+Actuals}} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}} mat\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Assigna a la partida els valors que ha col·locat l\textquotesingle{}usuari. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac2723f0d505484c0957f6904f59b7d95}{assignar\+No\+Coonfirmades}} (Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ llista)
+\begin{DoxyCompactList}\small\item\em Assigna a la partida les coordenades de caselles que no han sigut solucionades. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad682c6383139c93dc4747c6b1440b61b}{assignar\+Taulell}} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} t)
+\begin{DoxyCompactList}\small\item\em Assigna a la partida el seu taulell corresponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a744e69c03ce012decff605527f4f0025}{temps}}
+\begin{DoxyCompactList}\small\item\em Temps emprat en la partida. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad4f9e1440f0d9e1468513f43d559e4a6}{I\+Dpartida}}
+\begin{DoxyCompactList}\small\item\em Identificador de la partida. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriu\+Valors\+Actuals}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Valors actuals del kakuro. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}{coord\+No\+Confirmades}}
+\begin{DoxyCompactList}\small\item\em Llista de coordenades de les caselles blanques no resoltes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} associat a la partida. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a96846a9386496dd4159afe7d182baea6}{acabada}}
+\begin{DoxyCompactList}\small\item\em Indica si la partida s\textquotesingle{}ha finalitzat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una partida. 
+
+\begin{DoxyAuthor}{Author}
+pere.\+ginebra 
+\end{DoxyAuthor}
+
+
+Definition at line 17 of file Partida.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea4fec8734ccd89d91ec4a539b79e344}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea4fec8734ccd89d91ec4a539b79e344}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!Partida@{Partida}}
+\index{Partida@{Partida}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{Partida()}{Partida()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Classes.\+Partida.\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora per defecte. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Crea una partida amb tots els valors nuls. 
+\end{DoxyPostcond}
+
+
+Definition at line 41 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                      \{}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0ae5d617093342f80cb058573f48270e}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0ae5d617093342f80cb058573f48270e}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!Partida@{Partida}}
+\index{Partida@{Partida}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{Partida()}{Partida()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Classes.\+Partida.\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Creadora de partida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & és un taulell valid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Crea una partida i s\textquotesingle{}assigna el taulell a aquesta. 
+\end{DoxyPostcond}
+
+
+Definition at line 51 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                              \{}
+\DoxyCodeLine{52         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a744e69c03ce012decff605527f4f0025}{temps}} = \textcolor{stringliteral}{"{}00:00:00"{}};}
+\DoxyCodeLine{53         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}} = t;}
+\DoxyCodeLine{54         }
+\DoxyCodeLine{55         \textcolor{keywordtype}{int} n = t.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a186b6f12c43c7fe9db1848c970a203c0}{getFiles}}();}
+\DoxyCodeLine{56         \textcolor{keywordtype}{int} m = t.getColumnes();}
+\DoxyCodeLine{57         }
+\DoxyCodeLine{58         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}= \textcolor{keyword}{new} PairSB[n][m];}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0 ; i<n; ++i)\{}
+\DoxyCodeLine{61             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j<m; ++j)\{}
+\DoxyCodeLine{62                 \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[i][j] = \textcolor{keyword}{new} PairSB(\textcolor{stringliteral}{"{}?"{}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{63             \}}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65         }
+\DoxyCodeLine{66         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a96846a9386496dd4159afe7d182baea6}{acabada}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{67         }
+\DoxyCodeLine{68         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}{coordNoConfirmades}} = \textcolor{keyword}{new} ArrayList < PairII > ();}
+\DoxyCodeLine{69         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3e8cf939455c33e8e7d899ce14ebdd85}{omplirCoordNoConfirmades}}();}
+\DoxyCodeLine{70     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad12fd54a1e75d51ed2f9cf851c254b3c}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad12fd54a1e75d51ed2f9cf851c254b3c}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!assignarAtributs@{assignarAtributs}}
+\index{assignarAtributs@{assignarAtributs}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{assignarAtributs()}{assignarAtributs()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+assignar\+Atributs (\begin{DoxyParamCaption}\item[{String}]{time,  }\item[{String}]{I\+D\+Partida,  }\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}}}]{mat\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$}]{llista,  }\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Assigna els atributs necessaris per tal de poder jugar la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Tots els atributs pertanyen a la mateixa partida. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha assignat els atributs necessaris per tal de poder jugar la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 434 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{434                                                                                                                     \{}
+\DoxyCodeLine{435 }
+\DoxyCodeLine{436         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a6300572544d886c29b6e93ec2f1e6497}{assignarTemps}}(time);}
+\DoxyCodeLine{437         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a2139f72a26941ff0777b56167453c50d}{assignarIdPartida}}(IDPartida);}
+\DoxyCodeLine{438         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aebe3b89d61029889c532897d8788e40c}{assignarValorsActuals}}(mat);}
+\DoxyCodeLine{439         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac2723f0d505484c0957f6904f59b7d95}{assignarNoCoonfirmades}}(llista);}
+\DoxyCodeLine{440         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad682c6383139c93dc4747c6b1440b61b}{assignarTaulell}}(t);}
+\DoxyCodeLine{441     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a2139f72a26941ff0777b56167453c50d}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a2139f72a26941ff0777b56167453c50d}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!assignarIdPartida@{assignarIdPartida}}
+\index{assignarIdPartida@{assignarIdPartida}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{assignarIdPartida()}{assignarIdPartida()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+assignar\+Id\+Partida (\begin{DoxyParamCaption}\item[{String}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Assigna a la partida el seu ID. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha assignat a la partida el seu ID. 
+\end{DoxyPostcond}
+
+
+Definition at line 458 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{458                                              \{}
+\DoxyCodeLine{459         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad4f9e1440f0d9e1468513f43d559e4a6}{IDpartida}} = ID;}
+\DoxyCodeLine{460     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac2723f0d505484c0957f6904f59b7d95}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac2723f0d505484c0957f6904f59b7d95}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!assignarNoCoonfirmades@{assignarNoCoonfirmades}}
+\index{assignarNoCoonfirmades@{assignarNoCoonfirmades}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{assignarNoCoonfirmades()}{assignarNoCoonfirmades()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+assignar\+No\+Coonfirmades (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$}]{llista }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Assigna a la partida les coordenades de caselles que no han sigut solucionades. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha assignat a la partida les coordenades de caselles que no han sigut solucionades. 
+\end{DoxyPostcond}
+
+
+Definition at line 474 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{474                                                                    \{}
+\DoxyCodeLine{475         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}{coordNoConfirmades}} = llista;}
+\DoxyCodeLine{476     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad682c6383139c93dc4747c6b1440b61b}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad682c6383139c93dc4747c6b1440b61b}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!assignarTaulell@{assignarTaulell}}
+\index{assignarTaulell@{assignarTaulell}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{assignarTaulell()}{assignarTaulell()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+assignar\+Taulell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Assigna a la partida el seu taulell corresponent. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha assignat a la partida el seu taulell corresponent. 
+\end{DoxyPostcond}
+
+
+Definition at line 482 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{482                                            \{}
+\DoxyCodeLine{483         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}} = t;}
+\DoxyCodeLine{484     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a6300572544d886c29b6e93ec2f1e6497}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a6300572544d886c29b6e93ec2f1e6497}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!assignarTemps@{assignarTemps}}
+\index{assignarTemps@{assignarTemps}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{assignarTemps()}{assignarTemps()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+assignar\+Temps (\begin{DoxyParamCaption}\item[{String}]{t }\end{DoxyParamCaption})}
+
+
+
+Assigna el temps que s\textquotesingle{}ha estat jugant la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha assignat el temps que s\textquotesingle{}ha estat jugant la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 450 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{450                                        \{}
+\DoxyCodeLine{451         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a744e69c03ce012decff605527f4f0025}{temps}} = t;}
+\DoxyCodeLine{452     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aebe3b89d61029889c532897d8788e40c}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aebe3b89d61029889c532897d8788e40c}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!assignarValorsActuals@{assignarValorsActuals}}
+\index{assignarValorsActuals@{assignarValorsActuals}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{assignarValorsActuals()}{assignarValorsActuals()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+assignar\+Valors\+Actuals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}}}]{mat\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Assigna a la partida els valors que ha col·locat l\textquotesingle{}usuari. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha assignat a la partida els valors col·locat per l\textquotesingle{}usuari. 
+\end{DoxyPostcond}
+
+
+Definition at line 466 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{466                                                        \{}
+\DoxyCodeLine{467         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}} = mat;}
+\DoxyCodeLine{468     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!casellaEsBlanca@{casellaEsBlanca}}
+\index{casellaEsBlanca@{casellaEsBlanca}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{casellaEsBlanca()}{casellaEsBlanca()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Classes.\+Partida.\+casella\+Es\+Blanca (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Consulta si la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]} és una casella on hi ha d\textquotesingle{}haver un nombre posat per l\textquotesingle{}usuari. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em 0$<$=i$<$nombre} & de files del kakuro. \\
+\hline
+{\em 0$<$=j$<$nombre} & de columnes del kakuro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si i només hi hauria d\textquotesingle{}haver un nombre en la casella amb coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+\end{DoxyPostcond}
+
+
+Definition at line 154 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154                                                   \{}
+\DoxyCodeLine{155         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(i,j);}
+\DoxyCodeLine{156     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ab86ac7d6a680029c33c14a11e5bc5576}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ab86ac7d6a680029c33c14a11e5bc5576}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!casellaEsBloquejada@{casellaEsBloquejada}}
+\index{casellaEsBloquejada@{casellaEsBloquejada}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{casellaEsBloquejada()}{casellaEsBloquejada()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Classes.\+Partida.\+casella\+Es\+Bloquejada (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Consulta si la casella \mbox{[}i\mbox{]}\mbox{[}j\mbox{]} ha estat bloquejada perquè ja està solucionada. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si i la casella \mbox{[}i\mbox{]}\mbox{[}j\mbox{]} és una casella blanca que ha estat bloquejada. 
+\end{DoxyPostcond}
+
+
+Definition at line 263 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{263                                                     \{}
+\DoxyCodeLine{264         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(i,j) \&\& !\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[i][j].getRight());}
+\DoxyCodeLine{265     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8d8dcdb8c7f16bb9f95a4683141d8ebb}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8d8dcdb8c7f16bb9f95a4683141d8ebb}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!casellaEsEscribible@{casellaEsEscribible}}
+\index{casellaEsEscribible@{casellaEsEscribible}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{casellaEsEscribible()}{casellaEsEscribible()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Classes.\+Partida.\+casella\+Es\+Escribible (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Consulta si es pot escriure un nombre en la casella amb coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si i només si es pot escriure un nombre en la casella amb coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+\end{DoxyPostcond}
+
+
+Definition at line 253 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{253                                                     \{}
+\DoxyCodeLine{254         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(i,j) \&\& \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[i][j].getRight());}
+\DoxyCodeLine{255     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac99bd8bbdff75a5a94fe4744073801e7}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac99bd8bbdff75a5a94fe4744073801e7}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!demanarAjuda@{demanarAjuda}}
+\index{demanarAjuda@{demanarAjuda}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{demanarAjuda()}{demanarAjuda()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} src.\+Capa\+Domini.\+Classes.\+Partida.\+demanar\+Ajuda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resol una casella i la bloqueja per tal que no es pugui modificar. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+
+La partida no està acabada. ~\newline
+ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Una casella blanca aleatòria ha estat resolta i s\textquotesingle{}ha retornat les seves coordenades. 
+\end{DoxyPostcond}
+
+
+Definition at line 372 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{372                                 \{}
+\DoxyCodeLine{373 }
+\DoxyCodeLine{374         }
+\DoxyCodeLine{375         Random r = \textcolor{keyword}{new} Random();}
+\DoxyCodeLine{376 }
+\DoxyCodeLine{377         \textcolor{keywordtype}{int} mida = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}{coordNoConfirmades}}.size();}
+\DoxyCodeLine{378         \textcolor{keywordtype}{int} nAleatori = r.nextInt(mida);}
+\DoxyCodeLine{379         PairII p = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}{coordNoConfirmades}}.remove(nAleatori);}
+\DoxyCodeLine{380         }
+\DoxyCodeLine{381         \textcolor{keywordtype}{int} i = p.getLeft();}
+\DoxyCodeLine{382         \textcolor{keywordtype}{int} j = p.getRight();}
+\DoxyCodeLine{383         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a21b02046ad92f5fc17fcf3afd0c850f7}{resoldreCasella}}(i,j);}
+\DoxyCodeLine{384         }
+\DoxyCodeLine{385         \textcolor{keywordflow}{return} p;}
+\DoxyCodeLine{386     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_acf561c2dc74094a926c359df1f876298}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_acf561c2dc74094a926c359df1f876298}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!escriureTaulellPartida@{escriureTaulellPartida}}
+\index{escriureTaulellPartida@{escriureTaulellPartida}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{escriureTaulellPartida()}{escriureTaulellPartida()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+escriure\+Taulell\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escriu el taulell amb els valors que s\textquotesingle{}ha posat fins ara. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Escriu el taulell amb els valors que s\textquotesingle{}ha posat fins ara. 
+\end{DoxyPostcond}
+
+
+Definition at line 302 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{302                                          \{}
+\DoxyCodeLine{303         }
+\DoxyCodeLine{304         }
+\DoxyCodeLine{305         \textcolor{keywordtype}{int} files = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_adeebe10d6f657e20ee75c3c1f0a56b01}{getFiles}}();}
+\DoxyCodeLine{306         \textcolor{keywordtype}{int} \mbox{\hyperlink{_test_driver_ctrl_domain_output1_8txt_a469b78026f8760b9e57a5bce67d89411}{columnes}} = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae91bc797e247e8421297b3e8bc1eb714}{getColumnes}}();}
+\DoxyCodeLine{307         }
+\DoxyCodeLine{308         String ANSI\_RESET = \textcolor{stringliteral}{"{}\(\backslash\)u001B[0m"{}};}
+\DoxyCodeLine{309         String ANSI\_BLUE = \textcolor{stringliteral}{"{}\(\backslash\)u001B[34m"{}};}
+\DoxyCodeLine{310         }
+\DoxyCodeLine{311         System.out.print(ANSI\_BLUE);}
+\DoxyCodeLine{312         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} a=-\/1;a<\mbox{\hyperlink{_test_driver_ctrl_domain_output1_8txt_a469b78026f8760b9e57a5bce67d89411}{columnes}};a++)\{}
+\DoxyCodeLine{313             System.out.print(\mbox{\hyperlink{namespacesrc}{src}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini}{CapaDomini}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini_1_1_utils}{Utils}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a10c05ca7f536cd6ae6a63c3874dd0def}{NormalitzarEspai}}(\textcolor{stringliteral}{"{}c"{}}+String.valueOf(a)));}
+\DoxyCodeLine{314             \textcolor{keywordflow}{if}(a!=\mbox{\hyperlink{_test_driver_ctrl_domain_output1_8txt_a469b78026f8760b9e57a5bce67d89411}{columnes}}-\/1)System.out.print(\textcolor{stringliteral}{"{}|"{}});}
+\DoxyCodeLine{315         \}}
+\DoxyCodeLine{316         System.out.print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{317         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{_test_driver_ctrl_domain_output1_8txt_a469b78026f8760b9e57a5bce67d89411}{columnes}}+1;j++) \{}
+\DoxyCodeLine{318             System.out.print(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{319             System.out.print(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{320          \}}
+\DoxyCodeLine{321         System.out.print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{322         System.out.print(ANSI\_RESET);}
+\DoxyCodeLine{323         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<files;i++)\{}
+\DoxyCodeLine{324           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{_test_driver_ctrl_domain_output1_8txt_a469b78026f8760b9e57a5bce67d89411}{columnes}};j++) \{}
+\DoxyCodeLine{325             \textcolor{keywordflow}{if}(j==0)System.out.print(ANSI\_BLUE+\mbox{\hyperlink{namespacesrc}{src}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini}{CapaDomini}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini_1_1_utils}{Utils}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a10c05ca7f536cd6ae6a63c3874dd0def}{NormalitzarEspai}}(\textcolor{stringliteral}{"{}f"{}}+String.valueOf(i))+ANSI\_RESET);  }
+\DoxyCodeLine{326             System.out.print(\textcolor{stringliteral}{"{}|"{}});}
+\DoxyCodeLine{327             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(i, j)) \{}
+\DoxyCodeLine{328                     System.out.print(FinalVariables.NormalitzarEspai(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea6c1074d4ab8ea7662adf84a1a34295}{getValorActual}}(i,j)));}
+\DoxyCodeLine{329                 \}}
+\DoxyCodeLine{330                 }
+\DoxyCodeLine{331             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{332                     System.out.print(FinalVariables.NormalitzarEspai(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(i,j)));}
+\DoxyCodeLine{333                 \}}
+\DoxyCodeLine{334           \}}
+\DoxyCodeLine{335           System.out.print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{336           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{_test_driver_ctrl_domain_output1_8txt_a469b78026f8760b9e57a5bce67d89411}{columnes}}+1;j++) \{}
+\DoxyCodeLine{337             \textcolor{keywordflow}{if}(j!=0) System.out.print(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{338             System.out.print(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{339           \}}
+\DoxyCodeLine{340           System.out.print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{341         \}}
+\DoxyCodeLine{342         }
+\DoxyCodeLine{343         }
+\DoxyCodeLine{344     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae91bc797e247e8421297b3e8bc1eb714}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae91bc797e247e8421297b3e8bc1eb714}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getColumnes@{getColumnes}}
+\index{getColumnes@{getColumnes}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getColumnes()}{getColumnes()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Columnes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el nombre de columnes del kakuro. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el nombre de columnes del kakuro. 
+\end{DoxyPostcond}
+
+
+Definition at line 135 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{135                             \{}
+\DoxyCodeLine{136         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a751db61320ff0c8320ecc1be85e11cbd}{getColumnes}}();}
+\DoxyCodeLine{137     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac09f665ce30cdf0be631e88eb983e24a}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac09f665ce30cdf0be631e88eb983e24a}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getcoordNoConfirmades@{getcoordNoConfirmades}}
+\index{getcoordNoConfirmades@{getcoordNoConfirmades}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getcoordNoConfirmades()}{getcoordNoConfirmades()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ src.\+Capa\+Domini.\+Classes.\+Partida.\+getcoord\+No\+Confirmades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna les coordenades de caselles que no han sigut solucionades. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha retornat les coordenades de caselles que no han sigut solucionades. 
+\end{DoxyPostcond}
+
+
+Definition at line 83 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                                       \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}{coordNoConfirmades}};}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a4267fae6e3dcfddd16141205a26c114d}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a4267fae6e3dcfddd16141205a26c114d}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getDificultat@{getDificultat}}
+\index{getDificultat@{getDificultat}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getDificultat()}{getDificultat()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Dificultat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna la dificultat de la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+El kakuro de la partida ha sigut creat automàticament. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna la dificultat de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 118 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                   \{}
+\DoxyCodeLine{119         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a694356955cd2b79a904f8b740017ead0}{getDificultat}}();}
+\DoxyCodeLine{120     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_adeebe10d6f657e20ee75c3c1f0a56b01}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_adeebe10d6f657e20ee75c3c1f0a56b01}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el nombre de files del kakuro. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el nombre de files del kakuro. 
+\end{DoxyPostcond}
+
+
+Definition at line 127 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{127                          \{}
+\DoxyCodeLine{128         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a186b6f12c43c7fe9db1848c970a203c0}{getFiles}}();}
+\DoxyCodeLine{129     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aaa7613f2ba0e861500a5e94a680000fe}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aaa7613f2ba0e861500a5e94a680000fe}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getIdPartida@{getIdPartida}}
+\index{getIdPartida@{getIdPartida}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getIdPartida()}{getIdPartida()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Id\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el ID de la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el ID de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 144 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{144                                 \{}
+\DoxyCodeLine{145         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad4f9e1440f0d9e1468513f43d559e4a6}{IDpartida}};}
+\DoxyCodeLine{146     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a7e6eb67d78ab51d7702198bcfbcf298a}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a7e6eb67d78ab51d7702198bcfbcf298a}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getTaulell@{getTaulell}}
+\index{getTaulell@{getTaulell}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getTaulell()}{getTaulell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Taulell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el taulell de la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha retornat el taulell de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 92 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                                \{}
+\DoxyCodeLine{93         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}};}
+\DoxyCodeLine{94     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a63c887902b57c61c664155bf42e9e565}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a63c887902b57c61c664155bf42e9e565}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getTemps@{getTemps}}
+\index{getTemps@{getTemps}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getTemps()}{getTemps()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Temps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna la quantitat de temps que s\textquotesingle{}ha jugat la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna la quantitat de temps que s\textquotesingle{}ha jugat la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 110 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110                             \{}
+\DoxyCodeLine{111         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a744e69c03ce012decff605527f4f0025}{temps}};}
+\DoxyCodeLine{112     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea6c1074d4ab8ea7662adf84a1a34295}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea6c1074d4ab8ea7662adf84a1a34295}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getValorActual@{getValorActual}}
+\index{getValorActual@{getValorActual}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getValorActual()}{getValorActual()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Valor\+Actual (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Retorna el valor de la casella \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el valor actual de la casella de coordenades\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+\end{DoxyPostcond}
+
+
+Definition at line 231 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{231                                               \{}
+\DoxyCodeLine{232         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[i][j].\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b_a8ae4fec96ca001df50936aa15f6443ec}{getLeft}}();}
+\DoxyCodeLine{233     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a09ce81fe8f4a765bad3dbe7ca6ae0d7e}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a09ce81fe8f4a765bad3dbe7ca6ae0d7e}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getValorCorrecte@{getValorCorrecte}}
+\index{getValorCorrecte@{getValorCorrecte}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getValorCorrecte()}{getValorCorrecte()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Valor\+Correcte (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna el valor correcte de la casella \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el valor correcte de la casella \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+\end{DoxyPostcond}
+
+
+Definition at line 243 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{243                                                  \{}
+\DoxyCodeLine{244         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a8a114c16254b1c03565d58aba4215e09}{getValorCorrecteCasella}}(i,j);}
+\DoxyCodeLine{245     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aa028a8e9013cc7e99f21730983e90174}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aa028a8e9013cc7e99f21730983e90174}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!getValorsActuals@{getValorsActuals}}
+\index{getValorsActuals@{getValorsActuals}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{getValorsActuals()}{getValorsActuals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Capa\+Domini.\+Classes.\+Partida.\+get\+Valors\+Actuals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna els valors que ha col·locat l\textquotesingle{}usuari. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna els valors que ha col·locat l\textquotesingle{}usuari. 
+\end{DoxyPostcond}
+
+
+Definition at line 100 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                                         \{}
+\DoxyCodeLine{101         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}};}
+\DoxyCodeLine{102     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae18be80bca34e96b03f8978f558cb20c}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae18be80bca34e96b03f8978f558cb20c}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!hiHaRepetits@{hiHaRepetits}}
+\index{hiHaRepetits@{hiHaRepetits}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{hiHaRepetits()}{hiHaRepetits()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Classes.\+Partida.\+hi\+Ha\+Repetits (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{String}]{s }\end{DoxyParamCaption})}
+
+
+
+Mira si hi ha algun nombre igual que el que es vol posar en la mateixa fila i/o columna. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+{\em s} & és un string amb el valor a comprovar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si i només si en hi ha algun nombre que sigui igual que el nombre de la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+\end{DoxyPostcond}
+
+
+Definition at line 166 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166                                                         \{}
+\DoxyCodeLine{167         \textcolor{keywordtype}{int} n = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_adeebe10d6f657e20ee75c3c1f0a56b01}{getFiles}}();}
+\DoxyCodeLine{168         \textcolor{keywordtype}{int} m = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae91bc797e247e8421297b3e8bc1eb714}{getColumnes}}();}
+\DoxyCodeLine{169         }
+\DoxyCodeLine{170         }
+\DoxyCodeLine{171         \textcolor{comment}{//Cap a la dreta.}}
+\DoxyCodeLine{172         \textcolor{keywordtype}{int} ii = i;}
+\DoxyCodeLine{173         \textcolor{keywordtype}{int} jj = j+1;}
+\DoxyCodeLine{174         \textcolor{keywordflow}{while} ((jj<m) \&\& (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(ii,jj)))\{}
+\DoxyCodeLine{175             }
+\DoxyCodeLine{176             String vActual = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[ii][jj].\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b_a8ae4fec96ca001df50936aa15f6443ec}{getLeft}}();}
+\DoxyCodeLine{177             }
+\DoxyCodeLine{178             }
+\DoxyCodeLine{179             \textcolor{keywordflow}{if} (vActual.compareTo(s) == 0)\{}
+\DoxyCodeLine{180                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{181             \}}
+\DoxyCodeLine{182             ++jj;}
+\DoxyCodeLine{183         \}}
+\DoxyCodeLine{184         }
+\DoxyCodeLine{185         \textcolor{comment}{// Cap a baix.}}
+\DoxyCodeLine{186         ii = i+1;}
+\DoxyCodeLine{187         jj = j;}
+\DoxyCodeLine{188         \textcolor{keywordflow}{while} ((ii<n) \&\& (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(ii,jj)))\{}
+\DoxyCodeLine{189                }
+\DoxyCodeLine{190             String vActual = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[ii][jj].\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b_a8ae4fec96ca001df50936aa15f6443ec}{getLeft}}();}
+\DoxyCodeLine{191             \textcolor{keywordflow}{if} (vActual.compareTo(s) == 0)\{}
+\DoxyCodeLine{192                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{193             \}}
+\DoxyCodeLine{194             ++ii;}
+\DoxyCodeLine{195         \}}
+\DoxyCodeLine{196         }
+\DoxyCodeLine{197         \textcolor{comment}{//Cap a l'esquerra.}}
+\DoxyCodeLine{198         ii = i;}
+\DoxyCodeLine{199         jj = j-\/1;}
+\DoxyCodeLine{200         \textcolor{keywordflow}{while} ((0<=jj) \&\& (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(ii,jj)))\{}
+\DoxyCodeLine{201         }
+\DoxyCodeLine{202             String vActual = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[ii][jj].\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b_a8ae4fec96ca001df50936aa15f6443ec}{getLeft}}();}
+\DoxyCodeLine{203             \textcolor{keywordflow}{if} (vActual.compareTo(s) == 0)\{}
+\DoxyCodeLine{204                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{205             \}}
+\DoxyCodeLine{206             -\/-\/jj;}
+\DoxyCodeLine{207         \}}
+\DoxyCodeLine{208         }
+\DoxyCodeLine{209         \textcolor{comment}{//Cap a dalt.}}
+\DoxyCodeLine{210         ii = i-\/1;}
+\DoxyCodeLine{211         jj = j;}
+\DoxyCodeLine{212         \textcolor{keywordflow}{while} ((0<=ii) \&\& (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(ii,jj)))\{}
+\DoxyCodeLine{213         }
+\DoxyCodeLine{214             String vActual = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[ii][jj].\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b_a8ae4fec96ca001df50936aa15f6443ec}{getLeft}}();}
+\DoxyCodeLine{215             \textcolor{keywordflow}{if} (vActual.compareTo(s) == 0)\{}
+\DoxyCodeLine{216                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{217             \}}
+\DoxyCodeLine{218             -\/-\/ii;}
+\DoxyCodeLine{219         \}}
+\DoxyCodeLine{220         }
+\DoxyCodeLine{221         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{222     }
+\DoxyCodeLine{223     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8dbece6b327b741068562697d12ff99e}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8dbece6b327b741068562697d12ff99e}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!modificarCasella@{modificarCasella}}
+\index{modificarCasella@{modificarCasella}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{modificarCasella()}{modificarCasella()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+modificar\+Casella (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna,  }\item[{String}]{valor }\end{DoxyParamCaption})}
+
+
+
+Modifica la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]} posant-\/li el valor \char`\"{}valor\char`\"{}. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+
+La casella és una casella blanca i no està bloquejada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+{\em valor} & és el valor que se li vol donar a la casella \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casella ha estat modificada. 
+\end{DoxyPostcond}
+
+
+Definition at line 409 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{409                                                                     \{}
+\DoxyCodeLine{410         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8d8dcdb8c7f16bb9f95a4683141d8ebb}{casellaEsEscribible}} (fila, columna))\{}
+\DoxyCodeLine{411             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[fila][columna].\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b_a559d69e1501e34589ba9e0ae03f32cc5}{setLeft}}(valor);}
+\DoxyCodeLine{412         \}}
+\DoxyCodeLine{413     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3e8cf939455c33e8e7d899ce14ebdd85}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3e8cf939455c33e8e7d899ce14ebdd85}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!omplirCoordNoConfirmades@{omplirCoordNoConfirmades}}
+\index{omplirCoordNoConfirmades@{omplirCoordNoConfirmades}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{omplirCoordNoConfirmades()}{omplirCoordNoConfirmades()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+omplir\+Coord\+No\+Confirmades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Quan es crea una partida omple un conjunt amb les coordenades que pertanyen a caselles blanques. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. ~\newline
+ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Les coordenades de caselles blanques han sigut guardades. 
+\end{DoxyPostcond}
+
+
+Definition at line 352 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{352                                            \{}
+\DoxyCodeLine{353         \textcolor{keywordtype}{int} n = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_adeebe10d6f657e20ee75c3c1f0a56b01}{getFiles}}();}
+\DoxyCodeLine{354         \textcolor{keywordtype}{int} m = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae91bc797e247e8421297b3e8bc1eb714}{getColumnes}}();}
+\DoxyCodeLine{355         }
+\DoxyCodeLine{356         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<n; ++i)\{}
+\DoxyCodeLine{357             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j<m; ++j)\{}
+\DoxyCodeLine{358                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(i,j))\{}
+\DoxyCodeLine{359                     \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}{coordNoConfirmades}}.add(PairII.of(i,j));}
+\DoxyCodeLine{360                 \}}
+\DoxyCodeLine{361             \}   }
+\DoxyCodeLine{362         \}}
+\DoxyCodeLine{363     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8bfd09a2e9a23de829b59733b754751b}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8bfd09a2e9a23de829b59733b754751b}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!partidaAcabada@{partidaAcabada}}
+\index{partidaAcabada@{partidaAcabada}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{partidaAcabada()}{partidaAcabada()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Classes.\+Partida.\+partida\+Acabada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Comprova si la partida ha sigut acabada. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. ~\newline
+ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si i només s\textquotesingle{}han omplert totes les caselles blanques amb el valor correcte. 
+\end{DoxyPostcond}
+
+
+Definition at line 272 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{272                                    \{}
+\DoxyCodeLine{273         }
+\DoxyCodeLine{274         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a96846a9386496dd4159afe7d182baea6}{acabada}})\{}
+\DoxyCodeLine{275             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{276         \}}
+\DoxyCodeLine{277         }
+\DoxyCodeLine{278         \textcolor{keywordtype}{int} files = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_adeebe10d6f657e20ee75c3c1f0a56b01}{getFiles}}();}
+\DoxyCodeLine{279         \textcolor{keywordtype}{int} \mbox{\hyperlink{_test_driver_ctrl_domain_output1_8txt_a469b78026f8760b9e57a5bce67d89411}{columnes}} = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae91bc797e247e8421297b3e8bc1eb714}{getColumnes}}();}
+\DoxyCodeLine{280         }
+\DoxyCodeLine{281         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < files; i++) \{}
+\DoxyCodeLine{282             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{_test_driver_ctrl_domain_output1_8txt_a469b78026f8760b9e57a5bce67d89411}{columnes}}; j++) \{}
+\DoxyCodeLine{283                 }
+\DoxyCodeLine{284                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a28dca0714191d99a6be6d015533898bf}{casellaEsBlanca}}(i, j)) \{}
+\DoxyCodeLine{285                     }
+\DoxyCodeLine{286                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea6c1074d4ab8ea7662adf84a1a34295}{getValorActual}}(i,j).compareTo(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a09ce81fe8f4a765bad3dbe7ca6ae0d7e}{getValorCorrecte}}(i,j)) != 0)\{}
+\DoxyCodeLine{287                         \textcolor{comment}{//System.out.println("{}La partida no esta acabada correctament"{});}}
+\DoxyCodeLine{288                         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{289                     \} }
+\DoxyCodeLine{290                 \}}
+\DoxyCodeLine{291             \}}
+\DoxyCodeLine{292         \}}
+\DoxyCodeLine{293         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a96846a9386496dd4159afe7d182baea6}{acabada}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{294         \textcolor{keywordflow}{return} \textcolor{keyword}{true};  }
+\DoxyCodeLine{295     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a21b02046ad92f5fc17fcf3afd0c850f7}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a21b02046ad92f5fc17fcf3afd0c850f7}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!resoldreCasella@{resoldreCasella}}
+\index{resoldreCasella@{resoldreCasella}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{resoldreCasella()}{resoldreCasella()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Partida.\+resoldre\+Casella (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resol la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+
+La casella és una casella blanca. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Resol una casella i no deixa que s\textquotesingle{}hi torni a escriure. 
+\end{DoxyPostcond}
+
+
+Definition at line 422 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{422                                               \{}
+\DoxyCodeLine{423         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[i][j].\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b_a559d69e1501e34589ba9e0ae03f32cc5}{setLeft}}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a09ce81fe8f4a765bad3dbe7ca6ae0d7e}{getValorCorrecte}}(i,j));}
+\DoxyCodeLine{424         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}{matriuValorsActuals}}[i][j].\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b_a754671da5474bb4a2fdfafdcfe85ae6e}{setRight}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{425     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a894cfb744272ff86533ed23ad3f827c1}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a894cfb744272ff86533ed23ad3f827c1}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!solucionar@{solucionar}}
+\index{solucionar@{solucionar}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{solucionar()}{solucionar()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Capa\+Domini.\+Classes.\+Partida.\+solucionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resol tot el kakuro. 
+
+\begin{DoxyPrecond}{Precondition}
+El taulell ja havia estat inicialitzat i s\textquotesingle{}ha trobat la seva solució única. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Resol tot el kakuro i retorna una matriu amb el taulell amb la solució inclosa. 
+\end{DoxyPostcond}
+
+
+Definition at line 394 of file Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{394                                   \{}
+\DoxyCodeLine{395         }
+\DoxyCodeLine{396         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a96846a9386496dd4159afe7d182baea6}{acabada}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{397         }
+\DoxyCodeLine{398         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}{mapa}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a58a3b2d2fc837bf4b3cf720c46e54fb4}{getTaulellSolucio}}();  }
+\DoxyCodeLine{399     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a96846a9386496dd4159afe7d182baea6}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a96846a9386496dd4159afe7d182baea6}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!acabada@{acabada}}
+\index{acabada@{acabada}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{acabada}{acabada}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Classes.\+Partida.\+acabada\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica si la partida s\textquotesingle{}ha finalitzat. 
+
+
+
+Definition at line 33 of file Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3bc87996a426fa2fb08eea2497b54009}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!coordNoConfirmades@{coordNoConfirmades}}
+\index{coordNoConfirmades@{coordNoConfirmades}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{coordNoConfirmades}{coordNoConfirmades}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ src.\+Capa\+Domini.\+Classes.\+Partida.\+coord\+No\+Confirmades\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Llista de coordenades de les caselles blanques no resoltes. 
+
+
+
+Definition at line 29 of file Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad4f9e1440f0d9e1468513f43d559e4a6}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad4f9e1440f0d9e1468513f43d559e4a6}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!IDpartida@{IDpartida}}
+\index{IDpartida@{IDpartida}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{IDpartida}{IDpartida}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Classes.\+Partida.\+I\+Dpartida\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identificador de la partida. 
+
+
+
+Definition at line 23 of file Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a0428981f3e510c98c08439ec77ae7247}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!mapa@{mapa}}
+\index{mapa@{mapa}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{mapa}{mapa}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} src.\+Capa\+Domini.\+Classes.\+Partida.\+mapa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} associat a la partida. 
+
+
+
+Definition at line 31 of file Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a3c3d5ba10e7ebc9900a4eb0eb727c5e9}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!matriuValorsActuals@{matriuValorsActuals}}
+\index{matriuValorsActuals@{matriuValorsActuals}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{matriuValorsActuals}{matriuValorsActuals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}} src.\+Capa\+Domini.\+Classes.\+Partida.\+matriu\+Valors\+Actuals\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Valors actuals del kakuro. 
+
+
+
+Definition at line 25 of file Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a744e69c03ce012decff605527f4f0025}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a744e69c03ce012decff605527f4f0025}} 
+\index{src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}!temps@{temps}}
+\index{temps@{temps}!src.CapaDomini.Classes.Partida@{src.CapaDomini.Classes.Partida}}
+\doxysubsubsection{\texorpdfstring{temps}{temps}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Classes.\+Partida.\+temps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Temps emprat en la partida. 
+
+
+
+Definition at line 21 of file Partida.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Classes/\mbox{\hyperlink{_partida_8java}{Partida.\+java}}\end{DoxyCompactItemize}

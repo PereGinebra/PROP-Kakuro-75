@@ -1,0 +1,308 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida}{}\doxysection{src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida}\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+
+
+Controlador per poder jugar una partida.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aa742b1093796c78554d26e43d9f58472}{Ctrl\+Partida}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a147acae0d00a75d094ccdfcf9f688b70}{Ctrl\+Partida}} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}} x)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte amb atribut partida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a917118394639e39aadfe5e71a17f43da}{jugar}} ()
+\begin{DoxyCompactList}\small\item\em Modificadora per jugar la partida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}
+\begin{DoxyCompactList}\small\item\em Partida associada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a286a5fa21e038a19701e4f5490e63c1b}{get\+Files}} ()
+\begin{DoxyCompactList}\small\item\em Consultora per obtenir el nombre de files del taulell de la partida. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aae097d66c5859673bf7c5b552482b1dc}{get\+Columnes}} ()
+\begin{DoxyCompactList}\small\item\em Consultora per obtenir el nombre de columnes del taulell de la partida. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1046053e1919c494cd68f446aac27ef3}{casella\+Es\+Escribible}} (int fila, int columna)
+\begin{DoxyCompactList}\small\item\em Consultora per saber si la casella es pot modificar. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad16dccfc2813600ce92c35385539c14c}{hi\+Ha\+Repetits}} (int i, int j, String s)
+\begin{DoxyCompactList}\small\item\em Mira si hi ha algun nombre igual que el que es vol posar en la mateixa fila i/o columna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a81460f3cc68055723f19644530ba8356}{modificar\+Casella}} (int fila, int columna, String valor)
+\begin{DoxyCompactList}\small\item\em Modificadora d\textquotesingle{}una casella del tauler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a825c6dd0c2b0c1fc31c47f6f6541dc10}{demanar\+Ajuda}} ()
+\begin{DoxyCompactList}\small\item\em Modificadora d\textquotesingle{}una casella del tauler mitjançant ajuda. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1c5dddf4ffaa698e69c1ad923ffa3540}{solucionar}} ()
+\begin{DoxyCompactList}\small\item\em Resol tot el kakuro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador per poder jugar una partida. 
+
+\begin{DoxyAuthor}{Author}
+alvaro.\+andres 
+\end{DoxyAuthor}
+
+
+Definition at line 17 of file Ctrl\+Partida.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aa742b1093796c78554d26e43d9f58472}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aa742b1093796c78554d26e43d9f58472}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!CtrlPartida@{CtrlPartida}}
+\index{CtrlPartida@{CtrlPartida}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{CtrlPartida()}{CtrlPartida()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+Ctrl\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat el controlador partida amb valors nulls. 
+\end{DoxyPostcond}
+
+
+Definition at line 26 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a147acae0d00a75d094ccdfcf9f688b70}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a147acae0d00a75d094ccdfcf9f688b70}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!CtrlPartida@{CtrlPartida}}
+\index{CtrlPartida@{CtrlPartida}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{CtrlPartida()}{CtrlPartida()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+Ctrl\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte amb atribut partida. 
+
+\begin{DoxyPrecond}{Precondition}
+x es una partida existent. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & és una partida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat el controlador partida i s\textquotesingle{}assigna x a partida p 
+\end{DoxyPostcond}
+
+
+Definition at line 35 of file Ctrl\+Partida.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1046053e1919c494cd68f446aac27ef3}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1046053e1919c494cd68f446aac27ef3}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!casellaEsEscribible@{casellaEsEscribible}}
+\index{casellaEsEscribible@{casellaEsEscribible}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{casellaEsEscribible()}{casellaEsEscribible()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+casella\+Es\+Escribible (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Consultora per saber si la casella es pot modificar. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha una partida inicialitzada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & és la posició de la fila \\
+\hline
+{\em columna} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si la casella es pot modificar. 
+\end{DoxyPostcond}
+
+
+Definition at line 163 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a825c6dd0c2b0c1fc31c47f6f6541dc10}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a825c6dd0c2b0c1fc31c47f6f6541dc10}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!demanarAjuda@{demanarAjuda}}
+\index{demanarAjuda@{demanarAjuda}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{demanarAjuda()}{demanarAjuda()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+demanar\+Ajuda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Modificadora d\textquotesingle{}una casella del tauler mitjançant ajuda. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha modificat una casella aleatoria del taulell. 
+\end{DoxyPostcond}
+
+
+Definition at line 194 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aae097d66c5859673bf7c5b552482b1dc}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aae097d66c5859673bf7c5b552482b1dc}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getColumnes@{getColumnes}}
+\index{getColumnes@{getColumnes}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getColumnes()}{getColumnes()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Columnes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Consultora per obtenir el nombre de columnes del taulell de la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el nombre de columnes del taulell de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 153 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a286a5fa21e038a19701e4f5490e63c1b}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a286a5fa21e038a19701e4f5490e63c1b}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Consultora per obtenir el nombre de files del taulell de la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el nombre de files del taulell de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 145 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad16dccfc2813600ce92c35385539c14c}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad16dccfc2813600ce92c35385539c14c}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!hiHaRepetits@{hiHaRepetits}}
+\index{hiHaRepetits@{hiHaRepetits}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{hiHaRepetits()}{hiHaRepetits()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+hi\+Ha\+Repetits (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mira si hi ha algun nombre igual que el que es vol posar en la mateixa fila i/o columna. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha una partida inicialitzada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+{\em s} & és el valor a comprovar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si i només si en hi ha algun nombre que sigui igual que el nombre de la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+\end{DoxyPostcond}
+
+
+Definition at line 174 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a917118394639e39aadfe5e71a17f43da}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a917118394639e39aadfe5e71a17f43da}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!jugar@{jugar}}
+\index{jugar@{jugar}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{jugar()}{jugar()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+jugar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modificadora per jugar la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha un taulell associat al controlador. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha solucionat el tauler de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 44 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a81460f3cc68055723f19644530ba8356}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a81460f3cc68055723f19644530ba8356}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!modificarCasella@{modificarCasella}}
+\index{modificarCasella@{modificarCasella}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{modificarCasella()}{modificarCasella()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+modificar\+Casella (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna,  }\item[{String}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Modificadora d\textquotesingle{}una casella del tauler. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha una partida inicialitzada i string valor és vàlid. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & és la posició de la fila \\
+\hline
+{\em j} & és la posició de la columna \\
+\hline
+{\em valor} & és el valor de casellas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha solucionat el tauler de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 186 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1c5dddf4ffaa698e69c1ad923ffa3540}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1c5dddf4ffaa698e69c1ad923ffa3540}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!solucionar@{solucionar}}
+\index{solucionar@{solucionar}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{solucionar()}{solucionar()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+solucionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resol tot el kakuro. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Resol tot el kakuro. 
+\end{DoxyPostcond}
+
+
+Definition at line 202 of file Ctrl\+Partida.\+java.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!p@{p}}
+\index{p@{p}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+p\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Partida associada. 
+
+
+
+Definition at line 19 of file Ctrl\+Partida.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Controladors/\mbox{\hyperlink{_ctrl_partida_8java}{Ctrl\+Partida.\+java}}\end{DoxyCompactItemize}

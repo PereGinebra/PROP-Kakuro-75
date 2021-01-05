@@ -1,0 +1,298 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella}{}\doxysection{src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella}\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+
+
+El driver per a la clase Casella.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ab489c1ab02bd94bd31f9ab42b5bcc25d}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a1e15bd4d0b501934a8b815ccae29cb09}{test\+Constructora}} (String value)
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a60d12755b585141959a30fce1131d996}{test\+\_\+set\+Valor}} (String s)
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a830459a11445bcab04edb1843dc4e738}{test\+\_\+es\+Blanca}} ()
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ab384123be9ab084d27eb8d03853ec785}{test\+\_\+es\+Negra}} ()
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae1fa77d863e3bfd469b45c88845ca063}{test\+\_\+es\+Suma}} ()
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a5ba6c8dceadf10e0aa86043c0cbe8fb5}{test\+\_\+get\+Valor}} ()
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a0fd2c9974c91d4a1832432f5c87c4874}{test\+\_\+get\+Suma\+Fila}} ()
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae2795bd1599b24ff4f64cc4070be6c8c}{test\+\_\+get\+Suma\+Columna}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella}{Casella}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}}
+\item 
+static \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_blanca}{Casella\+Blanca}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae3284d2b4c0272d4b589f7e526e29f9b}{cb}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+El driver per a la clase Casella. 
+
+\begin{DoxyAuthor}{Author}
+pere.\+ginebra 
+\end{DoxyAuthor}
+
+
+Definition at line 15 of file Driver\+Casella.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ab489c1ab02bd94bd31f9ab42b5bcc25d}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ab489c1ab02bd94bd31f9ab42b5bcc25d}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!main@{main}}
+\index{main@{main}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 60 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                            \{}
+\DoxyCodeLine{61         }
+\DoxyCodeLine{62         Scanner reader = \textcolor{keyword}{new} Scanner(System.in);}
+\DoxyCodeLine{63         DriverCasella dc = \textcolor{keyword}{new} DriverCasella();}
+\DoxyCodeLine{64         }
+\DoxyCodeLine{65         \textcolor{keywordtype}{int} select;}
+\DoxyCodeLine{66         String value;}
+\DoxyCodeLine{67         }
+\DoxyCodeLine{68         System.out.println(\textcolor{stringliteral}{"{}1-\/ casella negra"{}});}
+\DoxyCodeLine{69         System.out.println(\textcolor{stringliteral}{"{}2-\/ casella blanca"{}});}
+\DoxyCodeLine{70         System.out.println(\textcolor{stringliteral}{"{}3-\/ casella suma"{}});}
+\DoxyCodeLine{71         System.out.println(\textcolor{stringliteral}{"{}0-\/ acabar test"{}});}
+\DoxyCodeLine{72         }
+\DoxyCodeLine{73         \textcolor{keywordflow}{while}((select = Integer.parseInt(reader.nextLine())) != 0) \{}
+\DoxyCodeLine{74             }
+\DoxyCodeLine{75             \textcolor{keywordflow}{if}(select == 1) \{}
+\DoxyCodeLine{76                 System.out.println(\textcolor{stringliteral}{"{}Creadora casella negra"{}});}
+\DoxyCodeLine{77                 \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}} = \textcolor{keyword}{new} CasellaNegra();}
+\DoxyCodeLine{78             \}}
+\DoxyCodeLine{79             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{80                 System.out.println(\textcolor{stringliteral}{"{}Escriu el valor de la casella: "{}});}
+\DoxyCodeLine{81                 value = reader.nextLine();}
+\DoxyCodeLine{82                 \textcolor{keywordflow}{if}(select == 2)\{}
+\DoxyCodeLine{83                     System.out.println(\textcolor{stringliteral}{"{}Creadora casella blanca amb valor: "{}} + value);}
+\DoxyCodeLine{84                     \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}} = \textcolor{keyword}{new} CasellaBlanca(value);}
+\DoxyCodeLine{85                 \}}
+\DoxyCodeLine{86                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(select == 3) \{}
+\DoxyCodeLine{87                     System.out.println(\textcolor{stringliteral}{"{}Creadora casella suma amb valor: "{}} + value);}
+\DoxyCodeLine{88                     \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}} = \textcolor{keyword}{new} CasellaSuma(value);}
+\DoxyCodeLine{89                 \}}
+\DoxyCodeLine{90             \}}
+\DoxyCodeLine{91             dc.test\_getValor();}
+\DoxyCodeLine{92             }
+\DoxyCodeLine{93             dc.test\_setValor(\textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{94             dc.test\_getValor();}
+\DoxyCodeLine{95             dc.test\_setValor(\textcolor{stringliteral}{"{}?"{}});}
+\DoxyCodeLine{96             dc.test\_getValor();}
+\DoxyCodeLine{97             dc.test\_setValor(\textcolor{stringliteral}{"{}14"{}});}
+\DoxyCodeLine{98             dc.test\_getValor();}
+\DoxyCodeLine{99             dc.test\_setValor(\textcolor{stringliteral}{"{}F5"{}});}
+\DoxyCodeLine{100             dc.test\_getValor();}
+\DoxyCodeLine{101             dc.test\_setValor(\textcolor{stringliteral}{"{}C10F9"{}});}
+\DoxyCodeLine{102             dc.test\_getValor();}
+\DoxyCodeLine{103             }
+\DoxyCodeLine{104             dc.test\_esBlanca();}
+\DoxyCodeLine{105             dc.test\_esNegra();}
+\DoxyCodeLine{106             dc.test\_esSuma();}
+\DoxyCodeLine{107             }
+\DoxyCodeLine{108             dc.test\_getSumaFila();}
+\DoxyCodeLine{109             dc.test\_getSumaColumna();}
+\DoxyCodeLine{110             }
+\DoxyCodeLine{111             System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{112             System.out.println(\textcolor{stringliteral}{"{}1-\/ casella negra"{}});}
+\DoxyCodeLine{113             System.out.println(\textcolor{stringliteral}{"{}2-\/ casella blanca"{}});}
+\DoxyCodeLine{114             System.out.println(\textcolor{stringliteral}{"{}3-\/ casella suma"{}});}
+\DoxyCodeLine{115             System.out.println(\textcolor{stringliteral}{"{}0-\/ acabar test"{}});}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117     \}    }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a830459a11445bcab04edb1843dc4e738}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a830459a11445bcab04edb1843dc4e738}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!test\_esBlanca@{test\_esBlanca}}
+\index{test\_esBlanca@{test\_esBlanca}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{test\_esBlanca()}{test\_esBlanca()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+test\+\_\+es\+Blanca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                                  \{}
+\DoxyCodeLine{31         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nMètode esBlanca"{}});}
+\DoxyCodeLine{32         System.out.println(\textcolor{stringliteral}{"{}c es blanca? "{}} + \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_afe7387f62ebfa805a9ac68cf1631b9c1}{esBlanca}}());}
+\DoxyCodeLine{33     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ab384123be9ab084d27eb8d03853ec785}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ab384123be9ab084d27eb8d03853ec785}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!test\_esNegra@{test\_esNegra}}
+\index{test\_esNegra@{test\_esNegra}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{test\_esNegra()}{test\_esNegra()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+test\+\_\+es\+Negra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                 \{}
+\DoxyCodeLine{36         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nMètode esNegra"{}});}
+\DoxyCodeLine{37         System.out.println(\textcolor{stringliteral}{"{}c es negra? "{}} + \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_a4b302f507195ca66274db6eacf20a9ef}{esNegra}}());}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae1fa77d863e3bfd469b45c88845ca063}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae1fa77d863e3bfd469b45c88845ca063}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!test\_esSuma@{test\_esSuma}}
+\index{test\_esSuma@{test\_esSuma}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{test\_esSuma()}{test\_esSuma()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+test\+\_\+es\+Suma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                \{}
+\DoxyCodeLine{41         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nMètode esSuma"{}});}
+\DoxyCodeLine{42         System.out.println(\textcolor{stringliteral}{"{}c es suma? "{}} + \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_a489d5e9852fc3d464dacf486c1f54a8a}{esSuma}}());}
+\DoxyCodeLine{43     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae2795bd1599b24ff4f64cc4070be6c8c}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae2795bd1599b24ff4f64cc4070be6c8c}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!test\_getSumaColumna@{test\_getSumaColumna}}
+\index{test\_getSumaColumna@{test\_getSumaColumna}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{test\_getSumaColumna()}{test\_getSumaColumna()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+test\+\_\+get\+Suma\+Columna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                        \{}
+\DoxyCodeLine{56         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nMètode getSumaColumna"{}});}
+\DoxyCodeLine{57         System.out.println(\textcolor{stringliteral}{"{}El valor de la suma de columna es: "{}}+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_a935cc9468573c2d471ee72b072a9ab90}{getSumaColumna}}());}
+\DoxyCodeLine{58     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a0fd2c9974c91d4a1832432f5c87c4874}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a0fd2c9974c91d4a1832432f5c87c4874}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!test\_getSumaFila@{test\_getSumaFila}}
+\index{test\_getSumaFila@{test\_getSumaFila}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{test\_getSumaFila()}{test\_getSumaFila()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+test\+\_\+get\+Suma\+Fila (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 50 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                     \{}
+\DoxyCodeLine{51         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nMètode getSumaFila"{}});}
+\DoxyCodeLine{52         System.out.println(\textcolor{stringliteral}{"{}El valor de la suma de fila es: "{}}+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_ac2805a8492b427055c6a74ea9257df81}{getSumaFila}}());}
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a5ba6c8dceadf10e0aa86043c0cbe8fb5}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a5ba6c8dceadf10e0aa86043c0cbe8fb5}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!test\_getValor@{test\_getValor}}
+\index{test\_getValor@{test\_getValor}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{test\_getValor()}{test\_getValor()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+test\+\_\+get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                  \{}
+\DoxyCodeLine{46         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nMètode getValorInput"{}});}
+\DoxyCodeLine{47         System.out.println(\textcolor{stringliteral}{"{}Valor de casella = "{}} + \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_a292171032d2d3b59389b8801f9f92ebc}{getValor}}());}
+\DoxyCodeLine{48     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a60d12755b585141959a30fce1131d996}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a60d12755b585141959a30fce1131d996}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!test\_setValor@{test\_setValor}}
+\index{test\_setValor@{test\_setValor}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{test\_setValor()}{test\_setValor()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+test\+\_\+set\+Valor (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25                                         \{}
+\DoxyCodeLine{26         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nMètode setValor amb input: "{}} + s);}
+\DoxyCodeLine{27         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_a89bf6ceee263d8f2e69d3f1f263a6c99}{setValor}}(s);}
+\DoxyCodeLine{28     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a1e15bd4d0b501934a8b815ccae29cb09}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_a1e15bd4d0b501934a8b815ccae29cb09}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!testConstructora@{testConstructora}}
+\index{testConstructora@{testConstructora}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{testConstructora()}{testConstructora()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+test\+Constructora (\begin{DoxyParamCaption}\item[{String}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Driver\+Casella.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                                                 \{}
+\DoxyCodeLine{20         System.out.println(\textcolor{stringliteral}{"{}Mètode constructor amb paràmetres"{}});}
+\DoxyCodeLine{21         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}{c}} = \textcolor{keyword}{new} Casella(value);}
+\DoxyCodeLine{22         System.out.println(\textcolor{stringliteral}{"{}S'ha creat la casella amb el valor d'input: "{}} + value);}
+\DoxyCodeLine{23     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_aa7a42930551bedd69dffa9ca2423d329}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!c@{c}}
+\index{c@{c}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella}{Casella}} src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+c\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 16 of file Driver\+Casella.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae3284d2b4c0272d4b589f7e526e29f9b}\label{classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella_ae3284d2b4c0272d4b589f7e526e29f9b}} 
+\index{src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}!cb@{cb}}
+\index{cb@{cb}!src.CapaDomini.Drivers.DriverCasella@{src.CapaDomini.Drivers.DriverCasella}}
+\doxysubsubsection{\texorpdfstring{cb}{cb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_casella_blanca}{Casella\+Blanca}} src.\+Capa\+Domini.\+Drivers.\+Driver\+Casella.\+cb\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 17 of file Driver\+Casella.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Drivers/\mbox{\hyperlink{_driver_casella_8java}{Driver\+Casella.\+java}}\end{DoxyCompactItemize}

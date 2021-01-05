@@ -1,0 +1,533 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver}{}\doxysection{src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver}\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+
+
+Controlador per poder solucionar i validar un taulell kakuro.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_1_1_solucions}{Solucions}}
+\begin{DoxyCompactList}\small\item\em Nombre de solucions del kakuro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_aafb36cb8f9ba469e4a84e8480b3a0e27}{Kakuro\+Solver}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a1b542ca0475507952e40d459a36c3d7f}{Kakuro\+Solver}} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} t)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a2d28d22a1ca17e79da73239b2931930f}{num\+Solucions}} ()
+\begin{DoxyCompactList}\small\item\em Consulta el nombre de solucions del kakuro. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ad169985b9b4cfb694ff46266317f9688}{solucio}} (boolean check)
+\begin{DoxyCompactList}\small\item\em Solucionador i validador del taulell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_afd431f4b31818f2f453833c07de28ca2}{num\+Solucions}}
+\begin{DoxyCompactList}\small\item\em Nombre de solucions trobades pel solver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a793d1d9e7901c4045d2ee8502e3d6798}{solver}} (int fila, int columna, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_1_1_solucions}{Solucions}} num\+Sol, boolean check)
+\begin{DoxyCompactList}\small\item\em Algoritme solucionador i validador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a7d6164f4b18f834df42df3a89bd27449}{set\+Taulell\+Solucio}} ()
+\begin{DoxyCompactList}\small\item\em Funció per escriure la solució del taulell. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a0d954e796dc36834d32b4251d497737f}{valor\+Possible}} (String possible, int fila, int columna)
+\begin{DoxyCompactList}\small\item\em Funció per saber si es pot col·locar el valor a la casella. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5fe6f11c85bc3311fa66554ced24f333}{suma\+Horitzontal\+Incorrecte}} (String s, int fila, int columna)
+\begin{DoxyCompactList}\small\item\em Funció per saber si la suma horitzontal s\textquotesingle{}ha superat. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5d39a284bf9974831a62eb836a0bd0bc}{suma\+Vertical\+Incorrecte}} (String s, int fila, int columna)
+\begin{DoxyCompactList}\small\item\em Funció per saber si la suma vertical s\textquotesingle{}ha superat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5083cf7bfdcf96435cdd111e70829310}{files}}
+\begin{DoxyCompactList}\small\item\em Nombre de files del taulell. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}{columnes}}
+\begin{DoxyCompactList}\small\item\em Nombre de columnes del taulell. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}
+\begin{DoxyCompactList}\small\item\em Taulell associat al solver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador per poder solucionar i validar un taulell kakuro. 
+
+\begin{DoxyAuthor}{Author}
+alvaro.\+andres 
+\end{DoxyAuthor}
+
+
+Definition at line 13 of file Kakuro\+Solver.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_aafb36cb8f9ba469e4a84e8480b3a0e27}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_aafb36cb8f9ba469e4a84e8480b3a0e27}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!KakuroSolver@{KakuroSolver}}
+\index{KakuroSolver@{KakuroSolver}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{KakuroSolver()}{KakuroSolver()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+Kakuro\+Solver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat kakuro\+Solver amb valors nulls. 
+\end{DoxyPostcond}
+
+
+Definition at line 34 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34                           \{}
+\DoxyCodeLine{35         }
+\DoxyCodeLine{36     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a1b542ca0475507952e40d459a36c3d7f}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a1b542ca0475507952e40d459a36c3d7f}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!KakuroSolver@{KakuroSolver}}
+\index{KakuroSolver@{KakuroSolver}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{KakuroSolver()}{KakuroSolver()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+Kakuro\+Solver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondition}
+S\textquotesingle{}introdueix un taulell amb un kakuro. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em t} & es un taulell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat kakuro\+Solver, s\textquotesingle{}associa el taulell i es dona valor a les files i les columnes. 
+\end{DoxyPostcond}
+
+
+Definition at line 43 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                    \{}
+\DoxyCodeLine{44         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}} = t;}
+\DoxyCodeLine{45         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5083cf7bfdcf96435cdd111e70829310}{files}} = t.getFiles();}
+\DoxyCodeLine{46         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}{columnes}} = t.getColumnes();}
+\DoxyCodeLine{47     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a2d28d22a1ca17e79da73239b2931930f}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a2d28d22a1ca17e79da73239b2931930f}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!numSolucions@{numSolucions}}
+\index{numSolucions@{numSolucions}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{numSolucions()}{numSolucions()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+num\+Solucions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta el nombre de solucions del kakuro. 
+
+\begin{DoxyPrecond}{Precondition}
+S\textquotesingle{}ha cridat al solver de la classe. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha retornat el nombre de solucions del kakuro. 
+\end{DoxyPostcond}
+
+
+Definition at line 53 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                               \{}
+\DoxyCodeLine{54         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_afd431f4b31818f2f453833c07de28ca2}{numSolucions}};}
+\DoxyCodeLine{55     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a7d6164f4b18f834df42df3a89bd27449}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a7d6164f4b18f834df42df3a89bd27449}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!setTaulellSolucio@{setTaulellSolucio}}
+\index{setTaulellSolucio@{setTaulellSolucio}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{setTaulellSolucio()}{setTaulellSolucio()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+set\+Taulell\+Solucio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funció per escriure la solució del taulell. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Se li escriu al taulell associat la solució del taulell. 
+\end{DoxyPostcond}
+
+
+Definition at line 137 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{137                                      \{}
+\DoxyCodeLine{138         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5083cf7bfdcf96435cdd111e70829310}{files}}; i++) \{}
+\DoxyCodeLine{139             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}{columnes}}; j++) \{}
+\DoxyCodeLine{140                 \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ad11acc91f565939819deb6def4ae6457}{setValorSolucio}}(i,j, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(i, j));}
+\DoxyCodeLine{141             \}  }
+\DoxyCodeLine{142         \}}
+\DoxyCodeLine{143     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ad169985b9b4cfb694ff46266317f9688}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ad169985b9b4cfb694ff46266317f9688}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!solucio@{solucio}}
+\index{solucio@{solucio}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{solucio()}{solucio()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+solucio (\begin{DoxyParamCaption}\item[{boolean}]{check }\end{DoxyParamCaption})}
+
+
+
+Solucionador i validador del taulell. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha un taulell inicialitzat. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em check} & boolea per saber si s\textquotesingle{}ha de comprovar que la solució és única \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Si check es false, no es valida el taulell, si es true si es valida, en ambdos casos s\textquotesingle{}escriu la solució al taulell. 
+\end{DoxyPostcond}
+
+
+Definition at line 62 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                                           \{}
+\DoxyCodeLine{63         }
+\DoxyCodeLine{64         Solucions sol = \textcolor{keyword}{new} Solucions();}
+\DoxyCodeLine{65         sol.num=0;}
+\DoxyCodeLine{66         \textcolor{keywordtype}{int} c = 0;}
+\DoxyCodeLine{67         \textcolor{keywordtype}{int} f = 0;}
+\DoxyCodeLine{68         \textcolor{keywordtype}{boolean} trobat = \textcolor{keyword}{false};}
+\DoxyCodeLine{69         }
+\DoxyCodeLine{70         \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_af4a94d0b5476cff61f0003760468d544}{CheckTaulellValidEstructuralment}}()) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{71         }
+\DoxyCodeLine{72         \textcolor{keywordflow}{while}(f < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5083cf7bfdcf96435cdd111e70829310}{files}} \&\& !trobat) \{}
+\DoxyCodeLine{73             c=0;}
+\DoxyCodeLine{74             }
+\DoxyCodeLine{75             \textcolor{keywordflow}{while} (c < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}{columnes}} \&\& !trobat) \{}
+\DoxyCodeLine{76                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(f,c)) trobat= \textcolor{keyword}{true};}
+\DoxyCodeLine{77                 \textcolor{keywordflow}{else} ++c;}
+\DoxyCodeLine{78             \}}
+\DoxyCodeLine{79             }
+\DoxyCodeLine{80             \textcolor{keywordflow}{if} (!trobat) ++f;}
+\DoxyCodeLine{81         \}}
+\DoxyCodeLine{82         }
+\DoxyCodeLine{83         \textcolor{keywordflow}{if}(trobat) \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a793d1d9e7901c4045d2ee8502e3d6798}{solver}}(f, c, sol, check);}
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} (sol.num==1);}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a793d1d9e7901c4045d2ee8502e3d6798}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a793d1d9e7901c4045d2ee8502e3d6798}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!solver@{solver}}
+\index{solver@{solver}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{solver()}{solver()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+solver (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna,  }\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_1_1_solucions}{Solucions}}}]{num\+Sol,  }\item[{boolean}]{check }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Algoritme solucionador i validador. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha un taulell inicialitzat. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & és la posició fila \\
+\hline
+{\em columna} & és la posició columna \\
+\hline
+{\em num\+Sol} & és el nombre de solucions trobades. \\
+\hline
+{\em check} & boolea per saber si s\textquotesingle{}ha de comprovar que la solució és única \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Si troba una solució l\textquotesingle{}escriu a la solucio del taulell i num\+Sol tindrà el nombre de solucions que s\textquotesingle{}han trobat (màxim 2). 
+\end{DoxyPostcond}
+
+
+Definition at line 96 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96                                                                                 \{}
+\DoxyCodeLine{97         \textcolor{keywordflow}{if} (!check \&\& numSol.num == 1) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{98         }
+\DoxyCodeLine{99         \textcolor{keywordflow}{if} (numSol.num > 1) \{}
+\DoxyCodeLine{100             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{101         \}}
+\DoxyCodeLine{102         }
+\DoxyCodeLine{103         \textcolor{keywordflow}{if} (fila == \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5083cf7bfdcf96435cdd111e70829310}{files}}) \{}
+\DoxyCodeLine{104             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a7d6164f4b18f834df42df3a89bd27449}{setTaulellSolucio}}();}
+\DoxyCodeLine{105             ++numSol.num;}
+\DoxyCodeLine{106             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{107         \}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(fila,columna)) \{}
+\DoxyCodeLine{110             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <10; ++i) \{}
+\DoxyCodeLine{111   }
+\DoxyCodeLine{112                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a0d954e796dc36834d32b4251d497737f}{valorPossible}}(String.valueOf(i), fila, columna)) \{}
+\DoxyCodeLine{113                     \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ac7bee2546a1b17e4fe898ebcde15b47a}{setValorCasella}}(fila,columna,String.valueOf(i));}
+\DoxyCodeLine{114                     \textcolor{keywordtype}{int} a = fila;}
+\DoxyCodeLine{115                     \textcolor{keywordtype}{int} b = columna + 1;}
+\DoxyCodeLine{116                     \textcolor{keywordflow}{if} (b == \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}{columnes}}) \{a = a+1; b=0;\} }
+\DoxyCodeLine{117                     \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a793d1d9e7901c4045d2ee8502e3d6798}{solver}}(a, b, numSol, check);}
+\DoxyCodeLine{118                 \}}
+\DoxyCodeLine{119             \}}
+\DoxyCodeLine{120             }
+\DoxyCodeLine{121             \textcolor{keywordflow}{if} (\textcolor{stringliteral}{"{}?"{}}.equals(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(fila,columna))) \textcolor{keywordflow}{return}; \textcolor{comment}{//no hi ha cap valor possible}}
+\DoxyCodeLine{122         \}}
+\DoxyCodeLine{123         }
+\DoxyCodeLine{124         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{125             \textcolor{keywordtype}{int} a = fila;}
+\DoxyCodeLine{126             \textcolor{keywordtype}{int} b = columna + 1;}
+\DoxyCodeLine{127             \textcolor{keywordflow}{if} (b == \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}{columnes}}) \{a = a+1; b=0;\} }
+\DoxyCodeLine{128             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a793d1d9e7901c4045d2ee8502e3d6798}{solver}}(a, b, numSol, check);}
+\DoxyCodeLine{129         \}}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5fe6f11c85bc3311fa66554ced24f333}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5fe6f11c85bc3311fa66554ced24f333}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!sumaHoritzontalIncorrecte@{sumaHoritzontalIncorrecte}}
+\index{sumaHoritzontalIncorrecte@{sumaHoritzontalIncorrecte}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{sumaHoritzontalIncorrecte()}{sumaHoritzontalIncorrecte()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+suma\+Horitzontal\+Incorrecte (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funció per saber si la suma horitzontal s\textquotesingle{}ha superat. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & és el valor a comprovar \\
+\hline
+{\em fila} & és la posició de la fila \\
+\hline
+{\em columna} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true en cas que la suma horitzontal sigui superada. 
+\end{DoxyPostcond}
+
+
+Definition at line 195 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{195                                                                                \{}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197         \textcolor{keywordtype}{int} suma = Integer.parseInt(s);}
+\DoxyCodeLine{198         \textcolor{keywordtype}{int} c = columna-\/1;}
+\DoxyCodeLine{199         \textcolor{comment}{//suma columna}}
+\DoxyCodeLine{200         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(fila,c)) \{ }
+\DoxyCodeLine{201             suma += Integer.parseInt(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(fila,c));}
+\DoxyCodeLine{202             -\/-\/c;}
+\DoxyCodeLine{203         \}}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205         \textcolor{keywordflow}{return} suma != \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ad0061dd9c6cbe50132829f3f40c86a7b}{getSumaFila}}(fila,c);}
+\DoxyCodeLine{206     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5d39a284bf9974831a62eb836a0bd0bc}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5d39a284bf9974831a62eb836a0bd0bc}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!sumaVerticalIncorrecte@{sumaVerticalIncorrecte}}
+\index{sumaVerticalIncorrecte@{sumaVerticalIncorrecte}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{sumaVerticalIncorrecte()}{sumaVerticalIncorrecte()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+suma\+Vertical\+Incorrecte (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funció per saber si la suma vertical s\textquotesingle{}ha superat. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & és el valor a comprovar \\
+\hline
+{\em fila} & és la posició de la fila \\
+\hline
+{\em columna} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true en cas que la suma sigui vertical sigui superada. 
+\end{DoxyPostcond}
+
+
+Definition at line 215 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{215                                                                             \{}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217         \textcolor{keywordtype}{int} suma = Integer.parseInt(s);}
+\DoxyCodeLine{218         \textcolor{keywordtype}{int} f = fila-\/1;}
+\DoxyCodeLine{219         \textcolor{comment}{//suma columna}}
+\DoxyCodeLine{220         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(f,columna)) \{ }
+\DoxyCodeLine{221             suma += Integer.parseInt(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(f,columna));}
+\DoxyCodeLine{222             -\/-\/f;}
+\DoxyCodeLine{223         \}}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225         \textcolor{keywordflow}{return} suma != \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a86fab72e2f15011521afdd14d079efec}{getSumaColumna}}(f,columna);}
+\DoxyCodeLine{226     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a0d954e796dc36834d32b4251d497737f}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a0d954e796dc36834d32b4251d497737f}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!valorPossible@{valorPossible}}
+\index{valorPossible@{valorPossible}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{valorPossible()}{valorPossible()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+valor\+Possible (\begin{DoxyParamCaption}\item[{String}]{possible,  }\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funció per saber si es pot col·locar el valor a la casella. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em possible} & és el valor a comprovar \\
+\hline
+{\em fila} & és la posició de la fila \\
+\hline
+{\em columna} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true en cas que . 
+\end{DoxyPostcond}
+
+
+Definition at line 152 of file Kakuro\+Solver.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{152                                                                           \{}
+\DoxyCodeLine{153         \textcolor{keywordtype}{int} suma = 0;}
+\DoxyCodeLine{154         \textcolor{keywordtype}{int} f = fila-\/1;}
+\DoxyCodeLine{155         \textcolor{keywordflow}{while} (f>=0 \&\& \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(f,columna)) \{ }
+\DoxyCodeLine{156             \textcolor{comment}{//es comproven valors repetits i la suma vertical}}
+\DoxyCodeLine{157             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(f,columna).equals(possible)) \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{//valor repetit}}
+\DoxyCodeLine{158             }
+\DoxyCodeLine{159             suma += Integer.parseInt(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(f,columna));}
+\DoxyCodeLine{160             -\/-\/f;}
+\DoxyCodeLine{161         \}}
+\DoxyCodeLine{162         }
+\DoxyCodeLine{163         \textcolor{keywordflow}{if} (suma + Integer.parseInt(possible) > \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a86fab72e2f15011521afdd14d079efec}{getSumaColumna}}(f,columna)) \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{//exedeix la suma}}
+\DoxyCodeLine{164         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5083cf7bfdcf96435cdd111e70829310}{files}}-\/1 == fila || !\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(fila+1,columna)) \{}
+\DoxyCodeLine{165             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5d39a284bf9974831a62eb836a0bd0bc}{sumaVerticalIncorrecte}}(possible, fila, columna)) \textcolor{keywordflow}{return} \textcolor{keyword}{false};  }
+\DoxyCodeLine{166         \}}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168         suma = 0;}
+\DoxyCodeLine{169         \textcolor{keywordtype}{int} col = columna-\/1;}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171         \textcolor{keywordflow}{while} (col>=0 \&\& \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(fila,col)) \{ }
+\DoxyCodeLine{172             \textcolor{comment}{//es comproven valors repetits i la suma horitzontal}}
+\DoxyCodeLine{173             }
+\DoxyCodeLine{174             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(fila,col).equals(possible)) \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{//valor repetit}}
+\DoxyCodeLine{175             suma += Integer.parseInt(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(fila,col));}
+\DoxyCodeLine{176             -\/-\/col;}
+\DoxyCodeLine{177         \}}
+\DoxyCodeLine{178         }
+\DoxyCodeLine{179         \textcolor{keywordflow}{if} (suma + Integer.parseInt(possible) > \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ad0061dd9c6cbe50132829f3f40c86a7b}{getSumaFila}}(fila,col)) \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{//exedeix la suma}}
+\DoxyCodeLine{180         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}{columnes}}-\/1 == columna || !\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}{taulell}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(fila, columna+1)) \{}
+\DoxyCodeLine{181             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5fe6f11c85bc3311fa66554ced24f333}{sumaHoritzontalIncorrecte}}(possible, fila, columna)) \textcolor{keywordflow}{return} \textcolor{keyword}{false};  }
+\DoxyCodeLine{182         \}}
+\DoxyCodeLine{183         }
+\DoxyCodeLine{184         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{185     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_ab3e998fb76e2e75b2b03fc340fa993d8}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!columnes@{columnes}}
+\index{columnes@{columnes}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{columnes}{columnes}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+columnes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nombre de columnes del taulell. 
+
+
+
+Definition at line 17 of file Kakuro\+Solver.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5083cf7bfdcf96435cdd111e70829310}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a5083cf7bfdcf96435cdd111e70829310}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!files@{files}}
+\index{files@{files}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+files\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nombre de files del taulell. 
+
+
+
+Definition at line 15 of file Kakuro\+Solver.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_afd431f4b31818f2f453833c07de28ca2}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_afd431f4b31818f2f453833c07de28ca2}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!numSolucions@{numSolucions}}
+\index{numSolucions@{numSolucions}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{numSolucions}{numSolucions}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+num\+Solucions\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Nombre de solucions trobades pel solver. 
+
+
+
+Definition at line 27 of file Kakuro\+Solver.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_kakuro_solver_a71d5afb9fa33a69eb2c2e2714e1714ac}} 
+\index{src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}!taulell@{taulell}}
+\index{taulell@{taulell}!src.CapaDomini.Controladors.KakuroSolver@{src.CapaDomini.Controladors.KakuroSolver}}
+\doxysubsubsection{\texorpdfstring{taulell}{taulell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} src.\+Capa\+Domini.\+Controladors.\+Kakuro\+Solver.\+taulell\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Taulell associat al solver. 
+
+
+
+Definition at line 19 of file Kakuro\+Solver.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Controladors/\mbox{\hyperlink{_kakuro_solver_8java}{Kakuro\+Solver.\+java}}\end{DoxyCompactItemize}

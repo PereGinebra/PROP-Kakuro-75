@@ -1,0 +1,406 @@
+1- casella negra
+2- casella blanca
+3- casella suma
+0- acabar test
+1
+Creadora casella negra
+
+Mètode getValorInput
+Valor de casella = *
+
+Mètode setValor amb input: *
+
+Mètode getValorInput
+Valor de casella = *
+
+Mètode setValor amb input: ?
+No es pot canviar el valor d'una casella negra
+
+Mètode getValorInput
+Valor de casella = *
+
+Mètode setValor amb input: 14
+No es pot canviar el valor d'una casella negra
+
+Mètode getValorInput
+Valor de casella = *
+
+Mètode setValor amb input: F5
+No es pot canviar el valor d'una casella negra
+
+Mètode getValorInput
+Valor de casella = *
+
+Mètode setValor amb input: C10F9
+No es pot canviar el valor d'una casella negra
+
+Mètode getValorInput
+Valor de casella = *
+
+Mètode esBlanca
+c es blanca? false
+
+Mètode esNegra
+c es negra? true
+
+Mètode esSuma
+c es suma? false
+
+Mètode getSumaFila
+El valor de la suma de fila es: -1
+
+Mètode getSumaColumna
+El valor de la suma de columna es: -1
+
+-------------------------------------------
+
+1- casella negra
+2- casella blanca
+3- casella suma
+0- acabar test
+2
+Escriu el valor de la casella: 
+f9
+Creadora casella blanca amb valor: f9
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = null
+
+Mètode setValor amb input: *
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = null
+
+Mètode setValor amb input: ?
+
+Mètode getValorInput
+Valor de casella = ?
+
+Mètode setValor amb input: 14
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode setValor amb input: F5
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode setValor amb input: C10F9
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode esBlanca
+c es blanca? true
+
+Mètode esNegra
+c es negra? false
+
+Mètode esSuma
+c es suma? false
+
+Mètode getSumaFila
+El valor de la suma de fila es: -1
+
+Mètode getSumaColumna
+El valor de la suma de columna es: -1
+
+-------------------------------------------
+
+1- casella negra
+2- casella blanca
+3- casella suma
+0- acabar test
+2
+Escriu el valor de la casella: 
+?
+Creadora casella blanca amb valor: ?
+
+Mètode getValorInput
+Valor de casella = ?
+
+Mètode setValor amb input: *
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = ?
+
+Mètode setValor amb input: ?
+
+Mètode getValorInput
+Valor de casella = ?
+
+Mètode setValor amb input: 14
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode setValor amb input: F5
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode setValor amb input: C10F9
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode esBlanca
+c es blanca? true
+
+Mètode esNegra
+c es negra? false
+
+Mètode esSuma
+c es suma? false
+
+Mètode getSumaFila
+El valor de la suma de fila es: -1
+
+Mètode getSumaColumna
+El valor de la suma de columna es: -1
+
+-------------------------------------------
+
+1- casella negra
+2- casella blanca
+3- casella suma
+0- acabar test
+2
+Escriu el valor de la casella: 
+5
+Creadora casella blanca amb valor: 5
+
+Mètode getValorInput
+Valor de casella = 5
+
+Mètode setValor amb input: *
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = 5
+
+Mètode setValor amb input: ?
+
+Mètode getValorInput
+Valor de casella = ?
+
+Mètode setValor amb input: 14
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode setValor amb input: F5
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode setValor amb input: C10F9
+el valor no es correcte per a una casella blanca
+
+Mètode getValorInput
+Valor de casella = 14
+
+Mètode esBlanca
+c es blanca? true
+
+Mètode esNegra
+c es negra? false
+
+Mètode esSuma
+c es suma? false
+
+Mètode getSumaFila
+El valor de la suma de fila es: -1
+
+Mètode getSumaColumna
+El valor de la suma de columna es: -1
+
+-------------------------------------------
+
+1- casella negra
+2- casella blanca
+3- casella suma
+0- acabar test
+3
+Escriu el valor de la casella: 
+pff
+Creadora casella suma amb valor: pff
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = null
+
+Mètode setValor amb input: *
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = null
+
+Mètode setValor amb input: ?
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = null
+
+Mètode setValor amb input: 14
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = null
+
+Mètode setValor amb input: F5
+
+Mètode getValorInput
+Valor de casella = F5
+
+Mètode setValor amb input: C10F9
+
+Mètode getValorInput
+Valor de casella = C10F9
+
+Mètode esBlanca
+c es blanca? false
+
+Mètode esNegra
+c es negra? false
+
+Mètode esSuma
+c es suma? true
+
+Mètode getSumaFila
+El valor de la suma de fila es: 9
+
+Mètode getSumaColumna
+El valor de la suma de columna es: 10
+
+-------------------------------------------
+
+1- casella negra
+2- casella blanca
+3- casella suma
+0- acabar test
+3
+Escriu el valor de la casella: 
+C
+Creadora casella suma amb valor: C
+Valor no valid per una casella de suma
+
+Mètode getValorInput
+Valor de casella = C
+
+Mètode setValor amb input: *
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = C
+
+Mètode setValor amb input: ?
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = C
+
+Mètode setValor amb input: 14
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = C
+
+Mètode setValor amb input: F5
+
+Mètode getValorInput
+Valor de casella = F5
+
+Mètode setValor amb input: C10F9
+
+Mètode getValorInput
+Valor de casella = C10F9
+
+Mètode esBlanca
+c es blanca? false
+
+Mètode esNegra
+c es negra? false
+
+Mètode esSuma
+c es suma? true
+
+Mètode getSumaFila
+El valor de la suma de fila es: 9
+
+Mètode getSumaColumna
+El valor de la suma de columna es: 10
+
+-------------------------------------------
+
+1- casella negra
+2- casella blanca
+3- casella suma
+0- acabar test
+3
+Escriu el valor de la casella: 
+F3
+Creadora casella suma amb valor: F3
+
+Mètode getValorInput
+Valor de casella = F3
+
+Mètode setValor amb input: *
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = F3
+
+Mètode setValor amb input: ?
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = F3
+
+Mètode setValor amb input: 14
+Valor no correcte per una casella de suma
+
+Mètode getValorInput
+Valor de casella = F3
+
+Mètode setValor amb input: F5
+
+Mètode getValorInput
+Valor de casella = F5
+
+Mètode setValor amb input: C10F9
+
+Mètode getValorInput
+Valor de casella = C10F9
+
+Mètode esBlanca
+c es blanca? false
+
+Mètode esNegra
+c es negra? false
+
+Mètode esSuma
+c es suma? true
+
+Mètode getSumaFila
+El valor de la suma de fila es: 9
+
+Mètode getSumaColumna
+El valor de la suma de columna es: 10
+
+-------------------------------------------
+
+1- casella negra
+2- casella blanca
+3- casella suma
+0- acabar test
+0

@@ -1,0 +1,228 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global}{}\doxysection{src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global}\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+
+
+Controlador per la clase Ranking\+Global.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a52c10f8d3687f147de37640912b63a99}{Ctrl\+Ranking\+Global}} ()
+\item 
+Array\+List$<$ Abstract\+Map.\+Simple\+Entry$<$ String, Integer $>$ $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a4503ec55460151de898049186b5fc902}{get\+Ranking\+Per\+Ordre\+Alfabetic}} ()
+\begin{DoxyCompactList}\small\item\em Consulta el nom i la puntuació de tots els usuaris del sistema per ordre alfabètic decreixent de nom d\textquotesingle{}usuari. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a7e5e295bf0847d41e23dc74b3d2c5405}{get\+Millors\+Usuaris\+Global}} ()
+\begin{DoxyCompactList}\small\item\em Consulta el nom i la puntuació dels 5 usuaris que tenen més punts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_aeaba262a73e40aeb79af6dc9cbeffe84}{afegir\+Usuari\+Nou}} (String nom)
+\begin{DoxyCompactList}\small\item\em Afegeix un usuari amb nom \char`\"{}nom\+U\char`\"{} al sistema amb zero punts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_aaf0107d804635f75749391850e984e5f}{treure\+Usuari}} (String nom)
+\begin{DoxyCompactList}\small\item\em Borra l\textquotesingle{}usuari amb nom \char`\"{}nom\+U\char`\"{} del sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a456f1bbb0f1e03857ea426dd1edf979e}{sumar\+Puntuacio\+A\+Usuari}} (String nom, int n)
+\begin{DoxyCompactList}\small\item\em Suma a l\textquotesingle{}usuari amb nom \char`\"{}nom\+U\char`\"{} n punts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_global}{Ranking\+Global}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_af7bffc1682871a460cff6aa4c1f66887}{RG}}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_persistencia_1_1_ctrl_persistencia}{Ctrl\+Persistencia}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a60d0f4c50f77aa50ee96323e4931d35b}{cp}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador per la clase Ranking\+Global. 
+
+\begin{DoxyAuthor}{Author}
+ignasi 
+\end{DoxyAuthor}
+
+
+Definition at line 16 of file Ctrl\+Ranking\+Global.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a52c10f8d3687f147de37640912b63a99}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a52c10f8d3687f147de37640912b63a99}} 
+\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}!CtrlRankingGlobal@{CtrlRankingGlobal}}
+\index{CtrlRankingGlobal@{CtrlRankingGlobal}!src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+\doxysubsubsection{\texorpdfstring{CtrlRankingGlobal()}{CtrlRankingGlobal()}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global.\+Ctrl\+Ranking\+Global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Ctrl\+Ranking\+Global.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                               \{}
+\DoxyCodeLine{24         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_af7bffc1682871a460cff6aa4c1f66887}{RG}} = \textcolor{keyword}{new} RankingGlobal();}
+\DoxyCodeLine{25         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a60d0f4c50f77aa50ee96323e4931d35b}{cp}} = \textcolor{keyword}{new} CtrlPersistencia();}
+\DoxyCodeLine{26     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_aeaba262a73e40aeb79af6dc9cbeffe84}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_aeaba262a73e40aeb79af6dc9cbeffe84}} 
+\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}!afegirUsuariNou@{afegirUsuariNou}}
+\index{afegirUsuariNou@{afegirUsuariNou}!src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+\doxysubsubsection{\texorpdfstring{afegirUsuariNou()}{afegirUsuariNou()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global.\+afegir\+Usuari\+Nou (\begin{DoxyParamCaption}\item[{String}]{nom }\end{DoxyParamCaption})}
+
+
+
+Afegeix un usuari amb nom \char`\"{}nom\+U\char`\"{} al sistema amb zero punts. 
+
+\begin{DoxyPrecond}{Precondition}
+L\textquotesingle{}usuari amb nom \char`\"{}nom\char`\"{} encara no està registrat en el ranking. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Afegeix un usuari amb nom \char`\"{}nom\+U\char`\"{} al sistema amb zero punts. 
+\end{DoxyPostcond}
+
+
+Definition at line 59 of file Ctrl\+Ranking\+Global.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                            \{}
+\DoxyCodeLine{60         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_af7bffc1682871a460cff6aa4c1f66887}{RG}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_global_a70a8cf93c2118039b40a562cd968f66b}{afegirNouUsuari}}(nom,0);}
+\DoxyCodeLine{61     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a7e5e295bf0847d41e23dc74b3d2c5405}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a7e5e295bf0847d41e23dc74b3d2c5405}} 
+\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}!getMillorsUsuarisGlobal@{getMillorsUsuarisGlobal}}
+\index{getMillorsUsuarisGlobal@{getMillorsUsuarisGlobal}!src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+\doxysubsubsection{\texorpdfstring{getMillorsUsuarisGlobal()}{getMillorsUsuarisGlobal()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global.\+get\+Millors\+Usuaris\+Global (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta el nom i la puntuació dels 5 usuaris que tenen més punts. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha almenys un usuari registrat al sistema. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha retornat una llista amb el nom i la puntuació dels 5 usuaris que tenen més punts. 
+\end{DoxyPostcond}
+
+
+Definition at line 46 of file Ctrl\+Ranking\+Global.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                                                \{}
+\DoxyCodeLine{47         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a60d0f4c50f77aa50ee96323e4931d35b}{cp}}.\mbox{\hyperlink{classsrc_1_1_capa_persistencia_1_1_ctrl_persistencia_a78862d2941e4c03cd166b607e5606e93}{getRankingGlobal}}();}
+\DoxyCodeLine{48     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a4503ec55460151de898049186b5fc902}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a4503ec55460151de898049186b5fc902}} 
+\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}!getRankingPerOrdreAlfabetic@{getRankingPerOrdreAlfabetic}}
+\index{getRankingPerOrdreAlfabetic@{getRankingPerOrdreAlfabetic}!src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+\doxysubsubsection{\texorpdfstring{getRankingPerOrdreAlfabetic()}{getRankingPerOrdreAlfabetic()}}
+{\footnotesize\ttfamily Array\+List$<$Abstract\+Map.\+Simple\+Entry$<$String, Integer$>$ $>$ src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global.\+get\+Ranking\+Per\+Ordre\+Alfabetic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta el nom i la puntuació de tots els usuaris del sistema per ordre alfabètic decreixent de nom d\textquotesingle{}usuari. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha almenys un usuari registrat al sistema. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha retornat una llista amb el nom i la puntuació de tots els usuaris del sistema en ordre alfabètic. 
+\end{DoxyPostcond}
+
+
+Definition at line 36 of file Ctrl\+Ranking\+Global.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                                                                             \{}
+\DoxyCodeLine{37         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_af7bffc1682871a460cff6aa4c1f66887}{RG}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_global_ac8f8e8a4a6f4937419933415155139db}{getRankingPerOrdreAlfabetic}}();}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a456f1bbb0f1e03857ea426dd1edf979e}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a456f1bbb0f1e03857ea426dd1edf979e}} 
+\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}!sumarPuntuacioAUsuari@{sumarPuntuacioAUsuari}}
+\index{sumarPuntuacioAUsuari@{sumarPuntuacioAUsuari}!src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+\doxysubsubsection{\texorpdfstring{sumarPuntuacioAUsuari()}{sumarPuntuacioAUsuari()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global.\+sumar\+Puntuacio\+A\+Usuari (\begin{DoxyParamCaption}\item[{String}]{nom,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Suma a l\textquotesingle{}usuari amb nom \char`\"{}nom\+U\char`\"{} n punts. 
+
+\begin{DoxyPrecond}{Precondition}
+L\textquotesingle{}usuari amb nom \char`\"{}nom\char`\"{} està registrat en el ranking. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha sumat n punts a l\textquotesingle{}usuari amb nom \char`\"{}nom\char`\"{}. 
+\end{DoxyPostcond}
+
+
+Definition at line 77 of file Ctrl\+Ranking\+Global.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                                                        \{}
+\DoxyCodeLine{78         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_af7bffc1682871a460cff6aa4c1f66887}{RG}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_global_a913e3bbc13267d6cf58b1bc039f60cc0}{sumarPuntuacioAUsuari}}(nom,n);}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_aaf0107d804635f75749391850e984e5f}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_aaf0107d804635f75749391850e984e5f}} 
+\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}!treureUsuari@{treureUsuari}}
+\index{treureUsuari@{treureUsuari}!src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+\doxysubsubsection{\texorpdfstring{treureUsuari()}{treureUsuari()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global.\+treure\+Usuari (\begin{DoxyParamCaption}\item[{String}]{nom }\end{DoxyParamCaption})}
+
+
+
+Borra l\textquotesingle{}usuari amb nom \char`\"{}nom\+U\char`\"{} del sistema. 
+
+\begin{DoxyPrecond}{Precondition}
+L\textquotesingle{}usuari amb nom \char`\"{}nom\char`\"{} està registrat en el ranking. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Borra l\textquotesingle{}usuari amb nom \char`\"{}nom\+U\char`\"{} del ranking global. 
+\end{DoxyPostcond}
+
+
+Definition at line 68 of file Ctrl\+Ranking\+Global.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                                         \{}
+\DoxyCodeLine{69         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_af7bffc1682871a460cff6aa4c1f66887}{RG}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_global_ad0aef228f332db6457039d74bf3e4ce9}{treureUsuari}}(nom);}
+\DoxyCodeLine{70     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a60d0f4c50f77aa50ee96323e4931d35b}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_a60d0f4c50f77aa50ee96323e4931d35b}} 
+\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}!cp@{cp}}
+\index{cp@{cp}!src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+\doxysubsubsection{\texorpdfstring{cp}{cp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_persistencia_1_1_ctrl_persistencia}{Ctrl\+Persistencia}} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global.\+cp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Ctrl\+Ranking\+Global.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_af7bffc1682871a460cff6aa4c1f66887}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_ranking_global_af7bffc1682871a460cff6aa4c1f66887}} 
+\index{src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}!RG@{RG}}
+\index{RG@{RG}!src.CapaDomini.Controladors.CtrlRankingGlobal@{src.CapaDomini.Controladors.CtrlRankingGlobal}}
+\doxysubsubsection{\texorpdfstring{RG}{RG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_global}{Ranking\+Global}} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Ranking\+Global.\+RG\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Ctrl\+Ranking\+Global.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Controladors/\mbox{\hyperlink{_ctrl_ranking_global_8java}{Ctrl\+Ranking\+Global.\+java}}\end{DoxyCompactItemize}

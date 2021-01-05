@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['botoautogenerar_1037',['botoautogenerar',['../classsrc_1_1_capa_presentacio_1_1_vista_new_game.html#a34788c3230ea8225a25b8e20e3968955',1,'src::CapaPresentacio::VistaNewGame']]],
+  ['botocarregar_1038',['botocarregar',['../classsrc_1_1_capa_presentacio_1_1_vista_new_game.html#ad796d9593875a27c4993628b4502d369',1,'src::CapaPresentacio::VistaNewGame']]],
+  ['botodificil_1039',['botodificil',['../classsrc_1_1_capa_presentacio_1_1_vista_seleccio_kakuro.html#a8f484e37b9ea6fe4776cd00fbb33dc5d',1,'src::CapaPresentacio::VistaSeleccioKakuro']]],
+  ['botoeasy_1040',['BotoEasy',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a381fc5ff68b133f9628163ebee0fcb71',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['botofacil_1041',['botofacil',['../classsrc_1_1_capa_presentacio_1_1_vista_seleccio_kakuro.html#a09a72d9bb726a69e0b30e606d6fe42f5',1,'src::CapaPresentacio::VistaSeleccioKakuro']]],
+  ['botogameranking_1042',['botoGameRanking',['../classsrc_1_1_capa_presentacio_1_1_menu_principal.html#a35d365682e7d5dbce01a0df39610da1a',1,'src::CapaPresentacio::MenuPrincipal']]],
+  ['botohard_1043',['BotoHard',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a7af3c41aad4801f8cbcc0903a8077f2a',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['botoloadgame_1044',['botoLoadGame',['../classsrc_1_1_capa_presentacio_1_1_menu_principal.html#a70cc55f9e6607fcd3de13fb36d4fd09d',1,'src::CapaPresentacio::MenuPrincipal']]],
+  ['botologin_1045',['botoLogIn',['../classsrc_1_1_capa_presentacio_1_1_pantalla_principal.html#aeab0ac95bf0fe99a3805403d32ef80ba',1,'src::CapaPresentacio::PantallaPrincipal']]],
+  ['botologout_1046',['botoLogOut',['../classsrc_1_1_capa_presentacio_1_1_menu_principal.html#a2883124eae11fa18e2085e3ab6a88a39',1,'src::CapaPresentacio::MenuPrincipal']]],
+  ['botomanual_1047',['botomanual',['../classsrc_1_1_capa_presentacio_1_1_vista_new_game.html#ac30fa2513abd25eb8c58eff43cc87f82',1,'src::CapaPresentacio::VistaNewGame']]],
+  ['botomedium_1048',['BotoMedium',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a61d2e389b64599b0722ac8db07aa045f',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['botomig_1049',['botomig',['../classsrc_1_1_capa_presentacio_1_1_vista_seleccio_kakuro.html#ae3ed67fc2dfbf994a5a48b57e5f570d5',1,'src::CapaPresentacio::VistaSeleccioKakuro']]],
+  ['botonewgame_1050',['botoNewGame',['../classsrc_1_1_capa_presentacio_1_1_menu_principal.html#a0196496c3eda0226ad1aed0f854cc022',1,'src::CapaPresentacio::MenuPrincipal']]],
+  ['botonext_1051',['botoNext',['../classsrc_1_1_capa_presentacio_1_1_vista_seleccio_kakuro.html#afa815abf6b527b11cc3f80185f611961',1,'src::CapaPresentacio::VistaSeleccioKakuro']]],
+  ['botook_1052',['BotoOK',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a27e705afaf780e5c5c6f45e80b91f84f',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['botoquit_1053',['botoQuit',['../classsrc_1_1_capa_presentacio_1_1_menu_principal.html#aedb4a7af9fbb567669d3648a80d27e60',1,'src::CapaPresentacio::MenuPrincipal']]],
+  ['botorankingglobal_1054',['botoRankingGlobal',['../classsrc_1_1_capa_presentacio_1_1_menu_principal.html#a493860573c65ba8ad10dd043aeac863d',1,'src::CapaPresentacio::MenuPrincipal']]],
+  ['botoreturn_1055',['BotoReturn',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#ad278ed5d9520c296ed4f94d51c65742f',1,'src.CapaPresentacio.VistaAutogenerar.BotoReturn()'],['../classsrc_1_1_capa_presentacio_1_1_sign_up.html#a914458185a459b4ceab72a6ce7a4baa2',1,'src.CapaPresentacio.SignUp.botoreturn()'],['../classsrc_1_1_capa_presentacio_1_1_vista_new_game.html#a4f9382dbc465070570cf14c3c639b86b',1,'src.CapaPresentacio.VistaNewGame.botoreturn()'],['../classsrc_1_1_capa_presentacio_1_1_vista_seleccio_kakuro.html#add2474813835a0da5a3aa5f1dcb70f5b',1,'src.CapaPresentacio.VistaSeleccioKakuro.botoreturn()']]],
+  ['botosignup_1056',['botoSignUp',['../classsrc_1_1_capa_presentacio_1_1_pantalla_principal.html#a4370a3d6cdceea919a3db541ba310a29',1,'src.CapaPresentacio.PantallaPrincipal.botoSignUp()'],['../classsrc_1_1_capa_presentacio_1_1_sign_up.html#ad8c61d8c91799ab74cd850650a34d738',1,'src.CapaPresentacio.SignUp.botosignup()']]]
+];

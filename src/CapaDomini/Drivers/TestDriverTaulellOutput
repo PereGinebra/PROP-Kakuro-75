@@ -1,0 +1,49 @@
+Insereix el numero de files i columnes del taulell
+Escriu el taulell
+Mètode Constructor amb parametres
+S'ha creat el taulell amb valors d'input
+1- getFiles
+2- getColumnes
+3- getDificultat
+4- getManual
+5- getSumaColumna
+6- getSumaFila
+7- getCasellaBlanca
+0- Finalitzar test
+Mètode getFiles
+Files= 3
+Introdueix un altre numero per continuar el testing
+Mètode getColumnes
+Files= 3
+Introdueix un altre numero per continuar el testing
+Mètode getDificultat
+Dificultat= null
+Introdueix un altre numero per continuar el testing
+Mètode getManual
+Manual= true
+Introdueix un altre numero per continuar el testing
+Escriu fila i columna a consultar: exemple 2,2
+Mètode getSumaColumna amb parametres 0 0
+Suma= 0
+Introdueix un altre numero per continuar el testing
+Escriu fila i columna a consultar: exemple 2,2
+Mètode getSumaColumna amb parametres 0 1
+Suma= 4
+Introdueix un altre numero per continuar el testing
+Escriu fila i columna a consultar: exemple 2,2
+Mètode getSumaFila amb parametres 1 1
+Suma= 0
+Introdueix un altre numero per continuar el testing
+Escriu fila i columna a consultar: exemple 2,2
+Mètode getSumaFila amb parametres 1 0
+Suma= 9
+Introdueix un altre numero per continuar el testing
+Escriu fila i columna a consultar: exemple 2,2
+Mètode casellaBlanca amb parametres 2 2
+Blanca= true
+Introdueix un altre numero per continuar el testing
+Escriu fila i columna a consultar: exemple 2,2
+Mètode casellaBlanca amb parametres 2 0
+Blanca= false
+Introdueix un altre numero per continuar el testing
+Fi

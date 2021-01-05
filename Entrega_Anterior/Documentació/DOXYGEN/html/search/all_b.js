@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['main_154',['Main',['../classsrc_1_1_main.html',1,'src.Main'],['../classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_casella.html#ab489c1ab02bd94bd31f9ab42b5bcc25d',1,'src.CapaDomini.Drivers.DriverCasella.main()'],['../classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_ctrl_domain.html#ae546a3374d3f01578106e444e61b0329',1,'src.CapaDomini.Drivers.DriverCtrlDomain.main()'],['../classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_kakuro_solver.html#abe7ac237133f7ecc4142ba16a3628871',1,'src.CapaDomini.Drivers.DriverKakuroSolver.main()'],['../classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_partida.html#ae011e603257c5441e1ae231dd3ce9649',1,'src.CapaDomini.Drivers.DriverPartida.main()'],['../classsrc_1_1_capa_domini_1_1_drivers_1_1_driver_taulell.html#afe84159601e990a04872833f80bfa658',1,'src.CapaDomini.Drivers.DriverTaulell.main()'],['../classsrc_1_1_main.html#ab61750a37c93e1bf0f5fd9b6ef17a470',1,'src.Main.main()']]],
+  ['main_2ejava_155',['Main.java',['../_main_8java.html',1,'']]],
+  ['manual_156',['manual',['../classsrc_1_1_capa_domini_1_1_classes_1_1_taulell.html#a84feaba39be8d3692671ac4554c86dce',1,'src::CapaDomini::Classes::Taulell']]],
+  ['mapa_157',['mapa',['../classsrc_1_1_capa_domini_1_1_classes_1_1_partida.html#a0428981f3e510c98c08439ec77ae7247',1,'src::CapaDomini::Classes::Partida']]],
+  ['matriustring_158',['MatriuString',['../classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a42612d021ee1707719205052abbda5f0',1,'src::CapaDomini::Controladors::RandomKakuro']]],
+  ['matriustringnum_159',['MatriuStringNum',['../classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a06b507617d029bbf2f18624727366d38',1,'src::CapaDomini::Controladors::RandomKakuro']]],
+  ['matriuvalorsactuals_160',['matriuValorsActuals',['../classsrc_1_1_capa_domini_1_1_classes_1_1_partida.html#a3c3d5ba10e7ebc9900a4eb0eb727c5e9',1,'src::CapaDomini::Classes::Partida']]],
+  ['midainterseccio_161',['midaInterseccio',['../classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions.html#a0e0dd3d3cb0e743b831ea31158f407bb',1,'src::CapaDomini::Utils::Permutacions']]],
+  ['modificar_162',['modificar',['../_test_driver_ctrl_domain_output1_8txt.html#a2aa0140740b72f3146f64433156ef023',1,'TestDriverCtrlDomainOutput1.txt']]],
+  ['modificarcasella_163',['modificarCasella',['../classsrc_1_1_capa_domini_1_1_classes_1_1_partida.html#a8dbece6b327b741068562697d12ff99e',1,'src.CapaDomini.Classes.Partida.modificarCasella()'],['../classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida.html#a81460f3cc68055723f19644530ba8356',1,'src.CapaDomini.Controladors.CtrlPartida.modificarCasella()']]]
+];

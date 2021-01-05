@@ -1,0 +1,1107 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro}{}\doxysection{src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro}\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+
+
+Controlador per poder crear un kakuro aleatori.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa271a63eab3730f0affc5ee2ab1919dd}{Random\+Kakuro}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a00cfcf3636077b5ef4d1ca75f9e13670}{Random\+Kakuro}} (int nfiles, int ncolumnes, String tdificultat)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a42612d021ee1707719205052abbda5f0}{Matriu\+String}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el taulell generat amb string que segueixen el input format establit. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a06b507617d029bbf2f18624727366d38}{Matriu\+String\+Num}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el taulell generat amb numeros valids string que segueixen el input format establit. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aad5ae4efcc7673b252ddc566bc1a7783}{get\+Found\+Kakuro}} ()
+\begin{DoxyCompactList}\small\item\em Retorna si ha trobat un taulell random possible. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a2ce243f117136d187a7cc8b326d4e924}{Create\+New\+Board}} ()
+\begin{DoxyCompactList}\small\item\em crea un nou taulell jugable amb les dimensions pasades originalment \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acd8c92df25d2d7411a08897f640eb047}{Print\+Taulell}} (boolean coloreado)
+\begin{DoxyCompactList}\small\item\em Imprimeix per pantalla el taulell associat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a3182b32a5d881b3b75749a6461914657}{Crear\+Taulell\+Random}} ()
+\begin{DoxyCompactList}\small\item\em Crea un Kakuro de Blanques i de Negres Estructuralment correcte segons la dificultat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a339f9ad7619869215d5899f4458a9d0e}{Default\+Kakuro}} (int nfiles, int ncolumnes)
+\begin{DoxyCompactList}\small\item\em Crea un taulell default de blanques i negres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac8a538bf93d8328f91619649c0afd585}{Eliminar\+Solitarias}} ()
+\begin{DoxyCompactList}\small\item\em Elimina Casellas que blanques que estiguin unicament elles en una fila. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a76e2007fd9f63cc73e6965e4aa534154}{Get\+Rnd\+Cell\+Line}} ()
+\begin{DoxyCompactList}\small\item\em Retorna un valor aleatori ponderat d\textquotesingle{}entre 2 i 9. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acfefc2d2d8c3043401208e2067611a5a}{Eliminate\+Impossible\+Cell\+Arragement}} ()
+\begin{DoxyCompactList}\small\item\em Elimina agrupacions de celes blanques de 9 generant caselles negres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1aeb67999a957afbeaa1a9ed569f4434}{Generate\+Black\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em Intenta Genera una casella negra en una cela blanca aleatoria. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a357594cf78f2b9e5a0f6d12e19a381b3}{valor\+Possible}} (String possible, int fila, int columna)
+\begin{DoxyCompactList}\small\item\em Funció per saber si es pot col·locar un valornumeric a una casella blanca. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac7cf17f2dfeb1b315375c7243052f824}{Colocar\+Numeros}} (int fila, int columna)
+\begin{DoxyCompactList}\small\item\em Coloca Numeros aleatoris entre 1-\/9 a les posicions blanques del taulell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1d94f49909fa09c38f2d65c5a5f14cc6}{Colocar\+Suma\+Casellas}} ()
+\begin{DoxyCompactList}\small\item\em Canvia les caselles negres a casella de suma amb els seus sumatoris corresponent. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a97eedbcf258bd9af88dfe84c8a14862e}{Lazy\+Populate}} ()
+\begin{DoxyCompactList}\small\item\em Coloca numeros aleatoris a les caselles blanques i coloca la seva suma corresponent. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a735e3d9c925ef82afc291dd6f23d3121}{Get\+Suma\+Populate}} (int fila, int columna, boolean Vertical)
+\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a4ecd9b401bb52b9dfaead0fec5bba25b}{Crear\+Casella\+Suma\+Valor}} (int Suma\+Fila, int Suma\+Columna)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}
+\begin{DoxyCompactList}\small\item\em Nombre de files del taulell. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}
+\begin{DoxyCompactList}\small\item\em Nombre de columnes del taulell. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aae76297f46eae8c44972234abee2fa03}{dificultat}}
+\begin{DoxyCompactList}\small\item\em Dificultat del taulell creat. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{Kakuro\+Generat}}
+\begin{DoxyCompactList}\small\item\em Taulell associat al random per guardar la forma del kakuro. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a5b4d4c7b02e16467699da28a3a0213c9}{Found\+Kakuro\+Random}}
+\begin{DoxyCompactList}\small\item\em Boolea si ha trobat un Kakuro Random. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador per poder crear un kakuro aleatori. 
+
+Definition at line 17 of file Random\+Kakuro.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa271a63eab3730f0affc5ee2ab1919dd}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa271a63eab3730f0affc5ee2ab1919dd}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!RandomKakuro@{RandomKakuro}}
+\index{RandomKakuro@{RandomKakuro}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{RandomKakuro()}{RandomKakuro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Random\+Kakuro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro}{Random\+Kakuro}} amb valors nulls. 
+\end{DoxyPostcond}
+
+
+Definition at line 40 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                           \{}
+\DoxyCodeLine{41         }
+\DoxyCodeLine{42     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a00cfcf3636077b5ef4d1ca75f9e13670}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a00cfcf3636077b5ef4d1ca75f9e13670}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!RandomKakuro@{RandomKakuro}}
+\index{RandomKakuro@{RandomKakuro}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{RandomKakuro()}{RandomKakuro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Random\+Kakuro (\begin{DoxyParamCaption}\item[{int}]{nfiles,  }\item[{int}]{ncolumnes,  }\item[{String}]{tdificultat }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nfiles} & files del kakuro a generar \\
+\hline
+{\em ncolumnes} & columnes del kakuro a generar \\
+\hline
+{\em tdificultat} & dificultat del kakuro a generar pot ser dificil mig facil \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+files $>$ 2 and columnes $>$ 2 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat un Kakuro\+Random, s\textquotesingle{}associa el taulell i es dona valor a les files i les columnes. 
+\end{DoxyPostcond}
+
+
+Definition at line 51 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                                                                        \{}
+\DoxyCodeLine{52         }
+\DoxyCodeLine{53       \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{54         \textcolor{keywordflow}{if}(!(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_af60165a88d0bdb1a89743db7c9cc127f}{DificultatDificil}}.equals(tdificultat) || \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a6f2ff74b14a5b12e2bf42821379d40dc}{DificultatMig}}.equals(tdificultat) || \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a508e72c8b3e9ffe63d55e5af75187190}{DificultatFacil}}.equals(tdificultat)))}
+\DoxyCodeLine{55             \textcolor{keywordflow}{throw}(\textcolor{keyword}{new} \mbox{\hyperlink{classsrc_1_1_exceptions_1_1_exception_dificultat_erronea}{ExceptionDificultatErronea}}());}
+\DoxyCodeLine{56         }
+\DoxyCodeLine{57         \textcolor{keywordflow}{if}(nfiles>2 \&\& ncolumnes>2)\{}
+\DoxyCodeLine{58             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}} = \textcolor{keyword}{new} Taulell();}
+\DoxyCodeLine{59             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}} = nfiles;}
+\DoxyCodeLine{60             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}} = ncolumnes;}
+\DoxyCodeLine{61             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aae76297f46eae8c44972234abee2fa03}{dificultat}} = tdificultat;}
+\DoxyCodeLine{62             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a3182b32a5d881b3b75749a6461914657}{CrearTaulellRandom}}();}
+\DoxyCodeLine{63             }
+\DoxyCodeLine{64             \textcolor{keywordflow}{while}( !(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a97eedbcf258bd9af88dfe84c8a14862e}{LazyPopulate}}()) ) \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a3182b32a5d881b3b75749a6461914657}{CrearTaulellRandom}}();}
+\DoxyCodeLine{65             }
+\DoxyCodeLine{66             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1d94f49909fa09c38f2d65c5a5f14cc6}{ColocarSumaCasellas}}();}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68         \textcolor{keywordflow}{else} \textcolor{keywordflow}{throw}(\textcolor{keyword}{new} \mbox{\hyperlink{classsrc_1_1_exceptions_1_1_exception_dimensions_taulell_errones}{ExceptionDimensionsTaulellErrones}}());}
+\DoxyCodeLine{69       \}}
+\DoxyCodeLine{70       \textcolor{keywordflow}{catch} (\mbox{\hyperlink{classsrc_1_1_exceptions_1_1_exception_dimensions_taulell_errones}{ExceptionDimensionsTaulellErrones}} e) \{}
+\DoxyCodeLine{71             System.out.println(e.\mbox{\hyperlink{classsrc_1_1_exceptions_1_1_exception_dimensions_taulell_errones_a59f71ecdb2f92a4d4e9f2a76a1a78caa}{getMessage}}() + \textcolor{stringliteral}{"{} arg files-\/columnes:"{}} + nfiles + \textcolor{stringliteral}{"{},"{}} + ncolumnes);}
+\DoxyCodeLine{72       \}}
+\DoxyCodeLine{73       \textcolor{keywordflow}{catch} (\mbox{\hyperlink{classsrc_1_1_exceptions_1_1_exception_dificultat_erronea}{ExceptionDificultatErronea}} e) \{}
+\DoxyCodeLine{74             System.out.println(e.\mbox{\hyperlink{classsrc_1_1_exceptions_1_1_exception_dificultat_erronea_a66576f3da807caec7a3a5f30203dbe10}{getMessage}}() + \textcolor{stringliteral}{"{} arg:"{}} + \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aae76297f46eae8c44972234abee2fa03}{dificultat}});}
+\DoxyCodeLine{75       \}}
+\DoxyCodeLine{76     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac7cf17f2dfeb1b315375c7243052f824}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac7cf17f2dfeb1b315375c7243052f824}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!ColocarNumeros@{ColocarNumeros}}
+\index{ColocarNumeros@{ColocarNumeros}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{ColocarNumeros()}{ColocarNumeros()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Colocar\+Numeros (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coloca Numeros aleatoris entre 1-\/9 a les posicions blanques del taulell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & fila on intenta col.\+locar numero \\
+\hline
+{\em columna} & colocar on intenta col.\+locar numero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si s\textquotesingle{}ha pogut col·locar un numero en aquesta posició 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+Valor casella canvia a un numero si s\textquotesingle{}ha pogut col.\+locar un numero aleatori 
+\end{DoxyPostcond}
+\begin{DoxyPrecond}{Precondition}
+La funció es crida a la primera casella blanca trobada 
+\end{DoxyPrecond}
+
+
+Definition at line 463 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{463                                                          \{}
+\DoxyCodeLine{464         Random ran = \textcolor{keyword}{new} Random();}
+\DoxyCodeLine{465         \textcolor{keywordflow}{if} (fila == \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}) \{}
+\DoxyCodeLine{466             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{467         \}}
+\DoxyCodeLine{468         }
+\DoxyCodeLine{469         ArrayList<String> numbers = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{470         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(fila,columna)) \{}
+\DoxyCodeLine{471             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <10; ++i) \{}
+\DoxyCodeLine{472                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a357594cf78f2b9e5a0f6d12e19a381b3}{valorPossible}}(String.valueOf(i), fila, columna))}
+\DoxyCodeLine{473                     numbers.add(String.valueOf(i));}
+\DoxyCodeLine{474             \}}
+\DoxyCodeLine{475             }
+\DoxyCodeLine{476             \textcolor{keywordflow}{while}(!numbers.isEmpty())\{}
+\DoxyCodeLine{477                 \textcolor{keywordtype}{int} rnd = ran.nextInt(numbers.size());}
+\DoxyCodeLine{478                 \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ac7bee2546a1b17e4fe898ebcde15b47a}{setValorCasella}}(fila,columna,numbers.get(rnd));}
+\DoxyCodeLine{479                 numbers.remove(rnd);}
+\DoxyCodeLine{480                 }
+\DoxyCodeLine{481                 \textcolor{keywordtype}{int} a = fila;}
+\DoxyCodeLine{482                 \textcolor{keywordtype}{int} b = columna + 1;}
+\DoxyCodeLine{483                 \textcolor{keywordflow}{if} (b == \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}) \{a = a+1; b=0;\} }
+\DoxyCodeLine{484                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac7cf17f2dfeb1b315375c7243052f824}{ColocarNumeros}}(a, b) ) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{485                     }
+\DoxyCodeLine{486             \}}
+\DoxyCodeLine{487             }
+\DoxyCodeLine{488             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ac7bee2546a1b17e4fe898ebcde15b47a}{setValorCasella}}(fila,columna,\textcolor{stringliteral}{"{}?"{}});}
+\DoxyCodeLine{489         \}}
+\DoxyCodeLine{490             }
+\DoxyCodeLine{491         \textcolor{keywordflow}{if} (\textcolor{stringliteral}{"{}?"{}}.equals(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(fila,columna)))\{}
+\DoxyCodeLine{492             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{493         \} \textcolor{comment}{//no hi ha cap valor possible}}
+\DoxyCodeLine{494           }
+\DoxyCodeLine{495         }
+\DoxyCodeLine{496         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{497             \textcolor{keywordtype}{int} a = fila;}
+\DoxyCodeLine{498             \textcolor{keywordtype}{int} b = columna + 1;}
+\DoxyCodeLine{499             \textcolor{keywordflow}{if} (b == \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}) \{a = a+1; b=0;\} }
+\DoxyCodeLine{500             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac7cf17f2dfeb1b315375c7243052f824}{ColocarNumeros}}(a, b);}
+\DoxyCodeLine{501         \}}
+\DoxyCodeLine{502         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{503     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1d94f49909fa09c38f2d65c5a5f14cc6}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1d94f49909fa09c38f2d65c5a5f14cc6}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!ColocarSumaCasellas@{ColocarSumaCasellas}}
+\index{ColocarSumaCasellas@{ColocarSumaCasellas}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{ColocarSumaCasellas()}{ColocarSumaCasellas()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Colocar\+Suma\+Casellas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Canvia les caselles negres a casella de suma amb els seus sumatoris corresponent. 
+
+\begin{DoxyPrecond}{Precondition}
+les caselles blanque tenen nombres 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Canvia les caselles negres a casella de suma amb els seus valors corresponent 
+\end{DoxyPostcond}
+
+
+Definition at line 510 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{510                                       \{}
+\DoxyCodeLine{511         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}; i++)\{}
+\DoxyCodeLine{512             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}; j++) \{}
+\DoxyCodeLine{513                  \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ab11fa62f5a12e07470762cab727c0d63}{casellaNegra}}(i,j))\{}
+\DoxyCodeLine{514                      \textcolor{comment}{//Te suma Vertical}}
+\DoxyCodeLine{515                      \textcolor{keywordtype}{int} sumaFila = 0,sumaColumna = 0;}
+\DoxyCodeLine{516                      \textcolor{keywordtype}{boolean} esSuma=\textcolor{keyword}{false};}
+\DoxyCodeLine{517                      \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(i, j, \textcolor{keyword}{true})>1)\{}
+\DoxyCodeLine{518                          sumaColumna = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a735e3d9c925ef82afc291dd6f23d3121}{GetSumaPopulate}}(i,j,\textcolor{keyword}{true});}
+\DoxyCodeLine{519                          esSuma=\textcolor{keyword}{true};}
+\DoxyCodeLine{520                          }
+\DoxyCodeLine{521                      \}}
+\DoxyCodeLine{522                      \textcolor{comment}{//Te suma horizontal}}
+\DoxyCodeLine{523                      \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(i, j, \textcolor{keyword}{false})>1)\{}
+\DoxyCodeLine{524                           sumaFila = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a735e3d9c925ef82afc291dd6f23d3121}{GetSumaPopulate}}(i,j,\textcolor{keyword}{false});}
+\DoxyCodeLine{525                           esSuma=\textcolor{keyword}{true};}
+\DoxyCodeLine{526                      \}                     }
+\DoxyCodeLine{527                      \textcolor{keywordflow}{if}(esSuma)\{}
+\DoxyCodeLine{528                          String s = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a4ecd9b401bb52b9dfaead0fec5bba25b}{CrearCasellaSumaValor}}(sumaFila,sumaColumna);}
+\DoxyCodeLine{529                          \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(i, j, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a88ecaa3cdd1e5ad3693b3c86d77c1110}{CapACellaSuma}}, s);}
+\DoxyCodeLine{530                      \}}
+\DoxyCodeLine{531                  \}}
+\DoxyCodeLine{532             \}}
+\DoxyCodeLine{533         \}}
+\DoxyCodeLine{534     }
+\DoxyCodeLine{535     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a4ecd9b401bb52b9dfaead0fec5bba25b}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a4ecd9b401bb52b9dfaead0fec5bba25b}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!CrearCasellaSumaValor@{CrearCasellaSumaValor}}
+\index{CrearCasellaSumaValor@{CrearCasellaSumaValor}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{CrearCasellaSumaValor()}{CrearCasellaSumaValor()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Crear\+Casella\+Suma\+Valor (\begin{DoxyParamCaption}\item[{int}]{Suma\+Fila,  }\item[{int}]{Suma\+Columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Crear el tipus de input Suma\+Fila Corresponent als valors donats 
+\begin{DoxyParams}{Parameters}
+{\em Suma\+Fila} & sumatori horitzontal \\
+\hline
+{\em Suma\+Columna} & sumatori vertical \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Almenys un dels arguments es mes gran que 0 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+String amb el input corresponent de la casella suma 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+cert 
+\end{DoxyPostcond}
+
+
+Definition at line 591 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{591                                                                        \{}
+\DoxyCodeLine{592         }
+\DoxyCodeLine{593         String str1 = \textcolor{stringliteral}{"{}notinit"{}},str2;}
+\DoxyCodeLine{594         \textcolor{keywordflow}{if}(SumaColumna>0 \&\& SumaFila>0)\{}
+\DoxyCodeLine{595             str1 =\textcolor{stringliteral}{"{}C"{}}+String.valueOf(SumaColumna);}
+\DoxyCodeLine{596             str2 =\textcolor{stringliteral}{"{}F"{}}+String.valueOf(SumaFila);}
+\DoxyCodeLine{597             str1 = str1.concat(str2);}
+\DoxyCodeLine{598         \}}
+\DoxyCodeLine{599         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(SumaFila>0)\{}
+\DoxyCodeLine{600             str1 =\textcolor{stringliteral}{"{}F"{}}+String.valueOf(SumaFila);}
+\DoxyCodeLine{601         \}}
+\DoxyCodeLine{602         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(SumaColumna>0)\{}
+\DoxyCodeLine{603             str1 =\textcolor{stringliteral}{"{}C"{}}+String.valueOf(SumaColumna);}
+\DoxyCodeLine{604         \}}
+\DoxyCodeLine{605         \textcolor{keywordflow}{return} str1;}
+\DoxyCodeLine{606     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a3182b32a5d881b3b75749a6461914657}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a3182b32a5d881b3b75749a6461914657}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!CrearTaulellRandom@{CrearTaulellRandom}}
+\index{CrearTaulellRandom@{CrearTaulellRandom}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{CrearTaulellRandom()}{CrearTaulellRandom()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Crear\+Taulell\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Crea un Kakuro de Blanques i de Negres Estructuralment correcte segons la dificultat. 
+
+\begin{DoxyPrecond}{Precondition}
+dimensions del kakuro mes grans que 3x3 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+es crea un taulell de blanques i negres segons la dificultat i mles dimensions 
+\end{DoxyPostcond}
+
+
+Definition at line 140 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{140                                      \{}
+\DoxyCodeLine{141         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a339f9ad7619869215d5899f4458a9d0e}{DefaultKakuro}}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}},\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}});}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143         \textcolor{keywordtype}{int} wc;}
+\DoxyCodeLine{144         \textcolor{keywordflow}{while}(!\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_af4a94d0b5476cff61f0003760468d544}{CheckTaulellValidEstructuralment}}() )\{}
+\DoxyCodeLine{145             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acfefc2d2d8c3043401208e2067611a5a}{EliminateImpossibleCellArragement}}();}
+\DoxyCodeLine{146             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acfefc2d2d8c3043401208e2067611a5a}{EliminateImpossibleCellArragement}}();}
+\DoxyCodeLine{147         \};}
+\DoxyCodeLine{148         \textcolor{keywordtype}{double} temp = 0.0;}
+\DoxyCodeLine{149         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_af60165a88d0bdb1a89743db7c9cc127f}{DificultatDificil}}.equals(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aae76297f46eae8c44972234abee2fa03}{dificultat}})) temp = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a7b7ccbbfe3410c13edb0b4346ad14504}{WhiteCellPercentDificil}};}
+\DoxyCodeLine{150         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a6f2ff74b14a5b12e2bf42821379d40dc}{DificultatMig}}.equals(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aae76297f46eae8c44972234abee2fa03}{dificultat}})) temp = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a41e41b0f23c9f4540e34b617aadeece3}{WhiteCellPercentMig}};}
+\DoxyCodeLine{151                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a508e72c8b3e9ffe63d55e5af75187190}{DificultatFacil}}.equals(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aae76297f46eae8c44972234abee2fa03}{dificultat}})) temp = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_ad7c8a0ff553c0d2075a8b9ff5d7336bd}{WhiteCellPercentFacil}};}
+\DoxyCodeLine{152         }
+\DoxyCodeLine{153         }
+\DoxyCodeLine{154         \textcolor{keywordtype}{int} wt = (int) ((\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}*\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}) * temp);}
+\DoxyCodeLine{155          \textcolor{keywordflow}{while}(wt < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ae92a69655b0263ccf32cc28d4afefa3a}{getNumeroCasellesBlanques}}() )\{}
+\DoxyCodeLine{156             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1aeb67999a957afbeaa1a9ed569f4434}{GenerateBlackPieces}}();}
+\DoxyCodeLine{157             \}}
+\DoxyCodeLine{158     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a2ce243f117136d187a7cc8b326d4e924}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a2ce243f117136d187a7cc8b326d4e924}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!CreateNewBoard@{CreateNewBoard}}
+\index{CreateNewBoard@{CreateNewBoard}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{CreateNewBoard()}{CreateNewBoard()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Create\+New\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+crea un nou taulell jugable amb les dimensions pasades originalment 
+
+\begin{DoxyPrecond}{Precondition}
+el Ctrl te associat files i columnes i dificultat 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+es crea un taulell jugable amb les dimensions quan es va initzialitzar 
+\end{DoxyPostcond}
+
+
+Definition at line 129 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{129                                       \{}
+\DoxyCodeLine{130         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a3182b32a5d881b3b75749a6461914657}{CrearTaulellRandom}}();}
+\DoxyCodeLine{131         \textcolor{keywordflow}{while}( !(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a97eedbcf258bd9af88dfe84c8a14862e}{LazyPopulate}}()) ) \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a3182b32a5d881b3b75749a6461914657}{CrearTaulellRandom}}();}
+\DoxyCodeLine{132         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1d94f49909fa09c38f2d65c5a5f14cc6}{ColocarSumaCasellas}}();}
+\DoxyCodeLine{133         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a42612d021ee1707719205052abbda5f0}{MatriuString}}();}
+\DoxyCodeLine{134     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a339f9ad7619869215d5899f4458a9d0e}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a339f9ad7619869215d5899f4458a9d0e}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!DefaultKakuro@{DefaultKakuro}}
+\index{DefaultKakuro@{DefaultKakuro}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{DefaultKakuro()}{DefaultKakuro()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Default\+Kakuro (\begin{DoxyParamCaption}\item[{int}]{nfiles,  }\item[{int}]{ncolumnes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Crea un taulell default de blanques i negres. 
+
+\begin{DoxyPrecond}{Precondition}
+S\textquotesingle{}han donat dimensions 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Kakuro\+Generat es un taulell de blanques amb la primera fila i la primera columna negres 
+\end{DoxyPostcond}
+
+
+Definition at line 170 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{170                                                         \{}
+\DoxyCodeLine{171         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}} = \textcolor{keyword}{new} Taulell();}
+\DoxyCodeLine{172         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}} = nfiles;}
+\DoxyCodeLine{173         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}} = ncolumnes;}
+\DoxyCodeLine{174         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acade2b43dbb02081133d75de0cb5fab4}{GenerateDefaultBoard}}(nfiles,ncolumnes);}
+\DoxyCodeLine{175     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac8a538bf93d8328f91619649c0afd585}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac8a538bf93d8328f91619649c0afd585}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!EliminarSolitarias@{EliminarSolitarias}}
+\index{EliminarSolitarias@{EliminarSolitarias}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{EliminarSolitarias()}{EliminarSolitarias()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Eliminar\+Solitarias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Elimina Casellas que blanques que estiguin unicament elles en una fila. 
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+converteix a negres aquelles caselles que estan unicament elles en una agrupacio També elimina si s\textquotesingle{}han creat caselles solitaries en fer la primera pasada 
+\end{DoxyPostcond}
+
+
+Definition at line 228 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{228                                      \{}
+\DoxyCodeLine{229          \textcolor{keywordtype}{boolean} Notfound=\textcolor{keyword}{true};}
+\DoxyCodeLine{230          \textcolor{keywordtype}{int} n=0;}
+\DoxyCodeLine{231         \textcolor{keywordtype}{int} fil, col;}
+\DoxyCodeLine{232             fil=col=0;}
+\DoxyCodeLine{233         \textcolor{keywordflow}{for}(fil = 0; fil < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}} \&\& Notfound; ++fil) \{}
+\DoxyCodeLine{234            \textcolor{keywordflow}{for} (col = 0; col < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}} \&\& Notfound; ++col) \{}
+\DoxyCodeLine{235                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ab11fa62f5a12e07470762cab727c0d63}{casellaNegra}}(fil,col))\{}
+\DoxyCodeLine{236                        \textcolor{keywordflow}{if}( \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(fil,col,\textcolor{keyword}{true})  == 1 )\{}
+\DoxyCodeLine{237                            \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(fil+1, col,\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a7536ebb36eaeaa208fe975d39319993f}{CapACellaNegra}} ,\textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{238                            n++;}
+\DoxyCodeLine{239                        \}}
+\DoxyCodeLine{240                        \textcolor{keywordflow}{if}( \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(fil,col,\textcolor{keyword}{false})  == 1 )\{}
+\DoxyCodeLine{241                            \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(fil, col+1,\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a7536ebb36eaeaa208fe975d39319993f}{CapACellaNegra}} ,\textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{242                            n++;}
+\DoxyCodeLine{243                         \}}
+\DoxyCodeLine{244                     \}}
+\DoxyCodeLine{245                            }
+\DoxyCodeLine{246             \}}
+\DoxyCodeLine{247             \}}
+\DoxyCodeLine{248         \textcolor{keywordflow}{if}(n!=0) \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac8a538bf93d8328f91619649c0afd585}{EliminarSolitarias}}();     }
+\DoxyCodeLine{249     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acfefc2d2d8c3043401208e2067611a5a}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acfefc2d2d8c3043401208e2067611a5a}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!EliminateImpossibleCellArragement@{EliminateImpossibleCellArragement}}
+\index{EliminateImpossibleCellArragement@{EliminateImpossibleCellArragement}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{EliminateImpossibleCellArragement()}{EliminateImpossibleCellArragement()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Eliminate\+Impossible\+Cell\+Arragement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Elimina agrupacions de celes blanques de 9 generant caselles negres. 
+
+\begin{DoxyPrecond}{Precondition}
+el kakuro taulell no te caselles solitaries 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+modifica el taulell perque no hi hagi agrupacions de $>$9 celes blanques 
+\end{DoxyPostcond}
+
+
+Definition at line 279 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{279                                                     \{}
+\DoxyCodeLine{280         \textcolor{keywordtype}{int} abort = 1000;}
+\DoxyCodeLine{281         Random ran = \textcolor{keyword}{new} Random();}
+\DoxyCodeLine{282         \textcolor{keywordtype}{int} CellsTransformed=0;}
+\DoxyCodeLine{283         }
+\DoxyCodeLine{284         ArrayList<PairII> ListForChange = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{285         ArrayList<PairII> ListForBackTracking = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{286         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} fil = 0; fil < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}; fil++) \{\textcolor{comment}{//pone en una lista las posiciones negras donde detecta errores verticals}}
+\DoxyCodeLine{287             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} col = 0; col < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}; col++) \{}
+\DoxyCodeLine{288                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ab11fa62f5a12e07470762cab727c0d63}{casellaNegra}}(fil,col) \&\& (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(fil,col,\textcolor{keyword}{true})>9))}
+\DoxyCodeLine{289                     ListForChange.add(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{PairII}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i_a4ea6d2a84abd867f3f0f35626a06103d}{of}}(fil,col));}
+\DoxyCodeLine{290             \}}
+\DoxyCodeLine{291         \}      }
+\DoxyCodeLine{292         }
+\DoxyCodeLine{293         }
+\DoxyCodeLine{294         \textcolor{keywordtype}{int} NCellLine;}
+\DoxyCodeLine{295         \textcolor{keywordtype}{int} nCasellesBlanques;}
+\DoxyCodeLine{296         \textcolor{keywordtype}{boolean} CambioPorDelante;}
+\DoxyCodeLine{297         }
+\DoxyCodeLine{298         }
+\DoxyCodeLine{299         }
+\DoxyCodeLine{300         \textcolor{keywordflow}{while}(!ListForChange.isEmpty())\{}
+\DoxyCodeLine{301             \textcolor{keywordflow}{if}((abort-\/-\/)<0) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{302             \textcolor{keywordtype}{int} f = ListForChange.get(0).getLeft();}
+\DoxyCodeLine{303             \textcolor{keywordtype}{int} c = ListForChange.get(0).getRight();}
+\DoxyCodeLine{304             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(f,c,\textcolor{keyword}{true})<9)\{}
+\DoxyCodeLine{305                 ListForChange.remove(0);}
+\DoxyCodeLine{306                 }
+\DoxyCodeLine{307             \}}
+\DoxyCodeLine{308             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{309                 }
+\DoxyCodeLine{310                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(f,c,\textcolor{keyword}{true})>9)\{\textcolor{comment}{//vertical}}
+\DoxyCodeLine{311                     }
+\DoxyCodeLine{312                     nCasellesBlanques = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(f,c,\textcolor{keyword}{false});}
+\DoxyCodeLine{313                     NCellLine = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a76e2007fd9f63cc73e6965e4aa534154}{GetRndCellLine}}();}
+\DoxyCodeLine{314 }
+\DoxyCodeLine{315                     CambioPorDelante = ran.nextBoolean();\textcolor{comment}{//50\% chance}}
+\DoxyCodeLine{316                     \textcolor{keywordtype}{int} TransformFila,TransformColumna;}
+\DoxyCodeLine{317                     \textcolor{keywordflow}{if}(CambioPorDelante)\{}
+\DoxyCodeLine{318                         TransformFila= f + NCellLine;}
+\DoxyCodeLine{319                         TransformColumna = c;}
+\DoxyCodeLine{320                     \}}
+\DoxyCodeLine{321                     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{322                         TransformFila= f + nCasellesBlanques -\/ NCellLine;}
+\DoxyCodeLine{323                         TransformColumna = c;}
+\DoxyCodeLine{324                     \}}
+\DoxyCodeLine{325                     \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(TransformFila,TransformColumna,\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a7536ebb36eaeaa208fe975d39319993f}{CapACellaNegra}},\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{326                     \textcolor{comment}{//PrintTaulell(true);}}
+\DoxyCodeLine{327                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a596a9a69436b1a2b7c210da69c96a3ca}{CheckConnectivityWhiteCells}}())\{}
+\DoxyCodeLine{328                         ListForBackTracking.add(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{PairII}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i_a4ea6d2a84abd867f3f0f35626a06103d}{of}}(TransformFila,TransformColumna));}
+\DoxyCodeLine{329                     \}}
+\DoxyCodeLine{330                     \textcolor{keywordflow}{else} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(TransformFila,TransformColumna,\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a83a0effa3fc500675777a56726b89bd9}{CapACellaBlanca}},\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{331                     }
+\DoxyCodeLine{332                 \}}
+\DoxyCodeLine{333             \}}
+\DoxyCodeLine{334         \}}
+\DoxyCodeLine{335         }
+\DoxyCodeLine{336         ListForChange = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{337         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} fil = 0; fil < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}; fil++) \{\textcolor{comment}{//pone en una lista las posiciones negras donde detecta errores verticals}}
+\DoxyCodeLine{338             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} col = 0; col < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}; col++) \{}
+\DoxyCodeLine{339                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ab11fa62f5a12e07470762cab727c0d63}{casellaNegra}}(fil,col) \&\& (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(fil,col,\textcolor{keyword}{false})>9))}
+\DoxyCodeLine{340                     ListForChange.add(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{PairII}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i_a4ea6d2a84abd867f3f0f35626a06103d}{of}}(fil,col));}
+\DoxyCodeLine{341             \}}
+\DoxyCodeLine{342         \}}
+\DoxyCodeLine{343         }
+\DoxyCodeLine{344         \textcolor{comment}{//Errors Horitzontals}}
+\DoxyCodeLine{345         \textcolor{keywordflow}{while}(!ListForChange.isEmpty())\{      }
+\DoxyCodeLine{346             \textcolor{keywordflow}{if}((abort-\/-\/)<0) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{347             \textcolor{keywordtype}{int} IndexList = 0;}
+\DoxyCodeLine{348             \textcolor{keywordtype}{int} f = ListForChange.get(IndexList).getLeft();}
+\DoxyCodeLine{349             \textcolor{keywordtype}{int} c = ListForChange.get(IndexList).getRight();}
+\DoxyCodeLine{350             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(f,c,\textcolor{keyword}{false})<9)\{}
+\DoxyCodeLine{351                 \textcolor{comment}{//PrintTaulell(true);}}
+\DoxyCodeLine{352                 ListForChange.remove(IndexList);}
+\DoxyCodeLine{353                 }
+\DoxyCodeLine{354             \}}
+\DoxyCodeLine{355             \textcolor{keywordflow}{else} \{\textcolor{comment}{//horizontal}}
+\DoxyCodeLine{356                     }
+\DoxyCodeLine{357                     nCasellesBlanques = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(f,c,\textcolor{keyword}{false});}
+\DoxyCodeLine{358                     NCellLine = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a76e2007fd9f63cc73e6965e4aa534154}{GetRndCellLine}}();\textcolor{comment}{//2-\/9}}
+\DoxyCodeLine{359 }
+\DoxyCodeLine{360                     CambioPorDelante = ran.nextBoolean();\textcolor{comment}{//50\% chance}}
+\DoxyCodeLine{361                     \textcolor{keywordtype}{int} TransformFila,TransformColumna;}
+\DoxyCodeLine{362                     \textcolor{keywordflow}{if}(CambioPorDelante)\{}
+\DoxyCodeLine{363                         TransformColumna= c + NCellLine;}
+\DoxyCodeLine{364                         TransformFila = f;}
+\DoxyCodeLine{365                     \}}
+\DoxyCodeLine{366                     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{367                         TransformColumna= c + nCasellesBlanques -\/ NCellLine;}
+\DoxyCodeLine{368                         TransformFila = f;}
+\DoxyCodeLine{369                     \}}
+\DoxyCodeLine{370                     \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(TransformFila,TransformColumna,\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a7536ebb36eaeaa208fe975d39319993f}{CapACellaNegra}},\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{371                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a596a9a69436b1a2b7c210da69c96a3ca}{CheckConnectivityWhiteCells}}())\{}
+\DoxyCodeLine{372                         ListForBackTracking.add(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{PairII}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i_a4ea6d2a84abd867f3f0f35626a06103d}{of}}(TransformFila,TransformColumna));}
+\DoxyCodeLine{373                     \}}
+\DoxyCodeLine{374                     \textcolor{keywordflow}{else} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(TransformFila,TransformColumna,\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a83a0effa3fc500675777a56726b89bd9}{CapACellaBlanca}},\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{375             \}}
+\DoxyCodeLine{376         \}}
+\DoxyCodeLine{377         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac8a538bf93d8328f91619649c0afd585}{EliminarSolitarias}}();}
+\DoxyCodeLine{378         \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_af4a94d0b5476cff61f0003760468d544}{CheckTaulellValidEstructuralment}}())\{}
+\DoxyCodeLine{379             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a339f9ad7619869215d5899f4458a9d0e}{DefaultKakuro}}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}},\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}});}
+\DoxyCodeLine{380             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acfefc2d2d8c3043401208e2067611a5a}{EliminateImpossibleCellArragement}}();}
+\DoxyCodeLine{381         \}}
+\DoxyCodeLine{382         }
+\DoxyCodeLine{383         }
+\DoxyCodeLine{384     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1aeb67999a957afbeaa1a9ed569f4434}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a1aeb67999a957afbeaa1a9ed569f4434}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!GenerateBlackPieces@{GenerateBlackPieces}}
+\index{GenerateBlackPieces@{GenerateBlackPieces}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{GenerateBlackPieces()}{GenerateBlackPieces()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Generate\+Black\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Intenta Genera una casella negra en una cela blanca aleatoria. 
+
+\begin{DoxyPrecond}{Precondition}
+taulell existeix 
+
+el taulell es estructuralment correcte 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+el taulell es estructuralment correcte
+\begin{DoxyItemize}
+\item de les caselles blanques que es puguin eliminar perque mantigui la correctesa estructural s\textquotesingle{}a eliminat una al atzar 
+\end{DoxyItemize}
+\end{DoxyPostcond}
+
+
+Definition at line 393 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{393                                       \{}
+\DoxyCodeLine{394         \textcolor{keywordtype}{int} Transformed=0;}
+\DoxyCodeLine{395         Random ran = \textcolor{keyword}{new} Random(); }
+\DoxyCodeLine{396         ArrayList<PairII> Selector = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{397         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} idx=0;idx<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}};idx++)\{}
+\DoxyCodeLine{398             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} jdx=0;jdx<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}};jdx++)\{}
+\DoxyCodeLine{399                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(idx,jdx))}
+\DoxyCodeLine{400                    Selector.add(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{PairII}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i_a4ea6d2a84abd867f3f0f35626a06103d}{of}}(idx,jdx));}
+\DoxyCodeLine{401             \}}
+\DoxyCodeLine{402         \}}
+\DoxyCodeLine{403         \textcolor{keywordtype}{int} indexList;}
+\DoxyCodeLine{404         \textcolor{keywordtype}{int} PosicioFilaTransf,PosicioColumnaTransf;}
+\DoxyCodeLine{405         \textcolor{keywordflow}{while}(!Selector.isEmpty())\{}
+\DoxyCodeLine{406             indexList = ran.nextInt(Selector.size());}
+\DoxyCodeLine{407             PosicioFilaTransf=Selector.get(indexList).getLeft();}
+\DoxyCodeLine{408             PosicioColumnaTransf=Selector.get(indexList).getRight();}
+\DoxyCodeLine{409             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(PosicioFilaTransf,PosicioColumnaTransf))\{}
+\DoxyCodeLine{410                \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(PosicioFilaTransf, PosicioColumnaTransf, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a7536ebb36eaeaa208fe975d39319993f}{CapACellaNegra}}, \textcolor{stringliteral}{"{}*"{}});}
+\DoxyCodeLine{411                \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_af4a94d0b5476cff61f0003760468d544}{CheckTaulellValidEstructuralment}}())\{}
+\DoxyCodeLine{412                    \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a942bcb9e113ab905b209bdfd2f8e67bc}{TransformCellToOtherType}}(PosicioFilaTransf, PosicioColumnaTransf, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a83a0effa3fc500675777a56726b89bd9}{CapACellaBlanca}}, \textcolor{stringliteral}{"{}?"{}});}
+\DoxyCodeLine{413                     Selector.remove(indexList);}
+\DoxyCodeLine{414                \}}
+\DoxyCodeLine{415             \}}
+\DoxyCodeLine{416             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{417                 Selector.remove(indexList);}
+\DoxyCodeLine{418             \}}
+\DoxyCodeLine{419             }
+\DoxyCodeLine{420         \}}
+\DoxyCodeLine{421     \} }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aad5ae4efcc7673b252ddc566bc1a7783}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aad5ae4efcc7673b252ddc566bc1a7783}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!getFoundKakuro@{getFoundKakuro}}
+\index{getFoundKakuro@{getFoundKakuro}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{getFoundKakuro()}{getFoundKakuro()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+get\+Found\+Kakuro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna si ha trobat un taulell random possible. 
+
+\begin{DoxyPrecond}{Precondition}
+se ha intentat crear com a minim un kakuro 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+cert 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Retorna si ha trobat un taulell random possible 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{120                                    \{}
+\DoxyCodeLine{121         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a5b4d4c7b02e16467699da28a3a0213c9}{FoundKakuroRandom}};}
+\DoxyCodeLine{122     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a76e2007fd9f63cc73e6965e4aa534154}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a76e2007fd9f63cc73e6965e4aa534154}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!GetRndCellLine@{GetRndCellLine}}
+\index{GetRndCellLine@{GetRndCellLine}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{GetRndCellLine()}{GetRndCellLine()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Get\+Rnd\+Cell\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna un valor aleatori ponderat d\textquotesingle{}entre 2 i 9. 
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+cert 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Valor entre 2 i 9 
+\end{DoxyReturn}
+
+
+Definition at line 258 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{258                                 \{}
+\DoxyCodeLine{259         Random ran = \textcolor{keyword}{new} Random();}
+\DoxyCodeLine{260         \textcolor{keywordtype}{int} rnd;}
+\DoxyCodeLine{261         \textcolor{keywordtype}{int} NCellLine=3;                }
+\DoxyCodeLine{262         rnd = ran.nextInt(100); }
+\DoxyCodeLine{263         \textcolor{keywordflow}{if}(rnd >= 0  \&\& rnd <=10)  NCellLine = 2;}
+\DoxyCodeLine{264         \textcolor{keywordflow}{if}(rnd >= 11 \&\& rnd <=25)  NCellLine = 3;}
+\DoxyCodeLine{265         \textcolor{keywordflow}{if}(rnd >= 26 \&\& rnd <=40)  NCellLine = 4;}
+\DoxyCodeLine{266         \textcolor{keywordflow}{if}(rnd >= 41 \&\& rnd <=52)  NCellLine = 5;}
+\DoxyCodeLine{267         \textcolor{keywordflow}{if}(rnd >= 53 \&\& rnd <=65)  NCellLine = 6;}
+\DoxyCodeLine{268         \textcolor{keywordflow}{if}(rnd >= 65 \&\& rnd <=80)  NCellLine = 7;}
+\DoxyCodeLine{269         \textcolor{keywordflow}{if}(rnd >= 81 \&\& rnd <=90)  NCellLine = 8;}
+\DoxyCodeLine{270         \textcolor{keywordflow}{if}(rnd >= 91 \&\& rnd <=99)  NCellLine = 9;}
+\DoxyCodeLine{271         }
+\DoxyCodeLine{272         \textcolor{keywordflow}{return} NCellLine;}
+\DoxyCodeLine{273     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a735e3d9c925ef82afc291dd6f23d3121}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a735e3d9c925ef82afc291dd6f23d3121}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!GetSumaPopulate@{GetSumaPopulate}}
+\index{GetSumaPopulate@{GetSumaPopulate}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{GetSumaPopulate()}{GetSumaPopulate()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Get\+Suma\+Populate (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna,  }\item[{boolean}]{Vertical }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Funcio per trobar la suma vertical o horitzontal que te una casella negra \begin{DoxyPrecond}{Precondition}
+el taulell ha de tenir numeros en totes les posicions blanques 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & fila de la casella de Suma \\
+\hline
+{\em columna} & columna de la casella de Suma \\
+\hline
+{\em Vertical} & Si volem la suma en vertical T\+R\+UE o en horitzontal F\+A\+L\+SE \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorna el sumatori de les caselles blanques que li son adjecents verticals o horitzontals 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+cert 
+\end{DoxyPostcond}
+
+
+Definition at line 573 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{573                                                                         \{}
+\DoxyCodeLine{574         }
+\DoxyCodeLine{575         \textcolor{keywordtype}{int} CellLine = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_acde7321a22a15542949b9b89fba5b9d4}{nombreCasellesBlanquesSpecific}}(fila, columna, Vertical);}
+\DoxyCodeLine{576         \textcolor{keywordtype}{int} Total = 0;}
+\DoxyCodeLine{577         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= CellLine; i++) \{}
+\DoxyCodeLine{578             \textcolor{keywordflow}{if}(Vertical) Total+= Integer.parseInt(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(fila+i,columna));}
+\DoxyCodeLine{579             \textcolor{keywordflow}{else} Total+= Integer.parseInt(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(fila,columna+i));}
+\DoxyCodeLine{580         \}}
+\DoxyCodeLine{581         \textcolor{keywordflow}{return} Total;}
+\DoxyCodeLine{582     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a97eedbcf258bd9af88dfe84c8a14862e}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a97eedbcf258bd9af88dfe84c8a14862e}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!LazyPopulate@{LazyPopulate}}
+\index{LazyPopulate@{LazyPopulate}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{LazyPopulate()}{LazyPopulate()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Lazy\+Populate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coloca numeros aleatoris a les caselles blanques i coloca la seva suma corresponent. 
+
+\begin{DoxyPostcond}{Postcondition}
+en el taulell es coloquen numeros i la seva suma corresponent 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+True si ha pogut col·locar nombres a totes les caselles 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+Kakuro\+Generat es estructuralment correcte 
+\end{DoxyPrecond}
+
+
+Definition at line 543 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{543                                   \{}
+\DoxyCodeLine{544         Random ran = \textcolor{keyword}{new} Random();}
+\DoxyCodeLine{545         ArrayList<PairII> ListPosition = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{546         \textcolor{comment}{//Coloca nombres aleatoris entre 1 i 9 a les posicions blanques}}
+\DoxyCodeLine{547         }
+\DoxyCodeLine{548         \textcolor{keywordtype}{boolean} trobat = \textcolor{keyword}{false};}
+\DoxyCodeLine{549         \textcolor{keywordtype}{int} c,f;}
+\DoxyCodeLine{550         c = f = 0;}
+\DoxyCodeLine{551         \textcolor{keywordflow}{while}(f < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}} \&\& !trobat) \{}
+\DoxyCodeLine{552             c=0;}
+\DoxyCodeLine{553             }
+\DoxyCodeLine{554             \textcolor{keywordflow}{while} (c < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}} \&\& !trobat) \{}
+\DoxyCodeLine{555                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(f,c)) trobat= \textcolor{keyword}{true};}
+\DoxyCodeLine{556                 \textcolor{keywordflow}{else} ++c;}
+\DoxyCodeLine{557             \}}
+\DoxyCodeLine{558             }
+\DoxyCodeLine{559             \textcolor{keywordflow}{if} (!trobat) ++f;}
+\DoxyCodeLine{560         \}}
+\DoxyCodeLine{561         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ac7cf17f2dfeb1b315375c7243052f824}{ColocarNumeros}}(f,c);}
+\DoxyCodeLine{562         }
+\DoxyCodeLine{563     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a42612d021ee1707719205052abbda5f0}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a42612d021ee1707719205052abbda5f0}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!MatriuString@{MatriuString}}
+\index{MatriuString@{MatriuString}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{MatriuString()}{MatriuString()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Matriu\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el taulell generat amb string que segueixen el input format establit. 
+
+\begin{DoxyPrecond}{Precondition}
+Taulell no es nuk 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+cert 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Retorna el taulell generat amb string que segueixen el input format establit 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86                                     \{}
+\DoxyCodeLine{87         String[][] Matriu = \textcolor{keyword}{new} String[\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}][\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}];}
+\DoxyCodeLine{88         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}; i++) \{}
+\DoxyCodeLine{89             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}; j++) \{}
+\DoxyCodeLine{90                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(i,j)) Matriu[i][j]=\textcolor{stringliteral}{"{}?"{}};}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{else} Matriu[i][j] = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(i, j);}
+\DoxyCodeLine{92             \}}
+\DoxyCodeLine{93         \}}
+\DoxyCodeLine{94         \textcolor{keywordflow}{return} Matriu;}
+\DoxyCodeLine{95     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a06b507617d029bbf2f18624727366d38}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a06b507617d029bbf2f18624727366d38}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!MatriuStringNum@{MatriuStringNum}}
+\index{MatriuStringNum@{MatriuStringNum}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{MatriuStringNum()}{MatriuStringNum()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Matriu\+String\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el taulell generat amb numeros valids string que segueixen el input format establit. 
+
+\begin{DoxyPrecond}{Precondition}
+Taulell no es null i s\textquotesingle{}han colocat nombres 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+cert 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Retorna el taulell generat omplert de nombres valids amb string que segueixen el input format establit 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103                                        \{}
+\DoxyCodeLine{104         String[][] Matriu = \textcolor{keyword}{new} String[\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}][\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}];}
+\DoxyCodeLine{105         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}}; i++) \{}
+\DoxyCodeLine{106             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}; j++) \{}
+\DoxyCodeLine{107                 Matriu[i][j] = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(i, j);}
+\DoxyCodeLine{108                 System.out.print(Matriu[i][j]);}
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110         \}}
+\DoxyCodeLine{111         \textcolor{keywordflow}{return} Matriu;}
+\DoxyCodeLine{112     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acd8c92df25d2d7411a08897f640eb047}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_acd8c92df25d2d7411a08897f640eb047}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!PrintTaulell@{PrintTaulell}}
+\index{PrintTaulell@{PrintTaulell}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{PrintTaulell()}{PrintTaulell()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Print\+Taulell (\begin{DoxyParamCaption}\item[{boolean}]{coloreado }\end{DoxyParamCaption})}
+
+
+
+Imprimeix per pantalla el taulell associat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coloreado} & True si vols que imprimeixi el taulell associat amb colors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+el taullell associat no és nul 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}imprimeix per pantalla el taullell per pantalla, tindra colors si l\textquotesingle{}argument es tur 
+\end{DoxyPostcond}
+
+
+Definition at line 184 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{184                                                 \{}
+\DoxyCodeLine{185         String ANSI\_RESET = \textcolor{stringliteral}{"{}\(\backslash\)u001B[0m"{}};}
+\DoxyCodeLine{186         String ANSI\_YELLOW = \textcolor{stringliteral}{"{}\(\backslash\)u001B[33m"{}};}
+\DoxyCodeLine{187         String ANSI\_BLUE = \textcolor{stringliteral}{"{}\(\backslash\)u001B[34m"{}};}
+\DoxyCodeLine{188         String ANSI\_PURPLE = \textcolor{stringliteral}{"{}\(\backslash\)u001B[35m"{}};}
+\DoxyCodeLine{189         String ANSI\_RED = \textcolor{stringliteral}{"{}\(\backslash\)u001B[31m"{}};}
+\DoxyCodeLine{190         }
+\DoxyCodeLine{191         System.out.print(ANSI\_BLUE);}
+\DoxyCodeLine{192         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} a=-\/1;a<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}};a++)\{}
+\DoxyCodeLine{193             System.out.print(\mbox{\hyperlink{namespacesrc}{src}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini}{CapaDomini}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini_1_1_utils}{Utils}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a10c05ca7f536cd6ae6a63c3874dd0def}{NormalitzarEspai}}(\textcolor{stringliteral}{"{}c"{}}+String.valueOf(a)));}
+\DoxyCodeLine{194             \textcolor{keywordflow}{if}(a!=\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}-\/1)System.out.print(\textcolor{stringliteral}{"{}|"{}});}
+\DoxyCodeLine{195         \}}
+\DoxyCodeLine{196         System.out.print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{197         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}+1;j++) \{}
+\DoxyCodeLine{198             System.out.print(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{199             System.out.print(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{200          \}}
+\DoxyCodeLine{201         System.out.print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{202         System.out.print(ANSI\_RESET);}
+\DoxyCodeLine{203         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}{files}};i++)\{}
+\DoxyCodeLine{204           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}};j++) \{}
+\DoxyCodeLine{205             \textcolor{keywordflow}{if}(j==0)System.out.print(ANSI\_BLUE+\mbox{\hyperlink{namespacesrc}{src}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini}{CapaDomini}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini_1_1_utils}{Utils}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a10c05ca7f536cd6ae6a63c3874dd0def}{NormalitzarEspai}}(\textcolor{stringliteral}{"{}f"{}}+String.valueOf(i))+ANSI\_RESET);  }
+\DoxyCodeLine{206             System.out.print(\textcolor{stringliteral}{"{}|"{}});}
+\DoxyCodeLine{207             \textcolor{keywordflow}{if}(coloreado \&\& \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(i,j))System.out.print(ANSI\_YELLOW);}
+\DoxyCodeLine{208             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(coloreado \&\& \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_ab11fa62f5a12e07470762cab727c0d63}{casellaNegra}}(i,j))System.out.print(ANSI\_PURPLE);}
+\DoxyCodeLine{209             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(coloreado \&\& \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_a85ef21529d84f3cade1e4ac03f061ec2}{casellaSuma}}(i,j))System.out.print(ANSI\_RED);}
+\DoxyCodeLine{210             System.out.print(\mbox{\hyperlink{namespacesrc}{src}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini}{CapaDomini}}.\mbox{\hyperlink{namespacesrc_1_1_capa_domini_1_1_utils}{Utils}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables}{FinalVariables}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_final_variables_a10c05ca7f536cd6ae6a63c3874dd0def}{NormalitzarEspai}}(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(i, j)));}
+\DoxyCodeLine{211             System.out.print(ANSI\_RESET);}
+\DoxyCodeLine{212           \}}
+\DoxyCodeLine{213           System.out.print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{214           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}{columnes}}+1;j++) \{}
+\DoxyCodeLine{215             \textcolor{keywordflow}{if}(j!=0) System.out.print(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{216             System.out.print(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{217           \}}
+\DoxyCodeLine{218           System.out.print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{219         \}}
+\DoxyCodeLine{220     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a357594cf78f2b9e5a0f6d12e19a381b3}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a357594cf78f2b9e5a0f6d12e19a381b3}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!valorPossible@{valorPossible}}
+\index{valorPossible@{valorPossible}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{valorPossible()}{valorPossible()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+valor\+Possible (\begin{DoxyParamCaption}\item[{String}]{possible,  }\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funció per saber si es pot col·locar un valornumeric a una casella blanca. 
+
+\begin{DoxyPrecond}{Precondition}
+Kakurogenerat conte valors no nuls 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em possible} & és el valor a comprovar \\
+\hline
+{\em fila} & és la posició de la fila \\
+\hline
+{\em columna} & és la posició de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true en cas que el valor númeric no estigui duplicat a la seva fila o columna 
+\end{DoxyPostcond}
+
+
+Definition at line 432 of file Random\+Kakuro.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{432                                                                           \{}
+\DoxyCodeLine{433         \textcolor{keywordtype}{int} suma = 0;}
+\DoxyCodeLine{434         \textcolor{keywordtype}{int} f = fila-\/1;}
+\DoxyCodeLine{435         \textcolor{keywordflow}{while} (f>=0 \&\& \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(f,columna)) \{ }
+\DoxyCodeLine{436             \textcolor{comment}{//es comproven valors repetits i la suma vertical}}
+\DoxyCodeLine{437             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(f,columna).equals(possible)) \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{//valor repetit            }}
+\DoxyCodeLine{438             -\/-\/f;}
+\DoxyCodeLine{439         \}}
+\DoxyCodeLine{440         }
+\DoxyCodeLine{441         \textcolor{keywordtype}{int} col = columna-\/1;}
+\DoxyCodeLine{442 }
+\DoxyCodeLine{443         \textcolor{keywordflow}{while} (col>=0 \&\& \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_abfc32be8de6cae04e5290e9b0826a954}{casellaBlanca}}(fila,col)) \{ }
+\DoxyCodeLine{444             \textcolor{comment}{//es comproven valors repetits i la suma horitzontal}}
+\DoxyCodeLine{445             }
+\DoxyCodeLine{446             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}{KakuroGenerat}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell_aea2f010bfc3d2228fbe50e2226a3f133}{getValorCasella}}(fila,col).equals(possible)) \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{//valor repetit}}
+\DoxyCodeLine{447             }
+\DoxyCodeLine{448             -\/-\/col;}
+\DoxyCodeLine{449         \}}
+\DoxyCodeLine{450         }
+\DoxyCodeLine{451         }
+\DoxyCodeLine{452         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{453     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_adc406c9e2ae6e70fee762812d6fd036b}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!columnes@{columnes}}
+\index{columnes@{columnes}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{columnes}{columnes}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+columnes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nombre de columnes del taulell. 
+
+
+
+Definition at line 22 of file Random\+Kakuro.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aae76297f46eae8c44972234abee2fa03}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aae76297f46eae8c44972234abee2fa03}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!dificultat@{dificultat}}
+\index{dificultat@{dificultat}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{dificultat}{dificultat}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+dificultat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dificultat del taulell creat. 
+
+
+
+Definition at line 24 of file Random\+Kakuro.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_aa0c63b69819b28c5ea45ffe362009b2c}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!files@{files}}
+\index{files@{files}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+files\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nombre de files del taulell. 
+
+
+
+Definition at line 20 of file Random\+Kakuro.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a5b4d4c7b02e16467699da28a3a0213c9}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_a5b4d4c7b02e16467699da28a3a0213c9}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!FoundKakuroRandom@{FoundKakuroRandom}}
+\index{FoundKakuroRandom@{FoundKakuroRandom}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{FoundKakuroRandom}{FoundKakuroRandom}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Found\+Kakuro\+Random\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Boolea si ha trobat un Kakuro Random. 
+
+
+
+Definition at line 28 of file Random\+Kakuro.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro_ae818214b5bb20e70b27b84f6f7f91f3f}} 
+\index{src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}!KakuroGenerat@{KakuroGenerat}}
+\index{KakuroGenerat@{KakuroGenerat}!src.CapaDomini.Controladors.RandomKakuro@{src.CapaDomini.Controladors.RandomKakuro}}
+\doxysubsubsection{\texorpdfstring{KakuroGenerat}{KakuroGenerat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} src.\+Capa\+Domini.\+Controladors.\+Random\+Kakuro.\+Kakuro\+Generat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Taulell associat al random per guardar la forma del kakuro. 
+
+
+
+Definition at line 26 of file Random\+Kakuro.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Controladors/\mbox{\hyperlink{_random_kakuro_8java}{Random\+Kakuro.\+java}}\end{DoxyCompactItemize}
