@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['label9_346',['label9',['../classsrc_1_1_capa_presentacio_1_1_vista_ranking_global.html#afcb88233b6c182ccf66799d0887706a0',1,'src::CapaPresentacio::VistaRankingGlobal']]],
+  ['labelavis_347',['LabelAvis',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a4e292af9b262141e00e7255c7bc2efeb',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['labelcolumnes_348',['labelcolumnes',['../classsrc_1_1_capa_presentacio_1_1_vista_crear_manualment.html#aebcd6e8c1a902d6e0d92f1051e028348',1,'src::CapaPresentacio::VistaCrearManualment']]],
+  ['labelcolumns_349',['LabelColumns',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a255f63f1cec0c878f68174e60dedf4aa',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['labelfiles_350',['labelfiles',['../classsrc_1_1_capa_presentacio_1_1_vista_crear_manualment.html#af2d6908f36556aeeb64ccf55f98eb2c8',1,'src::CapaPresentacio::VistaCrearManualment']]],
+  ['labelrows_351',['LabelRows',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#aff46167e5fe2939cc77cf7e5118358cb',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['labeltextcolumns_352',['LabelTextColumns',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#ab17d7f1bb4de8cefde9715f7d8eac97a',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['labeltextdifficulty_353',['LabelTextDifficulty',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a5e4a33faa1682f7577273f9bc8879a7d',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['labeltextrows_354',['LabelTextRows',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a828bfc9e1bd0a1f00b8c548d335d10a1',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['labeltitol_355',['LabelTitol',['../classsrc_1_1_capa_presentacio_1_1_vista_autogenerar.html#a105e8692e177c3d06a277894bcb8f1c8',1,'src::CapaPresentacio::VistaAutogenerar']]],
+  ['lazypopulate_356',['LazyPopulate',['../classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a97eedbcf258bd9af88dfe84c8a14862e',1,'src::CapaDomini::Controladors::RandomKakuro']]],
+  ['left_357',['left',['../classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i.html#a9ae2290abd024cda059af22e47825bf7',1,'src.CapaDomini.Utils.PairII.left()'],['../classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b.html#a76666ac292161dca446a6cff73c55a55',1,'src.CapaDomini.Utils.PairSB.left()']]],
+  ['lengthrestricteddocument_358',['LengthRestrictedDocument',['../classsrc_1_1_capa_presentacio_1_1_length_restricted_document.html',1,'src.CapaPresentacio.LengthRestrictedDocument'],['../classsrc_1_1_capa_presentacio_1_1_length_restricted_document.html#a8d9492b135be6f4134b18fbfb4e226c6',1,'src.CapaPresentacio.LengthRestrictedDocument.LengthRestrictedDocument()']]],
+  ['limit_359',['limit',['../classsrc_1_1_capa_presentacio_1_1_length_restricted_document.html#a571fc9faacd25acdd54ed70d231939bf',1,'src::CapaPresentacio::LengthRestrictedDocument']]],
+  ['llegirkakuronou_360',['llegirKakuroNou',['../classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_domain.html#ac5e15bad15a42d18a44d6591a782c7d4',1,'src::CapaDomini::Controladors::CtrlDomain']]],
+  ['llista_361',['llista',['../classsrc_1_1_capa_presentacio_1_1_vista_seleccio_kakuro.html#aadfba92fbb6f9ea70a03115810373e83',1,'src::CapaPresentacio::VistaSeleccioKakuro']]],
+  ['llistatpartidasencursdificultat_362',['llistatPartidasEnCursDificultat',['../classsrc_1_1_capa_persistencia_1_1_ctrl_persistencia.html#a10af7fe8c0e401ebc1cce54fd98010f5',1,'src::CapaPersistencia::CtrlPersistencia']]],
+  ['llistattaulells_363',['llistatTaulells',['../classsrc_1_1_capa_persistencia_1_1_ctrl_persistencia.html#a9dd5172644eb03a0e25025b572565a96',1,'src::CapaPersistencia::CtrlPersistencia']]],
+  ['llistattaulellsdificultat_364',['llistatTaulellsDificultat',['../classsrc_1_1_capa_persistencia_1_1_ctrl_persistencia.html#aed02793c20526c88236e52f80fdfbaea',1,'src::CapaPersistencia::CtrlPersistencia']]],
+  ['llistatusuarios_365',['llistatUsuarios',['../classsrc_1_1_capa_persistencia_1_1_ctrl_persistencia.html#aa5c87bfd295758dbbfad21ee36c842b2',1,'src::CapaPersistencia::CtrlPersistencia']]],
+  ['login_366',['login',['../classsrc_1_1_capa_presentacio_1_1_pantalla_principal.html#aaad8af941c463d8853de854f6683aab1',1,'src.CapaPresentacio.PantallaPrincipal.login()'],['../classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_domain.html#a752b7debdc57c1d4c9044b50a324bf28',1,'src.CapaDomini.Controladors.CtrlDomain.logIn()']]]
+];

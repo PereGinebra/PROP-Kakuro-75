@@ -1,0 +1,27 @@
+var classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro =
+[
+    [ "RandomKakuro", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#aa271a63eab3730f0affc5ee2ab1919dd", null ],
+    [ "RandomKakuro", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a00cfcf3636077b5ef4d1ca75f9e13670", null ],
+    [ "ColocarNumeros", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#ac7cf17f2dfeb1b315375c7243052f824", null ],
+    [ "ColocarSumaCasellas", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a1d94f49909fa09c38f2d65c5a5f14cc6", null ],
+    [ "CrearCasellaSumaValor", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a4ecd9b401bb52b9dfaead0fec5bba25b", null ],
+    [ "CrearTaulellRandom", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a3182b32a5d881b3b75749a6461914657", null ],
+    [ "CreateNewBoard", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a2ce243f117136d187a7cc8b326d4e924", null ],
+    [ "DefaultKakuro", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a339f9ad7619869215d5899f4458a9d0e", null ],
+    [ "EliminarSolitarias", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#ac8a538bf93d8328f91619649c0afd585", null ],
+    [ "EliminateImpossibleCellArragement", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#acfefc2d2d8c3043401208e2067611a5a", null ],
+    [ "GenerateBlackPieces", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a1aeb67999a957afbeaa1a9ed569f4434", null ],
+    [ "getFoundKakuro", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#aad5ae4efcc7673b252ddc566bc1a7783", null ],
+    [ "GetRndCellLine", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a76e2007fd9f63cc73e6965e4aa534154", null ],
+    [ "GetSumaPopulate", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a735e3d9c925ef82afc291dd6f23d3121", null ],
+    [ "LazyPopulate", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a97eedbcf258bd9af88dfe84c8a14862e", null ],
+    [ "MatriuString", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a42612d021ee1707719205052abbda5f0", null ],
+    [ "MatriuStringNum", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a06b507617d029bbf2f18624727366d38", null ],
+    [ "PrintTaulell", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#acd8c92df25d2d7411a08897f640eb047", null ],
+    [ "valorPossible", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a357594cf78f2b9e5a0f6d12e19a381b3", null ],
+    [ "columnes", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#adc406c9e2ae6e70fee762812d6fd036b", null ],
+    [ "dificultat", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#aae76297f46eae8c44972234abee2fa03", null ],
+    [ "files", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#aa0c63b69819b28c5ea45ffe362009b2c", null ],
+    [ "FoundKakuroRandom", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#a5b4d4c7b02e16467699da28a3a0213c9", null ],
+    [ "KakuroGenerat", "classsrc_1_1_capa_domini_1_1_controladors_1_1_random_kakuro.html#ae818214b5bb20e70b27b84f6f7f91f3f", null ]
+];

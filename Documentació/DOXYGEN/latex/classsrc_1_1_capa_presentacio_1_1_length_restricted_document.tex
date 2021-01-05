@@ -1,0 +1,105 @@
+\hypertarget{classsrc_1_1_capa_presentacio_1_1_length_restricted_document}{}\doxysection{src.\+Capa\+Presentacio.\+Length\+Restricted\+Document Class Reference}
+\label{classsrc_1_1_capa_presentacio_1_1_length_restricted_document}\index{src.CapaPresentacio.LengthRestrictedDocument@{src.CapaPresentacio.LengthRestrictedDocument}}
+
+
+Document amb restriccio de mida per les caselles (amb 1 sol numero)  
+
+
+Inheritance diagram for src.\+Capa\+Presentacio.\+Length\+Restricted\+Document\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsrc_1_1_capa_presentacio_1_1_length_restricted_document}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a8d9492b135be6f4134b18fbfb4e226c6}{Length\+Restricted\+Document}} (int \mbox{\hyperlink{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a571fc9faacd25acdd54ed70d231939bf}{limit}})
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_af3367492f6291df06ac8dfb2a8055802}{insert\+String}} (int offs, String str, Attribute\+Set a)  throws Bad\+Location\+Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int \mbox{\hyperlink{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a571fc9faacd25acdd54ed70d231939bf}{limit}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Document amb restriccio de mida per les caselles (amb 1 sol numero) 
+
+\begin{DoxyAuthor}{Author}
+pere.\+ginebra 
+\end{DoxyAuthor}
+
+
+Definition at line 795 of file Vista\+Partida.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a8d9492b135be6f4134b18fbfb4e226c6}\label{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a8d9492b135be6f4134b18fbfb4e226c6}} 
+\index{src.CapaPresentacio.LengthRestrictedDocument@{src.CapaPresentacio.LengthRestrictedDocument}!LengthRestrictedDocument@{LengthRestrictedDocument}}
+\index{LengthRestrictedDocument@{LengthRestrictedDocument}!src.CapaPresentacio.LengthRestrictedDocument@{src.CapaPresentacio.LengthRestrictedDocument}}
+\doxysubsubsection{\texorpdfstring{LengthRestrictedDocument()}{LengthRestrictedDocument()}}
+{\footnotesize\ttfamily src.\+Capa\+Presentacio.\+Length\+Restricted\+Document.\+Length\+Restricted\+Document (\begin{DoxyParamCaption}\item[{int}]{limit }\end{DoxyParamCaption})}
+
+
+
+Definition at line 799 of file Vista\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{799                                                \{}
+\DoxyCodeLine{800       this.\mbox{\hyperlink{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a571fc9faacd25acdd54ed70d231939bf}{limit}} = \mbox{\hyperlink{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a571fc9faacd25acdd54ed70d231939bf}{limit}};}
+\DoxyCodeLine{801     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_af3367492f6291df06ac8dfb2a8055802}\label{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_af3367492f6291df06ac8dfb2a8055802}} 
+\index{src.CapaPresentacio.LengthRestrictedDocument@{src.CapaPresentacio.LengthRestrictedDocument}!insertString@{insertString}}
+\index{insertString@{insertString}!src.CapaPresentacio.LengthRestrictedDocument@{src.CapaPresentacio.LengthRestrictedDocument}}
+\doxysubsubsection{\texorpdfstring{insertString()}{insertString()}}
+{\footnotesize\ttfamily void src.\+Capa\+Presentacio.\+Length\+Restricted\+Document.\+insert\+String (\begin{DoxyParamCaption}\item[{int}]{offs,  }\item[{String}]{str,  }\item[{Attribute\+Set}]{a }\end{DoxyParamCaption}) throws Bad\+Location\+Exception}
+
+
+
+Definition at line 803 of file Vista\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{804                                     \{}
+\DoxyCodeLine{805       \textcolor{keywordflow}{if} (str == \textcolor{keyword}{null})}
+\DoxyCodeLine{806         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{807 }
+\DoxyCodeLine{808       \textcolor{keywordflow}{if} ((getLength() + str.length()) <= \mbox{\hyperlink{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a571fc9faacd25acdd54ed70d231939bf}{limit}}) \{}
+\DoxyCodeLine{809         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{810             \textcolor{keywordflow}{if}(Integer.parseInt(str) != 0) super.insertString(offs, str.substring(str.length()-\/1), a);}
+\DoxyCodeLine{811             \textcolor{keywordflow}{else} \textcolor{keywordflow}{return};}
+\DoxyCodeLine{812         \}\textcolor{keywordflow}{catch} (NumberFormatException e) \{}
+\DoxyCodeLine{813             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{814         \}}
+\DoxyCodeLine{815       \}}
+\DoxyCodeLine{816     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a571fc9faacd25acdd54ed70d231939bf}\label{classsrc_1_1_capa_presentacio_1_1_length_restricted_document_a571fc9faacd25acdd54ed70d231939bf}} 
+\index{src.CapaPresentacio.LengthRestrictedDocument@{src.CapaPresentacio.LengthRestrictedDocument}!limit@{limit}}
+\index{limit@{limit}!src.CapaPresentacio.LengthRestrictedDocument@{src.CapaPresentacio.LengthRestrictedDocument}}
+\doxysubsubsection{\texorpdfstring{limit}{limit}}
+{\footnotesize\ttfamily final int src.\+Capa\+Presentacio.\+Length\+Restricted\+Document.\+limit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 797 of file Vista\+Partida.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Presentacio/\mbox{\hyperlink{_vista_partida_8java}{Vista\+Partida.\+java}}\end{DoxyCompactItemize}

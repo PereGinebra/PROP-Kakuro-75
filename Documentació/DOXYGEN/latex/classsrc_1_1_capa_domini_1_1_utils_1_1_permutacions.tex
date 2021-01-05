@@ -1,0 +1,444 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions}{}\doxysection{src.\+Capa\+Domini.\+Utils.\+Permutacions Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions}\index{src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}}
+
+
+Classe per obtenir els valors valids segons la suma i el nombre de caselles.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_afebfdeb6ee47e07c3819653998c84e1f}{Permutacions}} ()
+\begin{DoxyCompactList}\small\item\em Creadora per defecte. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_af9dd314003d39a597e97211544094052}{pertany}} (int nombre\+Caselles, int suma, int n)
+\begin{DoxyCompactList}\small\item\em Donat un nombre de caselles, una suma i un enter n, retorna true si i només si n es pot utilitzar per resoldre la fila o columna on pertany la casella.. \end{DoxyCompactList}\item 
+List$<$ Integer $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a1475afedc2b36a437ffaafb746f11ca3}{valors\+Possibles\+De\+Una\+Casella}} (int nombre\+Caselles, int suma)
+\begin{DoxyCompactList}\small\item\em Donat un nombre de caselles i una suma, retorna els valors que podrien ser utilitzats per resoldre-\/les. \end{DoxyCompactList}\item 
+List$<$ Integer $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a2965814416f43f9a82011bf698b6bc79}{interseccio}} (int nombre\+Caselles\+Fila, int suma\+Fila, int nombre\+Caselles\+Columna, int suma\+Columna)
+\begin{DoxyCompactList}\small\item\em Donat dos parells (n\+Caselles,suma) retorna els valors que podria haver-\/hi en l\textquotesingle{}intersecció de les caselles. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a0e0dd3d3cb0e743b831ea31158f407bb}{mida\+Interseccio}} (int nombre\+Caselles\+Fila, int suma\+Fila, int nombre\+Caselles\+Columna, int suma\+Columna)
+\begin{DoxyCompactList}\small\item\em Donat dos parells (n\+Caselles,suma) retorna el nombre de valors que podria haver-\/hi en l\textquotesingle{}intersecció de les caselles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a29e171eb4e1f272c3cdf76e7840809e8}{omplir\+Valors}} ()
+\begin{DoxyCompactList}\small\item\em Omple la l\+Lista de valors possibles per cada nombre de caselles i la seva suma corersponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hash\+Map$<$ String, boolean\mbox{[}$\,$\mbox{]} $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valors\+Possibles}}
+\begin{DoxyCompactList}\small\item\em Mapa que donat un enter (nombre de caselles) i un altre enter (suma) retorna els nombres que podrien pertànyer a la solució d\textquotesingle{}aquesta suma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe per obtenir els valors valids segons la suma i el nombre de caselles. 
+
+Definition at line 16 of file Permutacions.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_afebfdeb6ee47e07c3819653998c84e1f}\label{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_afebfdeb6ee47e07c3819653998c84e1f}} 
+\index{src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}!Permutacions@{Permutacions}}
+\index{Permutacions@{Permutacions}!src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}}
+\doxysubsubsection{\texorpdfstring{Permutacions()}{Permutacions()}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Utils.\+Permutacions.\+Permutacions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora per defecte. 
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Es crea el valor de totes les permutacions 
+\end{DoxyPostcond}
+
+
+Definition at line 31 of file Permutacions.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                          \{}
+\DoxyCodeLine{32         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}} = \textcolor{keyword}{new} HashMap< String ,boolean[] >(120);}
+\DoxyCodeLine{33         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a29e171eb4e1f272c3cdf76e7840809e8}{omplirValors}}();}
+\DoxyCodeLine{34     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a2965814416f43f9a82011bf698b6bc79}\label{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a2965814416f43f9a82011bf698b6bc79}} 
+\index{src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}!interseccio@{interseccio}}
+\index{interseccio@{interseccio}!src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}}
+\doxysubsubsection{\texorpdfstring{interseccio()}{interseccio()}}
+{\footnotesize\ttfamily List$<$Integer$>$ src.\+Capa\+Domini.\+Utils.\+Permutacions.\+interseccio (\begin{DoxyParamCaption}\item[{int}]{nombre\+Caselles\+Fila,  }\item[{int}]{suma\+Fila,  }\item[{int}]{nombre\+Caselles\+Columna,  }\item[{int}]{suma\+Columna }\end{DoxyParamCaption})}
+
+
+
+Donat dos parells (n\+Caselles,suma) retorna els valors que podria haver-\/hi en l\textquotesingle{}intersecció de les caselles. 
+
+\begin{DoxyPrecond}{Precondition}
+Un parell correspon a una columna i l\textquotesingle{}altre corespont a una fila. 
+
+Aquesta fila i aquesta columna es creuen en una casella. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna un conjunt de valors possibles per aquesta intersecció. 
+\end{DoxyPostcond}
+
+
+Definition at line 86 of file Permutacions.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86                                                                                                                        \{}
+\DoxyCodeLine{87         List<Integer> conjunt = \textcolor{keyword}{new} ArrayList<Integer>();}
+\DoxyCodeLine{88         }
+\DoxyCodeLine{89         String pC = String.valueOf(nombreCasellesColumna);}
+\DoxyCodeLine{90         String sC = String.valueOf(sumaColumna);}
+\DoxyCodeLine{91         }
+\DoxyCodeLine{92         String pF = String.valueOf(nombreCasellesFila);}
+\DoxyCodeLine{93         String sF = String.valueOf(sumaFila);}
+\DoxyCodeLine{94         }
+\DoxyCodeLine{95         \textcolor{keywordtype}{boolean}[] vFila = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean} [9];}
+\DoxyCodeLine{96         \textcolor{keywordtype}{boolean}[] vColumna = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean} [9]; }
+\DoxyCodeLine{97         vFila = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.get(pF+\textcolor{stringliteral}{"{} "{}}+ sF);}
+\DoxyCodeLine{98         vColumna = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.get(pC+\textcolor{stringliteral}{"{} "{}}+sC);}
+\DoxyCodeLine{99         }
+\DoxyCodeLine{100         \textcolor{keywordflow}{if} (vFila==\textcolor{keyword}{null} || vColumna == \textcolor{keyword}{null})\{}
+\DoxyCodeLine{101             \textcolor{keywordflow}{return} conjunt;}
+\DoxyCodeLine{102         \}}
+\DoxyCodeLine{103         }
+\DoxyCodeLine{104         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<9; ++i)\{}
+\DoxyCodeLine{105             \textcolor{keywordflow}{if} (vFila[i] \&\& vColumna[i])\{}
+\DoxyCodeLine{106                 \textcolor{keywordtype}{boolean} b = conjunt.add(i+1);}
+\DoxyCodeLine{107             \}}
+\DoxyCodeLine{108         \}}
+\DoxyCodeLine{109         \textcolor{keywordflow}{return} conjunt;}
+\DoxyCodeLine{110     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a0e0dd3d3cb0e743b831ea31158f407bb}\label{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a0e0dd3d3cb0e743b831ea31158f407bb}} 
+\index{src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}!midaInterseccio@{midaInterseccio}}
+\index{midaInterseccio@{midaInterseccio}!src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}}
+\doxysubsubsection{\texorpdfstring{midaInterseccio()}{midaInterseccio()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Utils.\+Permutacions.\+mida\+Interseccio (\begin{DoxyParamCaption}\item[{int}]{nombre\+Caselles\+Fila,  }\item[{int}]{suma\+Fila,  }\item[{int}]{nombre\+Caselles\+Columna,  }\item[{int}]{suma\+Columna }\end{DoxyParamCaption})}
+
+
+
+Donat dos parells (n\+Caselles,suma) retorna el nombre de valors que podria haver-\/hi en l\textquotesingle{}intersecció de les caselles. 
+
+\begin{DoxyPrecond}{Precondition}
+Un parell correspon a una columna i l\textquotesingle{}altre corespont a una fila. 
+
+Aquesta fila i aquesta columna es creuen en una casella. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+El nombre de valors possibles per aquesta intersecció. 
+\end{DoxyPostcond}
+
+
+Definition at line 118 of file Permutacions.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                                                                                                  \{}
+\DoxyCodeLine{119         }
+\DoxyCodeLine{120         String pC = String.valueOf(nombreCasellesColumna);}
+\DoxyCodeLine{121         String sC = String.valueOf(sumaColumna);}
+\DoxyCodeLine{122         }
+\DoxyCodeLine{123         String pF = String.valueOf(nombreCasellesFila);}
+\DoxyCodeLine{124         String sF = String.valueOf(sumaFila);}
+\DoxyCodeLine{125         }
+\DoxyCodeLine{126         \textcolor{keywordtype}{boolean}[] vFila = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean} [9];}
+\DoxyCodeLine{127         \textcolor{keywordtype}{boolean}[] vColumna = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean} [9]; }
+\DoxyCodeLine{128         vFila = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.get(pF+\textcolor{stringliteral}{"{} "{}}+ sF);}
+\DoxyCodeLine{129         vColumna = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.get(pC+\textcolor{stringliteral}{"{} "{}}+sC);}
+\DoxyCodeLine{130         \textcolor{keywordtype}{int} n = 0;}
+\DoxyCodeLine{131         }
+\DoxyCodeLine{132         \textcolor{keywordflow}{if} (vFila==\textcolor{keyword}{null} || vColumna == \textcolor{keyword}{null})\{}
+\DoxyCodeLine{133             \textcolor{keywordflow}{return} n;}
+\DoxyCodeLine{134         \}}
+\DoxyCodeLine{135         }
+\DoxyCodeLine{136         }
+\DoxyCodeLine{137         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<9; ++i)\{}
+\DoxyCodeLine{138             \textcolor{keywordflow}{if} (vFila[i] \&\& vColumna[i])\{}
+\DoxyCodeLine{139                 ++n;}
+\DoxyCodeLine{140             \}}
+\DoxyCodeLine{141         \}}
+\DoxyCodeLine{142         \textcolor{keywordflow}{return} n;}
+\DoxyCodeLine{143     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a29e171eb4e1f272c3cdf76e7840809e8}\label{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a29e171eb4e1f272c3cdf76e7840809e8}} 
+\index{src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}!omplirValors@{omplirValors}}
+\index{omplirValors@{omplirValors}!src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}}
+\doxysubsubsection{\texorpdfstring{omplirValors()}{omplirValors()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Utils.\+Permutacions.\+omplir\+Valors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Omple la l\+Lista de valors possibles per cada nombre de caselles i la seva suma corersponent. 
+
+\begin{DoxyPrecond}{Precondition}
+La l\+Lista de valors possibles està buida. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}omple la l\+Lista de valors possibles per cada nombre de caselles i suma. 
+\end{DoxyPostcond}
+
+
+Definition at line 152 of file Permutacions.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{152                                \{}
+\DoxyCodeLine{153   }
+\DoxyCodeLine{154         \textcolor{keywordtype}{boolean} F = \textcolor{keyword}{false};}
+\DoxyCodeLine{155         \textcolor{keywordtype}{boolean} T = \textcolor{keyword}{true};}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}3"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,F,F,F,F,F,F,F\});}
+\DoxyCodeLine{158         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}4"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,F,T,F,F,F,F,F,F\});}
+\DoxyCodeLine{159         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}5"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,F,F,F,F,F\});}
+\DoxyCodeLine{160         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}6"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,F,T,T,F,F,F,F\});}
+\DoxyCodeLine{161         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}7"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,F,F,F\});}
+\DoxyCodeLine{162         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}8"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,F,T,T,T,F,F\});}
+\DoxyCodeLine{163         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}9"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,F\});}
+\DoxyCodeLine{164         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}10"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,F,T,T,T,T\});}
+\DoxyCodeLine{165         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}11"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{166         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}12"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,T,T,T,F,T,T,T\});}
+\DoxyCodeLine{167         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}13"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,T,T,T,T,T,T\});}
+\DoxyCodeLine{168         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}14"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,T,T,F,T,T\});}
+\DoxyCodeLine{169         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}15"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,F,T,T,T,T\});}
+\DoxyCodeLine{170         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}16"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,F,F,T,F,T\});}
+\DoxyCodeLine{171         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}2"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}17"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,F,F,F,T,T\});}
+\DoxyCodeLine{172         }
+\DoxyCodeLine{173         }
+\DoxyCodeLine{174         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}6"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,F,F,F,F,F,F\});}
+\DoxyCodeLine{175         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}7"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,F,T,F,F,F,F,F\});}
+\DoxyCodeLine{176         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}8"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,F,F,F,F\});}
+\DoxyCodeLine{177         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}9"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,F,F,F\});}
+\DoxyCodeLine{178         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}10"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,F,F\});}
+\DoxyCodeLine{179         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}11"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,F\});}
+\DoxyCodeLine{180         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}12"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{181         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}13"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{182         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}14"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{183         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}15"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{184         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}16"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{185         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}17"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{186         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}18"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{187         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}19"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{188         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}20"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{189         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}21"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,T,T,T,T,T,T\});}
+\DoxyCodeLine{190         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}22"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,T,T,T,T,T\});}
+\DoxyCodeLine{191         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}23"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,F,T,F,T,T\});}
+\DoxyCodeLine{192         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}3"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}24"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,F,F,T,T,T\});}
+\DoxyCodeLine{193         }
+\DoxyCodeLine{194         }
+\DoxyCodeLine{195         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}10"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,F,F,F,F,F\});}
+\DoxyCodeLine{196         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}11"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,F,T,F,F,F,F\});}
+\DoxyCodeLine{197         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}12"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,F,F,F\});}
+\DoxyCodeLine{198         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}13"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,F,F\});}
+\DoxyCodeLine{199         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}14"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,F\});}
+\DoxyCodeLine{200         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}15"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{201         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}16"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{202         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}17"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{203         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}18"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{204         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}19"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{205         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}20"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{206         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}21"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{207         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}22"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{208         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}23"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{209         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}24"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{210         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}25"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{211         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}26"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{212         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}27"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{213         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}28"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,T,T,T,T,T,T\});}
+\DoxyCodeLine{214         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}29"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,T,F,T,T,T\});}
+\DoxyCodeLine{215         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}4"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}30"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,F,T,T,T,T\});}
+\DoxyCodeLine{216        }
+\DoxyCodeLine{217         }
+\DoxyCodeLine{218         }
+\DoxyCodeLine{219     }
+\DoxyCodeLine{220         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}15"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,F,F,F,F\});       }
+\DoxyCodeLine{221         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}16"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,F,T,F,F,F\});}
+\DoxyCodeLine{222         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}17"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,F,F\});}
+\DoxyCodeLine{223         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}18"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,F\});}
+\DoxyCodeLine{224         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}19"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{225         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}20"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{226         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}21"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{227         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}22"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{228         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}23"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{229         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}24"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{230         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}25"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{231         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}26"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{232         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}27"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{233         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}28"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{234         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}29"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{235         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}30"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{236         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}31"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{237         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}32"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{238         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}33"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{239         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}34"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,T,F,T,T,T,T\});}
+\DoxyCodeLine{240         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}5"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}35"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,F,T,T,T,T,T\});}
+\DoxyCodeLine{241         }
+\DoxyCodeLine{242 }
+\DoxyCodeLine{243         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}21"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,F,F,F\});}
+\DoxyCodeLine{244         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}22"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,F,T,F,F\});}
+\DoxyCodeLine{245         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}23"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,F\});}
+\DoxyCodeLine{246         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}24"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{247         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}25"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{248         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}26"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{249         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}27"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{250         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}28"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{251         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}29"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{252         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}30"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{253         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}31"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{254         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}32"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{255         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}33"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{256         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}34"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{257         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}35"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{258         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}36"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{259         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}37"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{260         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}38"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,T,F,T,T,T,T,T\});}
+\DoxyCodeLine{261         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}6"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}39"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,F,T,T,T,T,T,T\});}
+\DoxyCodeLine{262        }
+\DoxyCodeLine{263         }
+\DoxyCodeLine{264 }
+\DoxyCodeLine{265         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}28"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,F,F\});}
+\DoxyCodeLine{266         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}29"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,F,T,F\});}
+\DoxyCodeLine{267         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}30"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{268         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}31"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{269         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}32"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{270         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}33"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{271         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}34"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{272         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}35"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{273         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}36"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{274         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}37"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{275         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}38"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{276         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}39"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{277         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}40"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{278         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}41"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,T,F,T,T,T,T,T,T\});}
+\DoxyCodeLine{279         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}7"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}42"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,F,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{280         }
+\DoxyCodeLine{281 }
+\DoxyCodeLine{282         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}36"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,F\});}
+\DoxyCodeLine{283         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}37"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,F,T\});}
+\DoxyCodeLine{284         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}38"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,F,T,T\});}
+\DoxyCodeLine{285         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}39"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,F,T,T,T\});}
+\DoxyCodeLine{286         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}40"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,F,T,T,T,T\});}
+\DoxyCodeLine{287         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}41"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,F,T,T,T,T,T\});}
+\DoxyCodeLine{288         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}42"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,F,T,T,T,T,T,T\});}
+\DoxyCodeLine{289         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}43"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,F,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{290         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}8"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}44"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{F,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{291         }
+\DoxyCodeLine{292         }
+\DoxyCodeLine{293         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.put(\textcolor{stringliteral}{"{}9"{}}+\textcolor{stringliteral}{"{} "{}}+\textcolor{stringliteral}{"{}45"{}}, \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[]\{T,T,T,T,T,T,T,T,T\});}
+\DoxyCodeLine{294         }
+\DoxyCodeLine{295        }
+\DoxyCodeLine{296     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_af9dd314003d39a597e97211544094052}\label{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_af9dd314003d39a597e97211544094052}} 
+\index{src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}!pertany@{pertany}}
+\index{pertany@{pertany}!src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}}
+\doxysubsubsection{\texorpdfstring{pertany()}{pertany()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Utils.\+Permutacions.\+pertany (\begin{DoxyParamCaption}\item[{int}]{nombre\+Caselles,  }\item[{int}]{suma,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Donat un nombre de caselles, una suma i un enter n, retorna true si i només si n es pot utilitzar per resoldre la fila o columna on pertany la casella.. 
+
+\begin{DoxyPrecond}{Precondition}
+nombre\+Caselles és el nombre de caselles de la fila o columa, suma és el nombre de suma que conté la casella i 1$<$=n$<$=9. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si i només si n es pot utilitzar per resoldre la fila o columna on pertany la casella. 
+\end{DoxyPostcond}
+
+
+Definition at line 42 of file Permutacions.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                                                \{}
+\DoxyCodeLine{43         String p = String.valueOf(nombreCaselles);}
+\DoxyCodeLine{44         String s = String.valueOf(suma);}
+\DoxyCodeLine{45         }
+\DoxyCodeLine{46         \textcolor{keywordtype}{boolean}[] v = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean} [9];}
+\DoxyCodeLine{47         v = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.get(p+\textcolor{stringliteral}{"{} "{}}+s);}
+\DoxyCodeLine{48         }
+\DoxyCodeLine{49         \textcolor{keywordflow}{if}(v != \textcolor{keyword}{null} \&\& 1<=n \&\& 9>=n)\{}
+\DoxyCodeLine{50             \textcolor{keywordflow}{return} v[n-\/1];}
+\DoxyCodeLine{51         \}}
+\DoxyCodeLine{52         \textcolor{keywordflow}{return} \textcolor{keyword}{false}; }
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a1475afedc2b36a437ffaafb746f11ca3}\label{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a1475afedc2b36a437ffaafb746f11ca3}} 
+\index{src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}!valorsPossiblesDeUnaCasella@{valorsPossiblesDeUnaCasella}}
+\index{valorsPossiblesDeUnaCasella@{valorsPossiblesDeUnaCasella}!src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}}
+\doxysubsubsection{\texorpdfstring{valorsPossiblesDeUnaCasella()}{valorsPossiblesDeUnaCasella()}}
+{\footnotesize\ttfamily List$<$Integer$>$ src.\+Capa\+Domini.\+Utils.\+Permutacions.\+valors\+Possibles\+De\+Una\+Casella (\begin{DoxyParamCaption}\item[{int}]{nombre\+Caselles,  }\item[{int}]{suma }\end{DoxyParamCaption})}
+
+
+
+Donat un nombre de caselles i una suma, retorna els valors que podrien ser utilitzats per resoldre-\/les. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna els valors que podrien ser utilitzats en la fila o columna. 
+\end{DoxyPostcond}
+
+
+Definition at line 60 of file Permutacions.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                                                                   \{}
+\DoxyCodeLine{61         List<Integer> conjunt = \textcolor{keyword}{new} ArrayList<Integer> ();}
+\DoxyCodeLine{62         }
+\DoxyCodeLine{63         String p = String.valueOf(nombreCaselles);}
+\DoxyCodeLine{64         String s = String.valueOf(suma);}
+\DoxyCodeLine{65         \textcolor{keywordtype}{boolean} v [] = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean} [9];}
+\DoxyCodeLine{66         v = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}{valorsPossibles}}.get(p+\textcolor{stringliteral}{"{} "{}}+s);}
+\DoxyCodeLine{67         }
+\DoxyCodeLine{68         \textcolor{keywordflow}{if} (v==\textcolor{keyword}{null})\{}
+\DoxyCodeLine{69             \textcolor{keywordflow}{return} conjunt;}
+\DoxyCodeLine{70         \}}
+\DoxyCodeLine{71         }
+\DoxyCodeLine{72         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<9; ++i)\{}
+\DoxyCodeLine{73             \textcolor{keywordflow}{if} (v[i])\{}
+\DoxyCodeLine{74                 \textcolor{keywordtype}{boolean} b = conjunt.add(i+1);}
+\DoxyCodeLine{75             \}}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77         \textcolor{keywordflow}{return} conjunt;}
+\DoxyCodeLine{78     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}\label{classsrc_1_1_capa_domini_1_1_utils_1_1_permutacions_a770c40429e442173ace25cae76c5ebee}} 
+\index{src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}!valorsPossibles@{valorsPossibles}}
+\index{valorsPossibles@{valorsPossibles}!src.CapaDomini.Utils.Permutacions@{src.CapaDomini.Utils.Permutacions}}
+\doxysubsubsection{\texorpdfstring{valorsPossibles}{valorsPossibles}}
+{\footnotesize\ttfamily Hash\+Map$<$ String, boolean\mbox{[}$\,$\mbox{]} $>$ src.\+Capa\+Domini.\+Utils.\+Permutacions.\+valors\+Possibles\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mapa que donat un enter (nombre de caselles) i un altre enter (suma) retorna els nombres que podrien pertànyer a la solució d\textquotesingle{}aquesta suma. 
+
+
+
+Definition at line 23 of file Permutacions.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Utils/\mbox{\hyperlink{_permutacions_8java}{Permutacions.\+java}}\end{DoxyCompactItemize}

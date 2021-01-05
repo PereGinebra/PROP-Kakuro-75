@@ -1,0 +1,696 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida}{}\doxysection{src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida}\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+
+
+Controlador per poder jugar una partida.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aa742b1093796c78554d26e43d9f58472}{Ctrl\+Partida}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a147acae0d00a75d094ccdfcf9f688b70}{Ctrl\+Partida}} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}} x)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte amb atribut partida. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acb2eee4bd4514d32248ec740151978f5}{Ctrl\+Partida}} (\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}} x, String I\+DK)
+\begin{DoxyCompactList}\small\item\em Constructora per defecte amb atribut partida i l\textquotesingle{}identificador del kakuro que es vol jugar. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a71a3cae60f56b254678c5c2c51e36d6b}{get\+Id\+Kakuro}} ()
+\begin{DoxyCompactList}\small\item\em Consulta el id del taulell que s\textquotesingle{}esta jugant. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ac9a083c826aef510b4ff9113cf546cb9}{get\+Valor\+Actual}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Consulta el valor posat per l\textquotesingle{}usuari en una casella. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a37bfa58af7797425f6f76bc97d73761a}{get\+Valors\+Actuals}} ()
+\begin{DoxyCompactList}\small\item\em Consultora per obtenir els valors que l\textquotesingle{}usuari ha posat a la partida. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a0ba71b3472714d733394bcbc8de98ce4}{getcoord\+No\+Confirmades}} ()
+\begin{DoxyCompactList}\small\item\em Retorna les coordenades de les caselles de la partida que no han sigut solucionades. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acb9de966d5659f628fecc5efd3539880}{get\+Dificultat}} ()
+\begin{DoxyCompactList}\small\item\em Consultora per obtenir la dificultat de la partida. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a8b2669d20a71564f27fa705958b12cf0}{get\+Temps}} ()
+\begin{DoxyCompactList}\small\item\em Consultora per obtenir la quantitat de temps que s\textquotesingle{}ha jugat la partida. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad5e613d4bda78af93f4d70aad7d41c84}{get\+Taulell}} ()
+\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1046053e1919c494cd68f446aac27ef3}{casella\+Es\+Escribible}} (int fila, int columna)
+\begin{DoxyCompactList}\small\item\em Consultora per saber si la casella es pot modificar. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a241dfd661bec166dfecc50222eedfcab}{partida\+Acabada}} ()
+\begin{DoxyCompactList}\small\item\em Consulta si la partida ha sigut acabada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a81460f3cc68055723f19644530ba8356}{modificar\+Casella}} (int fila, int columna, String valor)
+\begin{DoxyCompactList}\small\item\em Modificadora d\textquotesingle{}una casella del tauler. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1fcf726b85a7f4e54ade64db60713225}{demanar\+Ajuda}} ()
+\begin{DoxyCompactList}\small\item\em Modificadora d\textquotesingle{}una casella del tauler mitjançant ajuda. \end{DoxyCompactList}\item 
+String\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a2fce137b9f54ae8ab91bf8d1109d0d92}{solucionar}} ()
+\begin{DoxyCompactList}\small\item\em Resol tot el kakuro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acc496a4d4ae577a6466458bf4a561cdf}{assignar\+Atributs}} (String time, String I\+D\+Partida, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}} mat\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ llista, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} t)
+\begin{DoxyCompactList}\small\item\em Assigna els atributs necessaris per tal de poder jugar la partida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3895ae3f934a14da0a9d12929b0de0e3}{set\+Temps}} (String t)
+\begin{DoxyCompactList}\small\item\em Modifica el temps que s\textquotesingle{}ha jugat la partida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}
+\begin{DoxyCompactList}\small\item\em Partida associada. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a11ed931caf21617f82121b208e534634}{Id\+Kakuro}}
+\begin{DoxyCompactList}\small\item\em Identificador del kakuro que s\textquotesingle{}esta jugant en aquest moment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a286a5fa21e038a19701e4f5490e63c1b}{get\+Files}} ()
+\begin{DoxyCompactList}\small\item\em Consultora per obtenir el nombre de files del taulell de la partida. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aae097d66c5859673bf7c5b552482b1dc}{get\+Columnes}} ()
+\begin{DoxyCompactList}\small\item\em Consultora per obtenir el nombre de columnes del taulell de la partida. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad16dccfc2813600ce92c35385539c14c}{hi\+Ha\+Repetits}} (int i, int j, String s)
+\begin{DoxyCompactList}\small\item\em Mira si hi ha algun nombre igual que el que es vol posar en la mateixa fila i/o columna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador per poder jugar una partida. 
+
+\begin{DoxyAuthor}{Author}
+alvaro.\+andres 
+\end{DoxyAuthor}
+
+
+Definition at line 19 of file Ctrl\+Partida.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aa742b1093796c78554d26e43d9f58472}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aa742b1093796c78554d26e43d9f58472}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!CtrlPartida@{CtrlPartida}}
+\index{CtrlPartida@{CtrlPartida}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{CtrlPartida()}{CtrlPartida()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+Ctrl\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat el controlador partida amb valors nuls. 
+\end{DoxyPostcond}
+
+
+Definition at line 30 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                          \{}
+\DoxyCodeLine{31         }
+\DoxyCodeLine{32     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a147acae0d00a75d094ccdfcf9f688b70}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a147acae0d00a75d094ccdfcf9f688b70}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!CtrlPartida@{CtrlPartida}}
+\index{CtrlPartida@{CtrlPartida}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{CtrlPartida()}{CtrlPartida()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+Ctrl\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}}}]{x }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte amb atribut partida. 
+
+\begin{DoxyPrecond}{Precondition}
+x es una partida existent. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & es una partida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat el controlador partida i se li assigna x a la partida p. 
+\end{DoxyPostcond}
+
+
+Definition at line 40 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                  \{}
+\DoxyCodeLine{41         this.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}} = x;}
+\DoxyCodeLine{42     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acb2eee4bd4514d32248ec740151978f5}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acb2eee4bd4514d32248ec740151978f5}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!CtrlPartida@{CtrlPartida}}
+\index{CtrlPartida@{CtrlPartida}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{CtrlPartida()}{CtrlPartida()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+Ctrl\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}}}]{x,  }\item[{String}]{I\+DK }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte amb atribut partida i l\textquotesingle{}identificador del kakuro que es vol jugar. 
+
+\begin{DoxyPrecond}{Precondition}
+x es una partida existent. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & es una partida. \\
+\hline
+{\em I\+DK} & es l\textquotesingle{}identificador d\textquotesingle{}un kakuro existent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha creat el controlador partida i se li assigna x a la partida p i se li assigna el string I\+DK a l\textquotesingle{}identificador del kakuro que es vol jugar. 
+\end{DoxyPostcond}
+
+
+Definition at line 54 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                                             \{}
+\DoxyCodeLine{55         this.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}} = x;}
+\DoxyCodeLine{56         this.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a11ed931caf21617f82121b208e534634}{IdKakuro}} = IDK;}
+\DoxyCodeLine{57     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acc496a4d4ae577a6466458bf4a561cdf}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acc496a4d4ae577a6466458bf4a561cdf}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!assignarAtributs@{assignarAtributs}}
+\index{assignarAtributs@{assignarAtributs}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{assignarAtributs()}{assignarAtributs()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+assignar\+Atributs (\begin{DoxyParamCaption}\item[{String}]{time,  }\item[{String}]{I\+D\+Partida,  }\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}}}]{mat\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$}]{llista,  }\item[{\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Assigna els atributs necessaris per tal de poder jugar la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Tots els atributs pertanyen a la mateixa partida. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha assignat els atributs necessaris per tal de poder jugar la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 210 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{210                                                                                                                     \{}
+\DoxyCodeLine{211         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ad12fd54a1e75d51ed2f9cf851c254b3c}{assignarAtributs}}(time,IDPartida,mat,llista,t);}
+\DoxyCodeLine{212     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1046053e1919c494cd68f446aac27ef3}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1046053e1919c494cd68f446aac27ef3}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!casellaEsEscribible@{casellaEsEscribible}}
+\index{casellaEsEscribible@{casellaEsEscribible}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{casellaEsEscribible()}{casellaEsEscribible()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+casella\+Es\+Escribible (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})}
+
+
+
+Consultora per saber si la casella es pot modificar. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha una partida inicialitzada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & es la posicio de la fila \\
+\hline
+{\em columna} & es la posicio de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si la casella es pot modificar. 
+\end{DoxyPostcond}
+
+
+Definition at line 152 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{152                                                             \{}
+\DoxyCodeLine{153         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8d8dcdb8c7f16bb9f95a4683141d8ebb}{casellaEsEscribible}}(fila,columna);}
+\DoxyCodeLine{154     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1fcf726b85a7f4e54ade64db60713225}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a1fcf726b85a7f4e54ade64db60713225}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!demanarAjuda@{demanarAjuda}}
+\index{demanarAjuda@{demanarAjuda}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{demanarAjuda()}{demanarAjuda()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+demanar\+Ajuda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modificadora d\textquotesingle{}una casella del tauler mitjançant ajuda. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha modificat una casella aleatoria del taulell. 
+\end{DoxyPostcond}
+
+
+Definition at line 191 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{191                                 \{}
+\DoxyCodeLine{192         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac99bd8bbdff75a5a94fe4744073801e7}{demanarAjuda}}();}
+\DoxyCodeLine{193     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aae097d66c5859673bf7c5b552482b1dc}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_aae097d66c5859673bf7c5b552482b1dc}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getColumnes@{getColumnes}}
+\index{getColumnes@{getColumnes}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getColumnes()}{getColumnes()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Columnes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Consultora per obtenir el nombre de columnes del taulell de la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el nombre de columnes del taulell de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 87 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87                              \{}
+\DoxyCodeLine{88         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae91bc797e247e8421297b3e8bc1eb714}{getColumnes}}();}
+\DoxyCodeLine{89     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a0ba71b3472714d733394bcbc8de98ce4}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a0ba71b3472714d733394bcbc8de98ce4}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getcoordNoConfirmades@{getcoordNoConfirmades}}
+\index{getcoordNoConfirmades@{getcoordNoConfirmades}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getcoordNoConfirmades()}{getcoordNoConfirmades()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_i_i}{Pair\+II}} $>$ src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+getcoord\+No\+Confirmades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna les coordenades de les caselles de la partida que no han sigut solucionades. 
+
+\begin{DoxyPrecond}{Precondition}
+La partida ha sigut inicialitzada i encara no s\textquotesingle{}ha acabat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha retornat les coordenades de les caselles de la partida que no han sigut solucionades. 
+\end{DoxyPostcond}
+
+
+Definition at line 118 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                                       \{}
+\DoxyCodeLine{119         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ac09f665ce30cdf0be631e88eb983e24a}{getcoordNoConfirmades}}();}
+\DoxyCodeLine{120     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acb9de966d5659f628fecc5efd3539880}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_acb9de966d5659f628fecc5efd3539880}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getDificultat@{getDificultat}}
+\index{getDificultat@{getDificultat}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getDificultat()}{getDificultat()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Dificultat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora per obtenir la dificultat de la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+La partida ha sigut inicialitzada. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna la dificultat de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 127 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{127                                  \{}
+\DoxyCodeLine{128         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a4267fae6e3dcfddd16141205a26c114d}{getDificultat}}();}
+\DoxyCodeLine{129     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a286a5fa21e038a19701e4f5490e63c1b}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a286a5fa21e038a19701e4f5490e63c1b}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily int src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Consultora per obtenir el nombre de files del taulell de la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el nombre de files del taulell de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 78 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                           \{}
+\DoxyCodeLine{79         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_adeebe10d6f657e20ee75c3c1f0a56b01}{getFiles}}();}
+\DoxyCodeLine{80     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a71a3cae60f56b254678c5c2c51e36d6b}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a71a3cae60f56b254678c5c2c51e36d6b}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getIdKakuro@{getIdKakuro}}
+\index{getIdKakuro@{getIdKakuro}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getIdKakuro()}{getIdKakuro()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Id\+Kakuro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta el id del taulell que s\textquotesingle{}esta jugant. 
+
+\begin{DoxyPrecond}{Precondition}
+La partida s\textquotesingle{}ha inicialitzat i l\textquotesingle{}identificador del kakuro també. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el id del taulell de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 68 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                                \{}
+\DoxyCodeLine{69         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a11ed931caf21617f82121b208e534634}{IdKakuro}};}
+\DoxyCodeLine{70     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad5e613d4bda78af93f4d70aad7d41c84}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad5e613d4bda78af93f4d70aad7d41c84}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getTaulell@{getTaulell}}
+\index{getTaulell@{getTaulell}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getTaulell()}{getTaulell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_taulell}{Taulell}} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Taulell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 142 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{142                                 \{}
+\DoxyCodeLine{143         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a7e6eb67d78ab51d7702198bcfbcf298a}{getTaulell}}();}
+\DoxyCodeLine{144     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a8b2669d20a71564f27fa705958b12cf0}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a8b2669d20a71564f27fa705958b12cf0}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getTemps@{getTemps}}
+\index{getTemps@{getTemps}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getTemps()}{getTemps()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Temps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora per obtenir la quantitat de temps que s\textquotesingle{}ha jugat la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+La partida ha sigut inicialitzada i encara no s\textquotesingle{}ha acabat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna la quantitat de temps que s\textquotesingle{}ha jugat la partida en el format següent\+: hh\+:mm\+:ss. 
+\end{DoxyPostcond}
+
+
+Definition at line 136 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136                             \{}
+\DoxyCodeLine{137         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a63c887902b57c61c664155bf42e9e565}{getTemps}}();}
+\DoxyCodeLine{138     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ac9a083c826aef510b4ff9113cf546cb9}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ac9a083c826aef510b4ff9113cf546cb9}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getValorActual@{getValorActual}}
+\index{getValorActual@{getValorActual}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getValorActual()}{getValorActual()}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Valor\+Actual (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Consulta el valor posat per l\textquotesingle{}usuari en una casella. 
+
+\begin{DoxyPrecond}{Precondition}
+La partida ha sigut inicialitzada i encara no s\textquotesingle{}ha acabat. 
+
+La casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]} es una casella blanca. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & es la fila de la casella. \\
+\hline
+{\em j} & es la columna de la casella. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna el valor colocat per l\textquotesingle{}usuari a la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+\end{DoxyPostcond}
+
+
+Definition at line 99 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99                                                \{}
+\DoxyCodeLine{100         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aea6c1074d4ab8ea7662adf84a1a34295}{getValorActual}}(i, j);}
+\DoxyCodeLine{101     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a37bfa58af7797425f6f76bc97d73761a}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a37bfa58af7797425f6f76bc97d73761a}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!getValorsActuals@{getValorsActuals}}
+\index{getValorsActuals@{getValorsActuals}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{getValorsActuals()}{getValorsActuals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_utils_1_1_pair_s_b}{Pair\+SB}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+get\+Valors\+Actuals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora per obtenir els valors que l\textquotesingle{}usuari ha posat a la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+La partida ha sigut inicialitzada i encara no s\textquotesingle{}ha acabat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna els valors que l\textquotesingle{}usuari ha posat a la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 108 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108                                         \{}
+\DoxyCodeLine{109         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_aa028a8e9013cc7e99f21730983e90174}{getValorsActuals}}();}
+\DoxyCodeLine{110     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad16dccfc2813600ce92c35385539c14c}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_ad16dccfc2813600ce92c35385539c14c}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!hiHaRepetits@{hiHaRepetits}}
+\index{hiHaRepetits@{hiHaRepetits}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{hiHaRepetits()}{hiHaRepetits()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+hi\+Ha\+Repetits (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mira si hi ha algun nombre igual que el que es vol posar en la mateixa fila i/o columna. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha una partida inicialitzada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & es la posicio de la fila \\
+\hline
+{\em j} & es la posicio de la columna \\
+\hline
+{\em s} & es el valor a comprovar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si i nomes si en hi ha algun nombre que sigui igual que el nombre de la casella de coordenades \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+\end{DoxyPostcond}
+
+
+Definition at line 163 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163                                                         \{}
+\DoxyCodeLine{164         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_ae18be80bca34e96b03f8978f558cb20c}{hiHaRepetits}}(i, j, s);}
+\DoxyCodeLine{165     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a81460f3cc68055723f19644530ba8356}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a81460f3cc68055723f19644530ba8356}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!modificarCasella@{modificarCasella}}
+\index{modificarCasella@{modificarCasella}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{modificarCasella()}{modificarCasella()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+modificar\+Casella (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna,  }\item[{String}]{valor }\end{DoxyParamCaption})}
+
+
+
+Modificadora d\textquotesingle{}una casella del tauler. 
+
+\begin{DoxyPrecond}{Precondition}
+Hi ha una partida inicialitzada i string valor es valid. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & es la posicio de la fila \\
+\hline
+{\em j} & es la posicio de la columna \\
+\hline
+{\em valor} & es el valor de casellas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha solucionat el tauler de la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 183 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{183                                                                      \{}
+\DoxyCodeLine{184         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8dbece6b327b741068562697d12ff99e}{modificarCasella}}(fila,columna,valor);}
+\DoxyCodeLine{185     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a241dfd661bec166dfecc50222eedfcab}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a241dfd661bec166dfecc50222eedfcab}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!partidaAcabada@{partidaAcabada}}
+\index{partidaAcabada@{partidaAcabada}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{partidaAcabada()}{partidaAcabada()}}
+{\footnotesize\ttfamily boolean src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+partida\+Acabada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta si la partida ha sigut acabada. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Retorna un bool que indica si s\textquotesingle{}ha acabat la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 171 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171                                     \{}
+\DoxyCodeLine{172         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a8bfd09a2e9a23de829b59733b754751b}{partidaAcabada}}();}
+\DoxyCodeLine{173     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3895ae3f934a14da0a9d12929b0de0e3}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3895ae3f934a14da0a9d12929b0de0e3}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!setTemps@{setTemps}}
+\index{setTemps@{setTemps}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{setTemps()}{setTemps()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+set\+Temps (\begin{DoxyParamCaption}\item[{String}]{t }\end{DoxyParamCaption})}
+
+
+
+Modifica el temps que s\textquotesingle{}ha jugat la partida. 
+
+\begin{DoxyPrecond}{Precondition}
+La partida ha sigut inicialitzada i encara no s\textquotesingle{}ha acabat. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em t} & és un string que representa el temps en el format següent\+: hh\+:mm\+:ss. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha mofificat la quantitat de temps que s\textquotesingle{}ha jugat la partida. 
+\end{DoxyPostcond}
+
+
+Definition at line 220 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{220                                    \{}
+\DoxyCodeLine{221         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a6300572544d886c29b6e93ec2f1e6497}{assignarTemps}}(t);}
+\DoxyCodeLine{222     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a2fce137b9f54ae8ab91bf8d1109d0d92}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a2fce137b9f54ae8ab91bf8d1109d0d92}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!solucionar@{solucionar}}
+\index{solucionar@{solucionar}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{solucionar()}{solucionar()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+solucionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resol tot el kakuro. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Resol tot el kakuro. 
+\end{DoxyPostcond}
+
+
+Definition at line 199 of file Ctrl\+Partida.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{199                                   \{}
+\DoxyCodeLine{200         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}{p}}.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida_a894cfb744272ff86533ed23ad3f827c1}{solucionar}}();}
+\DoxyCodeLine{201     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a11ed931caf21617f82121b208e534634}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a11ed931caf21617f82121b208e534634}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!IdKakuro@{IdKakuro}}
+\index{IdKakuro@{IdKakuro}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{IdKakuro}{IdKakuro}}
+{\footnotesize\ttfamily String src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+Id\+Kakuro\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Identificador del kakuro que s\textquotesingle{}esta jugant en aquest moment. 
+
+
+
+Definition at line 23 of file Ctrl\+Partida.\+java.
+
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}\label{classsrc_1_1_capa_domini_1_1_controladors_1_1_ctrl_partida_a3957ddc4d91225a6bf58cff321668eee}} 
+\index{src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}!p@{p}}
+\index{p@{p}!src.CapaDomini.Controladors.CtrlPartida@{src.CapaDomini.Controladors.CtrlPartida}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_partida}{Partida}} src.\+Capa\+Domini.\+Controladors.\+Ctrl\+Partida.\+p\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Partida associada. 
+
+
+
+Definition at line 21 of file Ctrl\+Partida.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Controladors/\mbox{\hyperlink{_ctrl_partida_8java}{Ctrl\+Partida.\+java}}\end{DoxyCompactItemize}

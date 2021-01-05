@@ -1,0 +1,267 @@
+\hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell}{}\doxysection{src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell Class Reference}
+\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell}\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+
+
+Ranking d\textquotesingle{}un taulell de kakuro en concret.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a7ceeebfb58302f69709efa532851b4fb}{insert\+Entry}} (String usuari, Long temps)
+\begin{DoxyCompactList}\small\item\em inserta una puntuació al rànking ordenat per temps \end{DoxyCompactList}\item 
+Array\+List$<$ Abstract\+Map.\+Simple\+Entry$<$ String, Long $>$ $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af0077771fa566ce4d8968a8c5694b0d1}{get\+Ranking\+Temps}} ()
+\begin{DoxyCompactList}\small\item\em Consultar el ranking ordenat per Temps. \end{DoxyCompactList}\item 
+Array\+List$<$ Abstract\+Map.\+Simple\+Entry$<$ String, Long $>$ $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_ac386f91f6c9770d2579dda5f1ca5f77c}{get\+Ranking\+Nom}} ()
+\begin{DoxyCompactList}\small\item\em Consultar el ranking ordenat per Nom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a7f5e51eed4ec253996c66c55337a9618}{Ranking\+Taulell}} ()
+\item 
+\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a5c87914af8a69d2721b3cd20ab578268}{Ranking\+Taulell}} (Array\+List$<$ Abstract\+Map.\+Simple\+Entry$<$ String, Long $>$$>$ r)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aec519e21a15be0a8f710236c459ad481}{sort\+Ranking\+By\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Ordena el ranking per temps. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af4ab82a8abbbd4e2ba34de47276b8052}{rec\+Insert}} (Abstract\+Map.\+Simple\+Entry$<$ String, Long $>$ entry, int l, int r)
+\begin{DoxyCompactList}\small\item\em funció recursiva per insertar una puntuació al ranking de forma ordenada \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ Abstract\+Map.\+Simple\+Entry$<$ String, Long $>$ $>$ \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}} = new Array\+List()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ranking d\textquotesingle{}un taulell de kakuro en concret. 
+
+\begin{DoxyAuthor}{Author}
+Pere Ginebra 
+\end{DoxyAuthor}
+
+
+Definition at line 16 of file Ranking\+Taulell.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a7f5e51eed4ec253996c66c55337a9618}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a7f5e51eed4ec253996c66c55337a9618}} 
+\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}!RankingTaulell@{RankingTaulell}}
+\index{RankingTaulell@{RankingTaulell}!src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+\doxysubsubsection{\texorpdfstring{RankingTaulell()}{RankingTaulell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell.\+Ranking\+Taulell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definition at line 21 of file Ranking\+Taulell.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                      \{   }
+\DoxyCodeLine{22     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a5c87914af8a69d2721b3cd20ab578268}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a5c87914af8a69d2721b3cd20ab578268}} 
+\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}!RankingTaulell@{RankingTaulell}}
+\index{RankingTaulell@{RankingTaulell}!src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+\doxysubsubsection{\texorpdfstring{RankingTaulell()}{RankingTaulell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell.\+Ranking\+Taulell (\begin{DoxyParamCaption}\item[{Array\+List$<$ Abstract\+Map.\+Simple\+Entry$<$ String, Long $>$$>$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definition at line 24 of file Ranking\+Taulell.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                                                                        \{}
+\DoxyCodeLine{25         this.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}} = r;}
+\DoxyCodeLine{26         this.\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aec519e21a15be0a8f710236c459ad481}{sortRankingByTime}}(); \textcolor{comment}{//no es necessaria si sempre legim el ranking ordenat per temps}}
+\DoxyCodeLine{27     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_ac386f91f6c9770d2579dda5f1ca5f77c}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_ac386f91f6c9770d2579dda5f1ca5f77c}} 
+\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}!getRankingNom@{getRankingNom}}
+\index{getRankingNom@{getRankingNom}!src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+\doxysubsubsection{\texorpdfstring{getRankingNom()}{getRankingNom()}}
+{\footnotesize\ttfamily Array\+List$<$Abstract\+Map.\+Simple\+Entry$<$String, Long$>$ $>$ src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell.\+get\+Ranking\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultar el ranking ordenat per Nom. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+retorna el rànking com a arraylist de Simple\+Entry (pairs) 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file Ranking\+Taulell.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98                                                                             \{}
+\DoxyCodeLine{99         ArrayList<AbstractMap.SimpleEntry<String, Long>> rankNom = \textcolor{keyword}{new} ArrayList();}
+\DoxyCodeLine{100         CompEntryByTime comp = \textcolor{keyword}{new} CompEntryByTime();}
+\DoxyCodeLine{101         Collections.sort(rankNom, comp);}
+\DoxyCodeLine{102         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}};}
+\DoxyCodeLine{103     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af0077771fa566ce4d8968a8c5694b0d1}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af0077771fa566ce4d8968a8c5694b0d1}} 
+\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}!getRankingTemps@{getRankingTemps}}
+\index{getRankingTemps@{getRankingTemps}!src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+\doxysubsubsection{\texorpdfstring{getRankingTemps()}{getRankingTemps()}}
+{\footnotesize\ttfamily Array\+List$<$Abstract\+Map.\+Simple\+Entry$<$String, Long$>$ $>$ src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell.\+get\+Ranking\+Temps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultar el ranking ordenat per Temps. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+retorna el rànking com a arraylist de Simple\+Entry (pairs) 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file Ranking\+Taulell.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89                                                                               \{}
+\DoxyCodeLine{90         \textcolor{keywordflow}{return} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}};}
+\DoxyCodeLine{91     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a7ceeebfb58302f69709efa532851b4fb}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_a7ceeebfb58302f69709efa532851b4fb}} 
+\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}!insertEntry@{insertEntry}}
+\index{insertEntry@{insertEntry}!src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+\doxysubsubsection{\texorpdfstring{insertEntry()}{insertEntry()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell.\+insert\+Entry (\begin{DoxyParamCaption}\item[{String}]{usuari,  }\item[{Long}]{temps }\end{DoxyParamCaption})}
+
+
+
+inserta una puntuació al rànking ordenat per temps 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha insertat la puntuació a la posició adient del rànking ordenat per temps 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em usuari} & el username de l\textquotesingle{}usuari que ha finalitzat el taulell \\
+\hline
+{\em temps} & el temps que ha tardat l\textquotesingle{}usuari en completar el taulell \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file Ranking\+Taulell.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                                        \{}
+\DoxyCodeLine{50         AbstractMap.SimpleEntry<String, Long> entry = \textcolor{keyword}{new} AbstractMap.SimpleEntry<String, Long>(usuari, temps);}
+\DoxyCodeLine{51         \textcolor{keywordtype}{int} n = \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}}.size();}
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} m = n/2;}
+\DoxyCodeLine{53         \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af4ab82a8abbbd4e2ba34de47276b8052}{recInsert}}(entry, 0, n);}
+\DoxyCodeLine{54     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af4ab82a8abbbd4e2ba34de47276b8052}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af4ab82a8abbbd4e2ba34de47276b8052}} 
+\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}!recInsert@{recInsert}}
+\index{recInsert@{recInsert}!src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+\doxysubsubsection{\texorpdfstring{recInsert()}{recInsert()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell.\+rec\+Insert (\begin{DoxyParamCaption}\item[{Abstract\+Map.\+Simple\+Entry$<$ String, Long $>$}]{entry,  }\item[{int}]{l,  }\item[{int}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+funció recursiva per insertar una puntuació al ranking de forma ordenada 
+
+
+
+Definition at line 59 of file Ranking\+Taulell.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                                                                       \{}
+\DoxyCodeLine{60         CompEntryByTime comp = \textcolor{keyword}{new} CompEntryByTime();}
+\DoxyCodeLine{61         \textcolor{keywordtype}{int} n = (r -\/ l);}
+\DoxyCodeLine{62         \textcolor{keywordtype}{int} m = l + (n / 2);}
+\DoxyCodeLine{63         \textcolor{keywordtype}{int} res = comp.compare(entry, \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}}.get(m));}
+\DoxyCodeLine{64         \textcolor{keywordflow}{if}(res == 0) \{          \textcolor{comment}{//tenen els mateixos punts}}
+\DoxyCodeLine{65             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}}.add(m, entry);}
+\DoxyCodeLine{66         \}}
+\DoxyCodeLine{67         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(n == 1) \{}
+\DoxyCodeLine{68             \textcolor{keywordflow}{if}(res == -\/1) \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}}.add(m, entry);}
+\DoxyCodeLine{69             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(res == 1) \{}
+\DoxyCodeLine{70                 \textcolor{keywordflow}{if}(m+1<\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}}.size())\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}}.add(m+1, entry);}
+\DoxyCodeLine{71                 \textcolor{keywordflow}{else} \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}}.add(entry);}
+\DoxyCodeLine{72             \}}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(res == -\/1) \{    \textcolor{comment}{//esta a l'esquerra}}
+\DoxyCodeLine{75             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af4ab82a8abbbd4e2ba34de47276b8052}{recInsert}}(entry, l, m);}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(res == 1) \{     \textcolor{comment}{//esta a la dreta}}
+\DoxyCodeLine{78             \mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_af4ab82a8abbbd4e2ba34de47276b8052}{recInsert}}(entry, m, r);}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80     \}  }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aec519e21a15be0a8f710236c459ad481}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aec519e21a15be0a8f710236c459ad481}} 
+\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}!sortRankingByTime@{sortRankingByTime}}
+\index{sortRankingByTime@{sortRankingByTime}!src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+\doxysubsubsection{\texorpdfstring{sortRankingByTime()}{sortRankingByTime()}}
+{\footnotesize\ttfamily void src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell.\+sort\+Ranking\+By\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ordena el ranking per temps. 
+
+\begin{DoxyPrecond}{Precondition}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\textquotesingle{}ha ordenat el ranking de manera creixent en relació al temps 
+\end{DoxyPostcond}
+
+
+Definition at line 37 of file Ranking\+Taulell.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                      \{}
+\DoxyCodeLine{38         CompEntryByTime comp = \textcolor{keyword}{new} CompEntryByTime();}
+\DoxyCodeLine{39         Collections.sort(\mbox{\hyperlink{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}{rank}}, comp);}
+\DoxyCodeLine{40     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}\label{classsrc_1_1_capa_domini_1_1_classes_1_1_ranking_taulell_aa93c9bdfed8c9e270f798117c6d6f3b7}} 
+\index{src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}!rank@{rank}}
+\index{rank@{rank}!src.CapaDomini.Classes.RankingTaulell@{src.CapaDomini.Classes.RankingTaulell}}
+\doxysubsubsection{\texorpdfstring{rank}{rank}}
+{\footnotesize\ttfamily Array\+List$<$Abstract\+Map.\+Simple\+Entry$<$String, Long$>$ $>$ src.\+Capa\+Domini.\+Classes.\+Ranking\+Taulell.\+rank = new Array\+List()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Ranking\+Taulell.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+U\+N\+I/5e Quatri/\+P\+R\+O\+P/subgrup-\/prop7-\/5/src/\+Capa\+Domini/\+Classes/\mbox{\hyperlink{_ranking_taulell_8java}{Ranking\+Taulell.\+java}}\end{DoxyCompactItemize}
